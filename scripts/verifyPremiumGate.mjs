@@ -10,6 +10,14 @@ function readJson(relativePath) {
   return JSON.parse(fs.readFileSync(path.join(rootDir, relativePath), 'utf8'));
 }
 
+function readOptionalJson(relativePath, fallback = {}) {
+  try {
+    return readJson(relativePath);
+  } catch {
+    return fallback;
+  }
+}
+
 function readText(relativePath) {
   return fs.readFileSync(path.join(rootDir, relativePath), 'utf8');
 }
@@ -84,8 +92,22 @@ function main() {
   const v21Quality = readJson('content/v21-quality-gates.json');
   const v22Quality = readJson('content/v22-quality-gates.json');
   const v23Quality = readJson('content/v23-quality-gates.json');
+  const strictIphoneVisual = readOptionalJson('content/visual-iphone-strict-gate-v11.json', {
+    status: 'fail',
+    visual_iphone_strict_gate: {
+      status: 'fail',
+      blockerCount: Number.POSITIVE_INFINITY,
+      checkedRoutes: 0,
+      checkedViewports: 0,
+      checkedThemes: [],
+      screenshots: [],
+    },
+  });
   const mobileSpec = readText('tests/mobile-overflow.spec.mjs');
   const uiContract = readText('src/styles/ultraPremiumContract.css');
+  const premium11Css = readText('src/styles/clinicalPremium11.css');
+  const modalStack11Css = readText('src/styles/modalStack11.css');
+  const strictVisualScript = readText('scripts/visualIphoneStrictGate.mjs');
   const appCss = readText('src/App.css');
   const diseaseModalContent = readText('src/components/diseaseModal/DiseaseModalContent.js');
   const diseaseModalCss = readText('src/styles/diseaseModalPremium.css');
@@ -197,8 +219,9 @@ function main() {
     check(packageJson.scripts['verify:premium']?.includes('v22:quality'), 'verify:premium includes v22 Perfect iPhone quality audit'),
     check(packageJson.scripts['verify:premium']?.includes('v23:visual'), 'verify:premium includes v23 iPhone visual stress gate'),
     check(packageJson.scripts['verify:premium']?.includes('v23:quality'), 'verify:premium includes v23 UltraPremium workbench quality audit'),
+    check(packageJson.scripts['verify:premium']?.includes('visual:iphone:strict'), 'verify:premium includes UroMed 1.1 strict iPhone visual gate'),
     check(fs.existsSync(path.join(rootDir, 'content/clinical-governance-passport-v10.csv')), 'v10 governance passport artifact exists'),
-    check(['ClinicalGovernanceMeta', 'ClinicalTableBlock', 'DecisionTreeNode', 'ClinicalLink', 'PremiumGateReport', 'IcdCoverageMeta', 'AnatomyModelMeta', 'ClinicalIndexDocument', 'DrugIntelligenceEntry', 'ClinicalCommandDocument', 'ClinicalCommandIndexDocument', 'SafeClinicalMarkupProps', 'ClinicalWorkflowBlock', 'ClinicalToolResult', 'ClinicalPageShell', 'ClinicalWorkbenchShell', 'ClinicalActionHeader', 'DrugCockpitEntry', 'AtlasHotspot', 'ClinicalSurfaceTokenSet', 'RouteVisualContract', 'DiseaseExpertWorkflowMeta', 'ServiceCockpitState', 'SearchRetrievalResult'].every((name) => contractTypes.includes(name)), 'public clinical contract typedefs are present'),
+    check(['ClinicalGovernanceMeta', 'ClinicalTableBlock', 'DecisionTreeNode', 'ClinicalLink', 'PremiumGateReport', 'IcdCoverageMeta', 'AnatomyModelMeta', 'ClinicalIndexDocument', 'DrugIntelligenceEntry', 'ClinicalCommandDocument', 'ClinicalCommandIndexDocument', 'SafeClinicalMarkupProps', 'ClinicalWorkflowBlock', 'ClinicalToolResult', 'ClinicalPageShell', 'ClinicalWorkbenchShell', 'ClinicalActionHeader', 'DrugCockpitEntry', 'AtlasHotspot', 'ClinicalSurfaceTokenSet', 'RouteVisualContract', 'DiseaseExpertWorkflowMeta', 'ServiceCockpitState', 'SearchRetrievalResult', 'ClinicalPremiumTheme', 'VisualIphoneGateReport', 'PremiumAuditReport'].every((name) => contractTypes.includes(name)), 'public clinical contract typedefs are present'),
   ]);
 
   const discoverabilityGate = makeGate('discoverability_gate', [
@@ -513,8 +536,33 @@ function main() {
     check(v23Quality.v23_deploy_freshness_gate?.status === 'pass', 'v23 deploy freshness gate passes'),
   ]);
 
+  const strictIphoneVisualGate = makeGate('strict_iphone_visual_gate', [
+    check(packageJson.scripts['visual:iphone:strict'] === 'node scripts/visualIphoneStrictGate.mjs', 'UroMed 1.1 strict visual script is registered'),
+    check(packageJson.scripts['verify:premium']?.includes('visual:iphone:strict'), 'strict iPhone visual gate runs before premium release gate'),
+    check(strictIphoneVisual.status === 'pass' && strictIphoneVisual.visual_iphone_strict_gate?.status === 'pass', 'strict iPhone visual report passes', {
+      blockerCount: strictIphoneVisual.visual_iphone_strict_gate?.blockerCount ?? null,
+    }),
+    check((strictIphoneVisual.visual_iphone_strict_gate?.checkedRoutes || 0) >= 24, 'strict visual gate covers all core routes and priority disease cards', {
+      checkedRoutes: strictIphoneVisual.visual_iphone_strict_gate?.checkedRoutes || 0,
+    }),
+    check((strictIphoneVisual.visual_iphone_strict_gate?.checkedViewports || 0) >= 13, 'strict visual gate covers iPhone portrait and landscape profiles', {
+      checkedViewports: strictIphoneVisual.visual_iphone_strict_gate?.checkedViewports || 0,
+    }),
+    check(['dark', 'light'].every((theme) => strictIphoneVisual.visual_iphone_strict_gate?.checkedThemes?.includes(theme)), 'strict visual gate covers light and dark themes'),
+    check((strictIphoneVisual.visual_iphone_strict_gate?.screenshots || []).length >= 6, 'strict visual gate stores visual QA screenshots'),
+    check(
+      premium11Css.includes('@layer clinical-premium-11')
+      && premium11Css.includes('--cp11-touch: 44px')
+      && modalStack11Css.includes('body.modal-open .tabs-shell')
+      && modalStack11Css.includes('body.modal-open .modal-mobile-quickbar'),
+      'Clinical Premium 1.1 cascade layer locks touch targets and final modal stack'
+    ),
+    check(premium11Css.includes('prefers-reduced-motion') && premium11Css.includes('body.light-mode'), 'Clinical Premium 1.1 supports reduced motion and light/dark symmetry'),
+    check(strictVisualScript.includes('clipped_controls') && strictVisualScript.includes('modal_quickbar_not_bottom_docked') && strictVisualScript.includes('/urology/oncology'), 'strict visual gate blocks clipping, floating quickbar and empty oncology regressions'),
+  ]);
+
   const report = {
-    status: [uiGate, contentGate, clinicalGate, deployGate, discoverabilityGate, visualGate, drugGate, sourceFreshnessGate, icdCoverageGate, encodingGate, model3dGate, aiSearchGate, clinicalExpertGate, securityGate, a11yGate, performanceGate, artifactEncodingGate, postDeployGate, workflowGate, privacyGate, keyboardA11yGate, encodingUserFacingGate, iphonePortraitGate, iphoneLandscapeGate, stickyStackGate, v18EncodingGate, v18ModalShellGate, v18ServiceShellGate, v18OncologyCardsGate, v18SmokeGate, v19ClinicalWorkbenchGate, v19Iphone1517Gate, v19DrugNavigationGate, v19AtlasFallbackGate, v19SourceRegistryGate, v19ArtifactEncodingGate, v20ClinicalOsGate, v20IphoneInteractionGate, v20ExpertWorkflowGate, v20DrugCockpitGate, v20SearchAiSafetyGate, v20AtlasPerformanceGate, v20VisualRegressionGate, v20SourceFreshnessGate, v21WorkbenchGate, v21DiseaseExpertGate, v21DrugCockpitGate, v21IcdExpansionGate, v21AtlasHotspotGate, v21AiRetrievalSafetyGate, v21VisualConsistencyGate, v21VisualIphoneGate, v22IphoneOverlapGate, v22ThemeSymmetryGate, v22ModalStackGate, v22SectionEmptyGate, v22DeployFreshnessGate, v23IphoneGeometryGate, v23ThemeContrastGate, v23RouteConsistencyGate, v23ClinicalReadabilityGate, v23ServiceCockpitGate, v23SearchRetrievalGate, v23AtlasInteractionGate, v23DeployFreshnessGate].every((gate) => gate.status === 'pass') ? 'pass' : 'fail',
+    status: [uiGate, contentGate, clinicalGate, deployGate, discoverabilityGate, visualGate, drugGate, sourceFreshnessGate, icdCoverageGate, encodingGate, model3dGate, aiSearchGate, clinicalExpertGate, securityGate, a11yGate, performanceGate, artifactEncodingGate, postDeployGate, workflowGate, privacyGate, keyboardA11yGate, encodingUserFacingGate, iphonePortraitGate, iphoneLandscapeGate, stickyStackGate, v18EncodingGate, v18ModalShellGate, v18ServiceShellGate, v18OncologyCardsGate, v18SmokeGate, v19ClinicalWorkbenchGate, v19Iphone1517Gate, v19DrugNavigationGate, v19AtlasFallbackGate, v19SourceRegistryGate, v19ArtifactEncodingGate, v20ClinicalOsGate, v20IphoneInteractionGate, v20ExpertWorkflowGate, v20DrugCockpitGate, v20SearchAiSafetyGate, v20AtlasPerformanceGate, v20VisualRegressionGate, v20SourceFreshnessGate, v21WorkbenchGate, v21DiseaseExpertGate, v21DrugCockpitGate, v21IcdExpansionGate, v21AtlasHotspotGate, v21AiRetrievalSafetyGate, v21VisualConsistencyGate, v21VisualIphoneGate, v22IphoneOverlapGate, v22ThemeSymmetryGate, v22ModalStackGate, v22SectionEmptyGate, v22DeployFreshnessGate, v23IphoneGeometryGate, v23ThemeContrastGate, v23RouteConsistencyGate, v23ClinicalReadabilityGate, v23ServiceCockpitGate, v23SearchRetrievalGate, v23AtlasInteractionGate, v23DeployFreshnessGate, strictIphoneVisualGate].every((gate) => gate.status === 'pass') ? 'pass' : 'fail',
     updated_at: 'runtime',
     ui_gate: uiGate,
     content_gate: contentGate,
@@ -584,6 +632,8 @@ function main() {
     v23_search_retrieval_gate: v23SearchRetrievalGate,
     v23_atlas_interaction_gate: v23AtlasInteractionGate,
     v23_deploy_freshness_gate: v23DeployFreshnessGate,
+    strict_iphone_visual_gate: strictIphoneVisualGate,
+    visual_iphone_strict_gate: strictIphoneVisualGate,
   };
 
   console.log(JSON.stringify(report, null, 2));

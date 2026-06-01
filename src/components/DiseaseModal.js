@@ -5,6 +5,7 @@ import '../styles/diseaseModalPremium.css';
 import '../styles/v21ModalVisualLock.css';
 import '../styles/v22WorkbenchLock.css';
 import '../styles/v23ClinicalWorkbench.css';
+import '../styles/modalStack11.css';
 import { normalizeDisease } from './diseaseModal/normalizeDisease';
 import { getDiseaseModalTabs, DEFAULT_TAB } from './diseaseModal/tabs';
 import DiseaseModalHeader from './diseaseModal/DiseaseModalHeader';
@@ -13,7 +14,7 @@ import DiseaseModalContent from './diseaseModal/DiseaseModalContent';
 import { preloadDiseaseBatch } from '../data/lazyData';
 
 const DRAG_CLOSE_THRESHOLD = 96;
-const IPHONE_SHELL_MAX_WIDTH = 940;
+const IPHONE_SHELL_MAX_WIDTH = 980;
 
 function isTypingTarget(target) {
   if (!target || !(target instanceof HTMLElement)) return false;
@@ -159,6 +160,66 @@ const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useEffect(() => {
+    if (!isMobile || !modalRef.current) return undefined;
+
+    const applyMobileStackLock = () => {
+      const modalElement = modalRef.current;
+      if (!modalElement) return;
+
+      const tabsShell = modalElement.querySelector('.tabs-shell');
+      const tabsRail = tabsShell?.querySelector('.tabs');
+      const quickbar = document.querySelector('.modal-mobile-quickbar.is-fixed');
+
+      modalElement.style.setProperty('position', 'fixed', 'important');
+      modalElement.style.setProperty('inset', '0', 'important');
+      modalElement.style.setProperty('width', '100vw', 'important');
+      modalElement.style.setProperty('max-width', '100vw', 'important');
+      modalElement.style.setProperty('height', '100dvh', 'important');
+      modalElement.style.setProperty('max-height', '100dvh', 'important');
+      modalElement.style.setProperty('overflow-x', 'clip', 'important');
+      modalElement.style.setProperty('overflow-y', 'auto', 'important');
+
+      if (tabsShell) {
+        tabsShell.style.setProperty('position', 'fixed', 'important');
+        tabsShell.style.setProperty('top', '0px', 'important');
+        tabsShell.style.setProperty('left', '0px', 'important');
+        tabsShell.style.setProperty('right', '0px', 'important');
+        tabsShell.style.setProperty('width', '100vw', 'important');
+        tabsShell.style.setProperty('max-width', '100vw', 'important');
+        tabsShell.style.setProperty('margin', '0', 'important');
+        tabsShell.style.setProperty('margin-inline', '0', 'important');
+        tabsShell.style.setProperty('transform', 'none', 'important');
+        tabsShell.style.setProperty('z-index', '2147483600', 'important');
+      }
+
+      if (tabsRail) {
+        tabsRail.style.setProperty('width', '100%', 'important');
+        tabsRail.style.setProperty('max-width', '100%', 'important');
+        tabsRail.style.setProperty('min-width', '0', 'important');
+        tabsRail.style.setProperty('overflow-x', 'auto', 'important');
+        tabsRail.style.setProperty('overflow-y', 'hidden', 'important');
+      }
+
+      if (quickbar) {
+        quickbar.style.setProperty('position', 'fixed', 'important');
+        quickbar.style.setProperty('top', 'auto', 'important');
+        quickbar.style.setProperty('bottom', 'max(0.62rem, calc(env(safe-area-inset-bottom, 0px) + 0.62rem))', 'important');
+        quickbar.style.setProperty('z-index', '2147483700', 'important');
+        quickbar.style.setProperty('transform', 'translate3d(0, 0, 0)', 'important');
+      }
+    };
+
+    applyMobileStackLock();
+    const frame = window.requestAnimationFrame(applyMobileStackLock);
+    window.addEventListener('resize', applyMobileStackLock, { passive: true });
+
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener('resize', applyMobileStackLock);
+    };
+  }, [activeTab, disease.id, isMobile]);
 
   useEffect(() => {
     if (modalRef.current) {

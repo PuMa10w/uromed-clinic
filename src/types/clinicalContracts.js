@@ -1,4 +1,45 @@
 /**
+ * @typedef {Object} ClinicalPremiumTheme
+ * @property {ClinicalSurfaceTokenSet} dark
+ * @property {ClinicalSurfaceTokenSet} light
+ * @property {string} typographyScale
+ * @property {string} spacingScale
+ * @property {string} interactionLanguage
+ */
+
+/**
+ * @typedef {Object} LayerStackContract
+ * @property {boolean} appNavHidden
+ * @property {boolean} sectionSwitchHidden
+ * @property {boolean} bottomNavSuppressed
+ * @property {boolean} tabsFixedTop
+ * @property {boolean} quickbarFixedBottom
+ * @property {boolean} contentSafePadding
+ */
+
+/**
+ * @typedef {Object} VisualIphoneGateReport
+ * @property {'pass'|'fail'} status
+ * @property {string} updated_at
+ * @property {Array<Record<string, unknown>>} screenshots
+ * @property {Array<Record<string, unknown>>} blockers
+ * @property {Array<Record<string, unknown>>} overflowMetrics
+ * @property {Array<Record<string, unknown>>} overlapFindings
+ * @property {Array<Record<string, unknown>>} clippedControls
+ * @property {Array<Record<string, unknown>>} touchTargetFindings
+ */
+
+/**
+ * @typedef {Object} PremiumAuditReport
+ * @property {{status: 'pass'|'fail'}} visualGate
+ * @property {{status: 'pass'|'fail'}} contentGate
+ * @property {{status: 'pass'|'fail'}} accessibilityGate
+ * @property {{status: 'pass'|'fail'}} performanceGate
+ * @property {{status: 'pass'|'fail'}} securityGate
+ * @property {{status: 'pass'|'fail'}} deployGate
+ */
+
+/**
  * @typedef {Object} ClinicalSurfaceTokenSet
  * @property {string} background
  * @property {string} elevatedBackground
@@ -391,6 +432,8 @@
  * @property {{status: 'pass'|'fail', checks: Array<Record<string, unknown>>}} v23_search_retrieval_gate
  * @property {{status: 'pass'|'fail', checks: Array<Record<string, unknown>>}} v23_atlas_interaction_gate
  * @property {{status: 'pass'|'fail', checks: Array<Record<string, unknown>>}} v23_deploy_freshness_gate
+ * @property {{status: 'pass'|'fail', checks: Array<Record<string, unknown>>}} strict_iphone_visual_gate
+ * @property {{status: 'pass'|'fail', checks: Array<Record<string, unknown>>}} visual_iphone_strict_gate
  */
 
 export {};

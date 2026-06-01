@@ -4,6 +4,7 @@ import './App.css';
 import './styles/ultraPremiumContract.css';
 import './styles/v22WorkbenchLock.css';
 import './styles/v23ClinicalWorkbench.css';
+import './styles/clinicalPremium11.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SeoHelmet from './components/SeoHelmet';
@@ -204,7 +205,13 @@ function App() {
       />
 
       <ErrorBoundary>
-        <div className={`App ${isMobileShell ? 'has-mobile-shell' : ''}`} role="main" data-v23-workbench="true">
+        <div
+          className={`App ${isMobileShell ? 'has-mobile-shell' : ''}`}
+          role="main"
+          data-v23-workbench="true"
+          data-clinical-premium="true"
+          data-product-version="1.1"
+        >
           <a href="#main-content" className="skip-link">Перейти к основному контенту</a>
           {!isOnline && (
             <div className="offline-indicator" role="alert">
