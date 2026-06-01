@@ -1,0 +1,116 @@
+{
+  "status": "pass",
+  "updated_at": "2026-06-01T10:32:49.238Z",
+  "premium_visual_system_gate": {
+    "name": "premium_visual_system_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "Clinical Premium 1.2 CSS imports after 1.1 lock",
+        "status": "pass"
+      },
+      {
+        "label": "App root exposes UroMed 1.2 product version",
+        "status": "pass"
+      },
+      {
+        "label": "Clinical Premium 1.2 cascade layer exists",
+        "status": "pass"
+      },
+      {
+        "label": "1.2 semantic design tokens exist",
+        "status": "pass"
+      },
+      {
+        "label": "1.2 light theme symmetry is explicit",
+        "status": "pass"
+      },
+      {
+        "label": "1.2 respects reduced motion",
+        "status": "pass"
+      }
+    ]
+  },
+  "iphone_geometry_gate": {
+    "name": "iphone_geometry_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "1.2 mobile geometry layer exists",
+        "status": "pass"
+      },
+      {
+        "label": "1.2 landscape compression rules exist",
+        "status": "pass"
+      },
+      {
+        "label": "1.2 safe-area support exists",
+        "status": "pass"
+      },
+      {
+        "label": "1.2 rails scroll inside their own containers",
+        "status": "pass"
+      },
+      {
+        "label": "disease tabs top lock remains enforced",
+        "status": "pass"
+      },
+      {
+        "label": "disease quickbar bottom lock remains enforced",
+        "status": "pass"
+      }
+    ]
+  },
+  "strict_visual_gate": {
+    "name": "strict_visual_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "latest strict iPhone visual report passes",
+        "status": "pass",
+        "blockerCount": 0
+      },
+      {
+        "label": "strict gate covers portrait and landscape iPhone matrix",
+        "status": "pass",
+        "checkedViewports": 13
+      },
+      {
+        "label": "strict gate covers core routes and priority disease cards",
+        "status": "pass",
+        "checkedRoutes": 24
+      },
+      {
+        "label": "strict gate covers light and dark themes",
+        "status": "pass"
+      },
+      {
+        "label": "strict gate keeps screenshot artifacts for visual review",
+        "status": "pass",
+        "screenshots": 6
+      }
+    ]
+  },
+  "trust_and_contract_gate": {
+    "name": "trust_and_contract_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "UroMed 1.2 quality gate is registered",
+        "status": "pass"
+      },
+      {
+        "label": "verify:premium includes UroMed 1.2 quality gate",
+        "status": "pass"
+      },
+      {
+        "label": "user-facing encoding audit is clean and blocking",
+        "status": "pass"
+      },
+      {
+        "label": "public 1.2 contracts are documented",
+        "status": "pass"
+      }
+    ]
+  }
+}

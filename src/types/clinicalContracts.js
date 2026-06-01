@@ -32,11 +32,44 @@
 /**
  * @typedef {Object} PremiumAuditReport
  * @property {{status: 'pass'|'fail'}} visualGate
+ * @property {{status: 'pass'|'fail'}} themeGate
+ * @property {{status: 'pass'|'fail'}} modalGate
  * @property {{status: 'pass'|'fail'}} contentGate
  * @property {{status: 'pass'|'fail'}} accessibilityGate
  * @property {{status: 'pass'|'fail'}} performanceGate
  * @property {{status: 'pass'|'fail'}} securityGate
  * @property {{status: 'pass'|'fail'}} deployGate
+ */
+
+/**
+ * @typedef {Object} ClinicalContentBlock
+ * @property {ClinicalActionHeader} actionHeader
+ * @property {ClinicalTableBlock[]} diagnostics
+ * @property {ClinicalTableBlock[]} differential
+ * @property {ClinicalTableBlock[]} treatment
+ * @property {ClinicalTableBlock[]} followUp
+ * @property {Array<{question: string, answer: string, sourceIds: string[]}>} FAQ
+ * @property {Array<{title: string, nextStep: string, sourceIds: string[]}>} cases
+ * @property {string[]} sources
+ * @property {string} lastCheckedAt
+ */
+
+/**
+ * @typedef {Object} ServiceShellContract
+ * @property {boolean} compactHero
+ * @property {boolean} contextualRail
+ * @property {boolean} commandFilters
+ * @property {boolean} readableCards
+ * @property {boolean} accessibleStates
+ */
+
+/**
+ * @typedef {Object} StrictIphoneVisualGate
+ * @property {Array<Record<string, unknown>>} screenshots
+ * @property {Array<Record<string, unknown>>} DOMMetrics
+ * @property {Array<Record<string, unknown>>} overlapFindings
+ * @property {Array<Record<string, unknown>>} clippedControls
+ * @property {Array<Record<string, unknown>>} overflowMetrics
  */
 
 /**

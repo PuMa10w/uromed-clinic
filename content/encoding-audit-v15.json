@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "updated_at": "2026-06-01T09:19:37.237Z",
-  "scannedFiles": 250,
+  "updated_at": "2026-06-01T10:19:57.345Z",
+  "scannedFiles": 288,
   "findings": [],
-  "note": "warn does not automatically block release: skipped legacy tests may intentionally contain broken encoding samples; user-facing UI remains the blocker."
+  "note": "User-facing mojibake is a release blocker. Intentional fixtures belong in test files, which are excluded."
 }

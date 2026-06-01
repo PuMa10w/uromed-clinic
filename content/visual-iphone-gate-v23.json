@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "updated_at": "2026-06-01T09:24:45.580Z",
+  "updated_at": "2026-06-01T10:25:08.272Z",
   "visual_iPhone_gate_v23": {
     "name": "visual_iPhone_gate_v23",
     "status": "pass",
@@ -127,11 +127,11 @@
             "height": 122
           },
           "title": {
-            "top": 301,
-            "left": 22,
-            "right": 298,
-            "bottom": 338,
-            "width": 277,
+            "top": 302,
+            "left": 23,
+            "right": 297,
+            "bottom": 339,
+            "width": 275,
             "height": 37
           },
           "modal": null,
@@ -172,11 +172,11 @@
             "height": 122
           },
           "title": {
-            "top": 301,
-            "left": 22,
-            "right": 298,
-            "bottom": 376,
-            "width": 277,
+            "top": 302,
+            "left": 23,
+            "right": 297,
+            "bottom": 377,
+            "width": 275,
             "height": 75
           },
           "modal": null,
@@ -345,11 +345,11 @@
             "height": 122
           },
           "title": {
-            "top": 345,
-            "left": 40,
-            "right": 280,
-            "bottom": 413,
-            "width": 241,
+            "top": 348,
+            "left": 41,
+            "right": 279,
+            "bottom": 415,
+            "width": 239,
             "height": 67
           },
           "modal": null,
@@ -390,11 +390,11 @@
             "height": 122
           },
           "title": {
-            "top": 354,
-            "left": 40,
-            "right": 280,
-            "bottom": 466,
-            "width": 240,
+            "top": 357,
+            "left": 41,
+            "right": 279,
+            "bottom": 470,
+            "width": 238,
             "height": 112
           },
           "modal": null,
@@ -435,11 +435,11 @@
             "height": 122
           },
           "title": {
-            "top": 328,
-            "left": 40,
-            "right": 280,
-            "bottom": 402,
-            "width": 240,
+            "top": 331,
+            "left": 41,
+            "right": 279,
+            "bottom": 406,
+            "width": 238,
             "height": 75
           },
           "modal": null,
@@ -518,11 +518,11 @@
             "height": 122
           },
           "title": {
-            "top": 354,
-            "left": 40,
-            "right": 280,
-            "bottom": 429,
-            "width": 240,
+            "top": 357,
+            "left": 41,
+            "right": 279,
+            "bottom": 432,
+            "width": 238,
             "height": 75
           },
           "modal": null,
@@ -563,10 +563,10 @@
             "height": 122
           },
           "title": {
-            "top": 320,
+            "top": 323,
             "left": 22,
             "right": 298,
-            "bottom": 358,
+            "bottom": 360,
             "width": 277,
             "height": 37
           },
@@ -1313,7 +1313,7 @@
     }
   ],
   "inheritedV22": {
-    "updated_at": "2026-06-01T09:24:19.042Z",
+    "updated_at": "2026-06-01T10:24:41.434Z",
     "status": "pass",
     "checkedRoutes": 25,
     "checkedViewports": 6
