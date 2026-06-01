@@ -1,0 +1,165 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:19:35.133Z",
+  "clinical_os_gate": {
+    "name": "clinical_os_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "ClinicalOperatingSystem component exists",
+        "status": "pass"
+      },
+      {
+        "label": "App renders Clinical OS outside disease modal",
+        "status": "pass"
+      },
+      {
+        "label": "Clinical OS offers search, urgent, drugs, spermogram and atlas actions",
+        "status": "pass"
+      },
+      {
+        "label": "Clinical OS has premium responsive CSS",
+        "status": "pass"
+      }
+    ]
+  },
+  "iphone_15_17_interaction_gate": {
+    "name": "iphone_15_17_interaction_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v20 iPhone smoke is present",
+        "status": "pass"
+      },
+      {
+        "label": "portrait and landscape v20 widths are covered",
+        "status": "pass"
+      },
+      {
+        "label": "Clinical OS action rail is iOS-safe",
+        "status": "pass"
+      },
+      {
+        "label": "home continue rail is iOS-safe",
+        "status": "pass"
+      }
+    ]
+  },
+  "expert_workflow_gate": {
+    "name": "expert_workflow_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "all disease cards remain quality-ready",
+        "status": "pass",
+        "qualityReady": 184,
+        "totalDiseases": 184
+      },
+      {
+        "label": "home exposes v20 workbench status and continue surface",
+        "status": "pass"
+      },
+      {
+        "label": "ClinicalWorkflowBlock exposes v20 freshness field",
+        "status": "pass"
+      },
+      {
+        "label": "disease action header contract remains present",
+        "status": "pass"
+      }
+    ]
+  },
+  "drug_cockpit_gate": {
+    "name": "drug_cockpit_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "drug catalog remains 500+",
+        "status": "pass",
+        "totalDrugs": 528
+      },
+      {
+        "label": "drug reference exposes v20 cockpit markers",
+        "status": "pass"
+      },
+      {
+        "label": "drug contract includes normalized risk tags",
+        "status": "pass"
+      },
+      {
+        "label": "drug route remains linked to v19 cockpit attributes",
+        "status": "pass"
+      }
+    ]
+  },
+  "search_ai_safety_gate": {
+    "name": "search_ai_safety_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "command search still exposes workflow metadata",
+        "status": "pass"
+      },
+      {
+        "label": "AI navigator is retrieval/discovery only",
+        "status": "pass"
+      },
+      {
+        "label": "v20 Clinical OS opens command search via keyboard event",
+        "status": "pass"
+      }
+    ]
+  },
+  "atlas_performance_gate": {
+    "name": "atlas_performance_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "atlas exposes v20 performance marker",
+        "status": "pass"
+      },
+      {
+        "label": "atlas fallback policy still passes v19 gate",
+        "status": "pass"
+      },
+      {
+        "label": "ICD coverage confirms model-ready entries",
+        "status": "pass",
+        "anatomyModelCount": 11
+      }
+    ]
+  },
+  "visual_regression_gate": {
+    "name": "visual_regression_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v20 smoke covers non-modal and modal states",
+        "status": "pass"
+      },
+      {
+        "label": "ClinicalPageShell carries v20 contract marker",
+        "status": "pass"
+      },
+      {
+        "label": "no replacement-character artifacts remain in user-facing source",
+        "status": "pass",
+        "findings": []
+      }
+    ]
+  },
+  "source_freshness_gate": {
+    "name": "source_freshness_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "source registry remains complete",
+        "status": "pass"
+      },
+      {
+        "label": "v20 quality is wired into verify:premium",
+        "status": "pass"
+      }
+    ]
+  }
+}

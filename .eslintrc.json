@@ -1,0 +1,28 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/anchor-is-valid": ["error", { "components": ["Link"], "specialLink": ["to", "href"] }],
+    "jsx-a11y/click-events-have-key-events": ["warn", { "required": { "some": ["role", "aria-label", "aria-labelledby", "title"] } }],
+    "jsx-a11y/no-static-element-interactions": ["warn", { "required": { "some": ["onClick", "onKeyDown", "onKeyUp", "role", "aria-label"] } }],
+    "jsx-a11y/no-noninteractive-tabindex": ["warn", { "allowExpressionValues": true }],
+    "jsx-a11y/role-has-required-aria-props": "warn",
+    "jsx-a11y/role-supports-aria-props": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["**/sections/*.js", "**/components/DiseaseModal.js"],
+      "rules": {
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off"
+      }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

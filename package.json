@@ -1,0 +1,79 @@
+{
+  "name": "urology-site",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sentry/browser": "^10.49.0",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.8",
+    "framer-motion": "^12.38.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.5",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.2.5",
+    "react-helmet-async": "^3.0.0",
+    "react-icons": "^5.6.0",
+    "react-scripts": "5.0.1",
+    "react-window": "^2.2.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "react-scripts test",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css}\"",
+    "content:audit": "node scripts/contentAudit.mjs",
+    "content:quality": "node scripts/contentQualityAudit.mjs",
+    "icd:coverage": "node scripts/icdCoverageAudit.mjs",
+    "drug:500": "node scripts/drug500Audit.mjs",
+    "encoding:audit": "node scripts/encodingAudit.mjs",
+    "v16:quality": "node scripts/v16QualityAudit.mjs",
+    "v17:quality": "node scripts/v17QualityAudit.mjs",
+    "v18:quality": "node scripts/v18QualityAudit.mjs",
+    "v19:quality": "node scripts/v19QualityAudit.mjs",
+    "v20:quality": "node scripts/v20QualityAudit.mjs",
+    "v21:visual": "node scripts/v21VisualIphoneGate.mjs",
+    "v21:quality": "node scripts/v21QualityAudit.mjs",
+    "v22:visual": "node scripts/v22VisualIphoneGate.mjs",
+    "v22:quality": "node scripts/v22QualityAudit.mjs",
+    "v23:visual": "node scripts/v23VisualIphoneGate.mjs",
+    "v23:quality": "node scripts/v23QualityAudit.mjs",
+    "clinical:governance": "node scripts/clinicalGovernanceAudit.mjs",
+    "premium:gate": "node scripts/verifyPremiumGate.mjs",
+    "verify:premium": "npm run build && npm test -- --watchAll=false && npx playwright test tests/mobile-overflow.spec.mjs --reporter=line && npm run content:quality && npm run content:audit && npm run icd:coverage && npm run drug:500 && npm run encoding:audit && npm run v16:quality && npm run v17:quality && npm run v18:quality && npm run v19:quality && npm run v20:quality && npm run v21:visual && npm run v21:quality && npm run v22:visual && npm run v22:quality && npm run v23:visual && npm run v23:quality && npm run clinical:governance && npm run premium:gate",
+    "analyze": "npm run build && npx source-map-explorer build/assets/*.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@rollup/rollup-win32-x64-msvc": "^4.52.5",
+    "@vitejs/plugin-react": "^4.7.0",
+    "jsdom": "^29.0.2",
+    "vite": "^5.4.19",
+    "vitest": "^4.1.5"
+  }
+}

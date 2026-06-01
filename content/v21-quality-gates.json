@@ -1,0 +1,176 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:21:53.961Z",
+  "workbench_gate": {
+    "name": "workbench_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v21 workbench marker is present on home",
+        "status": "pass"
+      },
+      {
+        "label": "Clinical OS carries v21 marker",
+        "status": "pass"
+      },
+      {
+        "label": "App keeps Clinical OS outside disease modal",
+        "status": "pass"
+      },
+      {
+        "label": "Clinical OS keeps search, urgent, drugs, spermogram and atlas actions",
+        "status": "pass"
+      }
+    ]
+  },
+  "disease_expert_gate": {
+    "name": "disease_expert_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "all disease cards remain quality-ready",
+        "status": "pass",
+        "qualityReady": 184,
+        "totalDiseases": 184
+      },
+      {
+        "label": "ClinicalActionHeader public contract exists",
+        "status": "pass"
+      },
+      {
+        "label": "clinical workflow freshness remains public",
+        "status": "pass"
+      },
+      {
+        "label": "disease sticky stack is covered by iPhone smoke",
+        "status": "pass"
+      }
+    ]
+  },
+  "drug_cockpit_gate": {
+    "name": "drug_cockpit_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "drug catalog remains 500+",
+        "status": "pass",
+        "totalDrugs": 528
+      },
+      {
+        "label": "drug cockpit exposes v21 marker",
+        "status": "pass"
+      },
+      {
+        "label": "DrugCockpitEntry public contract exists",
+        "status": "pass"
+      },
+      {
+        "label": "drug filters and risk tags remain machine-readable",
+        "status": "pass"
+      }
+    ]
+  },
+  "icd_expansion_gate": {
+    "name": "icd_expansion_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "ICD audit remains passing",
+        "status": "pass"
+      },
+      {
+        "label": "core ICD ranges remain populated",
+        "status": "pass",
+        "emptyPriorityRanges": 0
+      },
+      {
+        "label": "oncology route is visual-gated against empty state",
+        "status": "pass"
+      }
+    ]
+  },
+  "atlas_hotspot_gate": {
+    "name": "atlas_hotspot_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "AtlasHotspot public contract exists",
+        "status": "pass"
+      },
+      {
+        "label": "atlas exposes v21 marker and v20 performance marker",
+        "status": "pass"
+      },
+      {
+        "label": "atlas metadata has hotspots and fallback assets",
+        "status": "pass"
+      }
+    ]
+  },
+  "ai_retrieval_safety_gate": {
+    "name": "ai_retrieval_safety_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "command search exposes workflow metadata",
+        "status": "pass"
+      },
+      {
+        "label": "AI navigator remains retrieval/discovery oriented",
+        "status": "pass"
+      },
+      {
+        "label": "search command is covered by keyboard smoke",
+        "status": "pass"
+      }
+    ]
+  },
+  "visual_consistency_gate": {
+    "name": "visual_consistency_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v20 gates remain green before v21",
+        "status": "pass"
+      },
+      {
+        "label": "calculators expose v21 tool flow marker",
+        "status": "pass"
+      },
+      {
+        "label": "verify:premium includes v21 visual and quality gates",
+        "status": "pass"
+      },
+      {
+        "label": "public contracts include all v21 additions",
+        "status": "pass"
+      }
+    ]
+  },
+  "visual_iphone_gate": {
+    "name": "visual_iphone_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "strict visual iPhone report passes",
+        "status": "pass",
+        "blockers": 0
+      },
+      {
+        "label": "visual gate covers all requested route families",
+        "status": "pass",
+        "checkedRoutes": 25
+      },
+      {
+        "label": "visual gate covers iPhone portrait and landscape matrix",
+        "status": "pass",
+        "checkedViewports": 6
+      },
+      {
+        "label": "visual gate stores screenshot artifact references",
+        "status": "pass",
+        "screenshots": 8
+      }
+    ]
+  }
+}

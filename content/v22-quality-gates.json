@@ -1,0 +1,132 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:24:14.291Z",
+  "iphone_overlap_gate": {
+    "name": "iphone_overlap_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v22 visual report passes with zero blockers",
+        "status": "pass",
+        "blockers": 0
+      },
+      {
+        "label": "v22 visual report covers iPhone portrait and landscape matrix",
+        "status": "pass",
+        "checkedViewports": 6
+      },
+      {
+        "label": "v22 report scroll-checks modal routes",
+        "status": "pass",
+        "modalRoutes": 60
+      },
+      {
+        "label": "no horizontal overflow blockers remain",
+        "status": "pass"
+      },
+      {
+        "label": "no navbar/tabs/quickbar overlap blockers remain",
+        "status": "pass"
+      }
+    ]
+  },
+  "theme_symmetry_gate": {
+    "name": "theme_symmetry_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v22 CSS defines light-mode equivalents",
+        "status": "pass"
+      },
+      {
+        "label": "v22 CSS preserves keyboard focus visibility",
+        "status": "pass"
+      },
+      {
+        "label": "ThemeQualityTokenSet public contract exists",
+        "status": "pass"
+      },
+      {
+        "label": "light and dark visual smoke routes pass",
+        "status": "pass",
+        "themeResults": 8
+      }
+    ]
+  },
+  "modal_stack_gate": {
+    "name": "modal_stack_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "Disease modal imports v22 lock after legacy modal CSS",
+        "status": "pass"
+      },
+      {
+        "label": "v22 CSS hides app shell when modal is open",
+        "status": "pass"
+      },
+      {
+        "label": "v22 CSS fixes disease tabs to viewport top",
+        "status": "pass"
+      },
+      {
+        "label": "v22 CSS docks quickbar to safe-area bottom",
+        "status": "pass"
+      },
+      {
+        "label": "DiseaseModalStackContract public contract exists",
+        "status": "pass"
+      }
+    ]
+  },
+  "section_empty_gate": {
+    "name": "section_empty_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "all diseases remain quality-ready",
+        "status": "pass",
+        "qualityReady": 184,
+        "totalDiseases": 184
+      },
+      {
+        "label": "oncology is guarded against empty visual state",
+        "status": "pass"
+      },
+      {
+        "label": "core section routes are included in v22 visual smoke",
+        "status": "pass"
+      }
+    ]
+  },
+  "deploy_freshness_gate": {
+    "name": "deploy_freshness_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "verify:premium includes v22 visual and quality gates",
+        "status": "pass"
+      },
+      {
+        "label": "v22 CSS is imported globally by App",
+        "status": "pass"
+      },
+      {
+        "label": "Vite chunks split drug and disease data for reliable Pages upload",
+        "status": "pass"
+      },
+      {
+        "label": "service pages retain cockpit/tool-flow markers",
+        "status": "pass"
+      },
+      {
+        "label": "command search still exposes clinical workflow metadata",
+        "status": "pass"
+      },
+      {
+        "label": "v21 gates remain green under v22",
+        "status": "pass"
+      }
+    ]
+  }
+}

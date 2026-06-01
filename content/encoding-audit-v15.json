@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:19:33.957Z",
+  "scannedFiles": 248,
+  "findings": [],
+  "note": "warn does not automatically block release: skipped legacy tests may intentionally contain broken encoding samples; user-facing UI remains the blocker."
+}

@@ -1,0 +1,37 @@
+domain,icd,targetDisease,priorityWave,coverage,matchingIds,matchingNames,nextAction
+urology,N20.0,Kidney stone,A,covered,kidney-stone,Камень почки,audit tabs and guideline freshness
+urology,N20.1,Ureteral stone,A,covered,ureteral-stone,Камень мочеточника,audit tabs and guideline freshness
+urology,N21.0,Bladder stones,B,covered,bladder-stones,Камни мочевого пузыря,audit tabs and guideline freshness
+urology,N23,Renal colic,A,covered,renal-colic,Почечная колика,audit tabs and guideline freshness
+urology,N30.0,Acute cystitis,A,covered,acute-cystitis,Острый цистит,audit tabs and guideline freshness
+urology,N30.1,Interstitial cystitis / bladder pain syndrome,A,covered,interstitial-cystitis|bladder-pain-syndrome,Интерстициальный цистит / СБМП|Болевой синдром мочевого пузыря,audit tabs and guideline freshness
+urology,N30.4,Radiation cystitis,B,covered,radiation-cystitis,Лучевой цистит,audit tabs and guideline freshness
+urology,N39.0,Urinary tract infection / recurrent UTI,A,covered,recurrent-uti|uti-unspecified,Рецидивирующая ИМП|ИМП без уточнения,audit tabs and guideline freshness
+urology,N41.0,Acute bacterial prostatitis,A,covered,acute-bacterial-prostatitis,Острый бактериальный простатит,audit tabs and guideline freshness
+urology,N41.1,Chronic prostatitis / CPPS,A,covered,chronic-prostatitis-cpps|chronic-bacterial-prostatitis,Хронический простатит / СХТБ|Хронический бактериальный простатит,audit tabs and guideline freshness
+urology,N45,Epididymitis / orchitis,A,covered,epididymitis|orchitis,Эпидидимит|Орхит,audit tabs and guideline freshness
+urology,N49.2,Fournier gangrene,A,covered,fournier-gangrene|funiculitis,Гангрена Фурнье|Фуникулит,audit tabs and guideline freshness
+urology,N40,Benign prostatic hyperplasia,A,covered,bph,ДГПЖ / Аденома простаты,audit tabs and guideline freshness
+urology,R33,Urinary retention,A,covered,urinary-retention,Острая задержка мочи,audit tabs and guideline freshness
+urology,N31,Neurogenic bladder,A,covered,neurogenic-bladder,Нейрогенный мочевой пузырь,audit tabs and guideline freshness
+urology,N32.0,Bladder neck/outlet obstruction,A,covered,bladder-neck-obstruction|bladder-outlet-obstruction,Обструкция шейки мочевого пузыря|Обструкция выхода мочевого пузыря,audit tabs and guideline freshness
+urology,N35,Urethral stricture,A,covered,urethral-stricture,Стриктура уретры,audit tabs and guideline freshness
+urology,N13.5,Ureteral obstruction/stricture,A,covered,retroperitoneal-fibrosis|ureteral-stricture-benign|upj-obstruction,Ретроперитонеальный фиброз|Доброкачественная стриктура мочеточника|Обструкция ЛМС,audit tabs and guideline freshness
+urology,N13.7,Vesicoureteral reflux,B,covered,vesicoureteral-reflux,Пузырно-мочеточниковый рефлюкс,audit tabs and guideline freshness
+urology,C61,Prostate cancer,A,covered,prostate-cancer|sarcoma-prostate,Рак предстательной железы|Саркома предстательной железы,audit tabs and guideline freshness
+urology,C67,Bladder cancer,A,covered,bladder-cancer,Рак мочевого пузыря,audit tabs and guideline freshness
+urology,C64,Kidney cancer,A,covered,kidney-cancer|wilms-tumor|papillary-rcc,Рак почки|Опухоль Вильмса (нефробластома)|Папиллярный рак почки,audit tabs and guideline freshness
+urology,C62,Testicular cancer,A,covered,testicular-cancer,Рак яичка,audit tabs and guideline freshness
+urology,C60,Penile cancer,B,covered,penile-cancer,Рак полового члена,audit tabs and guideline freshness
+urology,C65-C66,Upper tract urothelial carcinoma,B,covered,upper-tract-uc,Уротелиальный рак верхних мочевых путей,audit tabs and guideline freshness
+andrology,N52,Erectile dysfunction,A,covered,erectile-dysfunction,Эректильная дисфункция,audit tabs and guideline freshness
+andrology,F52.2,Psychogenic erectile dysfunction,A,covered,psychogenic-ed,Психогенная эректильная дисфункция,audit tabs and guideline freshness
+andrology,N53,Premature ejaculation / ejaculation disorders,A,covered,premature-ejaculation,Преждевременная эякуляция,audit tabs and guideline freshness
+andrology,N46,Male infertility / oligozoospermia,A,covered,male-infertility|oligospermia|azoospermia|teratozoospermia|asthenozoospermia|leukocytospermia,Мужское бесплодие|Олигозооспермия|Азооспермия|Тератозооспермия|Астенозооспермия|Лейкоцитоспермия,audit tabs and guideline freshness
+andrology,I86.1,Varicocele,A,covered,varicocele|varicocele-recurrence,Варикоцеле|Рецидив варикоцеле,audit tabs and guideline freshness
+andrology,E29.1,Male hypogonadism,A,covered,hypogonadism|male-climacterium|subclinical-hypogonadism,Мужской гипогонадизм|Мужской климакс (LOH)|Субклинический гипогонадизм,audit tabs and guideline freshness
+andrology,N48.3,Priapism,A,covered,priapism,Приапизм,audit tabs and guideline freshness
+andrology,N48.6,Peyronie disease / penile fibrosis,B,covered,peyronie|cavernous-fibrosis,Болезнь Пейрони|Фиброз кавернозных тел,audit tabs and guideline freshness
+pediatric,Q53,Cryptorchidism,A,covered,cryptorchidism,Крипторхизм,audit tabs and guideline freshness
+pediatric,Q54,Hypospadias,A,covered,hypospadias,Гипоспадия,audit tabs and guideline freshness
+pediatric,Q64.2,Posterior urethral valves,A,covered,posterior-urethral-valves,Клапаны задней уретры,audit tabs and guideline freshness

@@ -1,0 +1,550 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:19:33.507Z",
+  "totalDiseases": 178,
+  "icdCoverageTargets": [
+    {
+      "range": "N20-N23",
+      "label": "Мочекаменная болезнь",
+      "priority": "A",
+      "status": "covered-core",
+      "diseaseCount": 7,
+      "canonicalExamples": [
+        {
+          "id": "urolithiasis",
+          "icd10_code": "N20-N23",
+          "canonical_route": "/urology/stones/urolithiasis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "kidney-stone",
+          "icd10_code": "N20.0",
+          "canonical_route": "/urology/stones/kidney-stone",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "renal-colic",
+          "icd10_code": "N23",
+          "canonical_route": "/urology/stones/renal-colic",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "kidney-ureter-stones",
+          "icd10_code": "N20.2",
+          "canonical_route": "/urology/stones/kidney-ureter-stones",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "ureteral-stone",
+          "icd10_code": "N20.1",
+          "canonical_route": "/urology/stones/ureteral-stone",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "bladder-stones",
+          "icd10_code": "N21.0",
+          "canonical_route": "/urology/stones/bladder-stones",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "urethral-stones",
+          "icd10_code": "N21.1",
+          "canonical_route": "/urology/stones/urethral-stones",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        }
+      ]
+    },
+    {
+      "range": "N30-N39",
+      "label": "Инфекции, цистит, пиелонефрит, СНМП",
+      "priority": "A",
+      "status": "covered-core",
+      "diseaseCount": 30,
+      "canonicalExamples": [
+        {
+          "id": "cystitis",
+          "icd10_code": "N30",
+          "canonical_route": "/urology/infections/cystitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "acute-cystitis",
+          "icd10_code": "N30.0",
+          "canonical_route": "/urology/infections/acute-cystitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "chronic-cystitis",
+          "icd10_code": "N30.2",
+          "canonical_route": "/urology/infections/chronic-cystitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "urethritis",
+          "icd10_code": "N34",
+          "canonical_route": "/urology/infections/urethritis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "recurrent-uti",
+          "icd10_code": "N39.0",
+          "canonical_route": "/urology/infections/recurrent-uti",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "uti-unspecified",
+          "icd10_code": "N39.0",
+          "canonical_route": "/urology/infections/uti-unspecified",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "overactive-bladder",
+          "icd10_code": "N32.8",
+          "canonical_route": "/urology/functional/overactive-bladder",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "stress-incontinence",
+          "icd10_code": "N39.3",
+          "canonical_route": "/urology/functional/stress-incontinence",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        }
+      ]
+    },
+    {
+      "range": "N40-N42",
+      "label": "Простата: ДГПЖ, простатит, опухолевые маркеры",
+      "priority": "A",
+      "status": "covered-core",
+      "diseaseCount": 8,
+      "canonicalExamples": [
+        {
+          "id": "prostatitis",
+          "icd10_code": "N41",
+          "canonical_route": "/urology/infections/prostatitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "prostate-abscess",
+          "icd10_code": "N41.2",
+          "canonical_route": "/urology/infections/prostate-abscess",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "acute-bacterial-prostatitis",
+          "icd10_code": "N41.0",
+          "canonical_route": "/urology/infections/acute-bacterial-prostatitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "bph",
+          "icd10_code": "N40",
+          "canonical_route": "/urology/functional/bph",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "prostatic-cyst",
+          "icd10_code": "N42.0",
+          "canonical_route": "/urology/functional/prostatic-cyst",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "prostatic-calculi",
+          "icd10_code": "N42.0",
+          "canonical_route": "/urology/functional/prostatic-calculi",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "chronic-prostatitis-cpps",
+          "icd10_code": "N41.1",
+          "canonical_route": "/andrology/sexual/chronic-prostatitis-cpps",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "chronic-bacterial-prostatitis",
+          "icd10_code": "N41.1",
+          "canonical_route": "/andrology/sexual/chronic-bacterial-prostatitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        }
+      ]
+    },
+    {
+      "range": "N43-N51",
+      "label": "Мужские половые органы, фертильность, сексуальная медицина",
+      "priority": "A",
+      "status": "covered-core",
+      "diseaseCount": 21,
+      "canonicalExamples": [
+        {
+          "id": "epididymitis",
+          "icd10_code": "N45",
+          "canonical_route": "/urology/infections/epididymitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "orchitis",
+          "icd10_code": "N45",
+          "canonical_route": "/urology/infections/orchitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "fournier-gangrene",
+          "icd10_code": "N49.2",
+          "canonical_route": "/urology/infections/fournier-gangrene",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "balanoposthitis",
+          "icd10_code": "N48.1",
+          "canonical_route": "/urology/infections/balanoposthitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "epididymo-orchitis",
+          "icd10_code": "N45.9",
+          "canonical_route": "/urology/infections/epididymo-orchitis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "seminal-vesicle-disease",
+          "icd10_code": "N50.0",
+          "canonical_route": "/urology/functional/seminal-vesicle-disease",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "paraphimosis",
+          "icd10_code": "N47.1",
+          "canonical_route": "/urology/reconstructive/paraphimosis",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "testicular-torsion",
+          "icd10_code": "N44",
+          "canonical_route": "/urology/reconstructive/testicular-torsion",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        }
+      ]
+    },
+    {
+      "range": "C60-C68",
+      "label": "Онкоурология",
+      "priority": "A",
+      "status": "covered-core",
+      "diseaseCount": 11,
+      "canonicalExamples": [
+        {
+          "id": "prostate-cancer",
+          "icd10_code": "C61",
+          "canonical_route": "/urology/oncology/prostate-cancer",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "bladder-cancer",
+          "icd10_code": "C67",
+          "canonical_route": "/urology/oncology/bladder-cancer",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "kidney-cancer",
+          "icd10_code": "C64",
+          "canonical_route": "/urology/oncology/kidney-cancer",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "testicular-cancer",
+          "icd10_code": "C62",
+          "canonical_route": "/urology/oncology/testicular-cancer",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "penile-cancer",
+          "icd10_code": "C60",
+          "canonical_route": "/urology/oncology/penile-cancer",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "upper-tract-uc",
+          "icd10_code": "C65-C66",
+          "canonical_route": "/urology/oncology/upper-tract-uc",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "urethral-cancer",
+          "icd10_code": "C68.0",
+          "canonical_route": "/urology/oncology/urethral-cancer",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "sarcoma-prostate",
+          "icd10_code": "C61",
+          "canonical_route": "/urology/oncology/sarcoma-prostate",
+          "module_status": "data-module",
+          "clinical_priority": "A",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        }
+      ]
+    },
+    {
+      "range": "Q53-Q64",
+      "label": "Педиатрическая урология и врождённые аномалии",
+      "priority": "B",
+      "status": "covered-core",
+      "diseaseCount": 3,
+      "canonicalExamples": [
+        {
+          "id": "polycystic-kidney",
+          "icd10_code": "Q61.2",
+          "canonical_route": "/urology/nephrology/polycystic-kidney",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "cryptorchidism",
+          "icd10_code": "Q53",
+          "canonical_route": "/andrology/fertility/cryptorchidism",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "bladder-exstrophy",
+          "icd10_code": "Q64.1",
+          "canonical_route": "/urology/reconstructive/bladder-exstrophy",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        }
+      ]
+    },
+    {
+      "range": "A54/A56/A60/A63",
+      "label": "STI и урогенитальные инфекции",
+      "priority": "B",
+      "status": "needs-wave-expansion",
+      "diseaseCount": 2,
+      "canonicalExamples": [
+        {
+          "id": "genital-herpes",
+          "icd10_code": "A60.0",
+          "canonical_route": "/urology/infections/genital-herpes",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "needs-wave-expansion"
+        },
+        {
+          "id": "condyloma-acuminata",
+          "icd10_code": "A63.0",
+          "canonical_route": "/urology/infections/condyloma-acuminata",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "needs-wave-expansion"
+        }
+      ]
+    },
+    {
+      "range": "S37",
+      "label": "Травмы мочеполовых органов",
+      "priority": "B",
+      "status": "needs-wave-expansion",
+      "diseaseCount": 5,
+      "canonicalExamples": [
+        {
+          "id": "bladder-rupture",
+          "icd10_code": "S37.2",
+          "canonical_route": "/urology/reconstructive/bladder-rupture",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "needs-wave-expansion"
+        },
+        {
+          "id": "urethral-trauma",
+          "icd10_code": "S37.3",
+          "canonical_route": "/urology/reconstructive/urethral-trauma",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "needs-wave-expansion"
+        },
+        {
+          "id": "renal-trauma",
+          "icd10_code": "S37.0",
+          "canonical_route": "/urology/nephrology/renal-trauma",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "needs-wave-expansion"
+        },
+        {
+          "id": "ureteral-trauma",
+          "icd10_code": "S37.1",
+          "canonical_route": "/urology/nephrology/ureteral-trauma",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "needs-wave-expansion"
+        },
+        {
+          "id": "pelvic-fracture-urethral-injury",
+          "icd10_code": "S37.2",
+          "canonical_route": "/urology/reconstructive/pelvic-fracture-urethral-injury",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "needs-wave-expansion"
+        }
+      ]
+    },
+    {
+      "range": "Z30-Z31",
+      "label": "Контрацепция, фертильность, ART-контекст",
+      "priority": "B",
+      "status": "covered-core",
+      "diseaseCount": 2,
+      "canonicalExamples": [
+        {
+          "id": "male-contraception",
+          "icd10_code": "Z30.0",
+          "canonical_route": "/andrology/fertility/male-contraception",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        },
+        {
+          "id": "fertility-preservation-male",
+          "icd10_code": "Z31.6",
+          "canonical_route": "/andrology/fertility/fertility-preservation-male",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
+        }
+      ]
+    }
+  ],
+  "anatomyModelCount": 11,
+  "missingModelTargets": [],
+  "emptyPriorityRanges": []
+}

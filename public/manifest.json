@@ -1,0 +1,58 @@
+{
+  "name": "UroMed — Урология и Андрология",
+  "short_name": "UroMed",
+  "description": "Медицинский справочник по урологии и андрологии с доказательной клинической базой.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#07111f",
+  "background_color": "#07111f",
+  "categories": ["medical", "health", "reference"],
+  "lang": "ru",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Избранное",
+      "short_name": "Избранное",
+      "description": "Сохранённые статьи",
+      "url": "/#/favorites",
+      "icons": [{ "src": "logo192.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Калькуляторы",
+      "short_name": "Калькуляторы",
+      "description": "Клинические калькуляторы",
+      "url": "/#/calculators",
+      "icons": [{ "src": "logo192.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Неотложные",
+      "short_name": "Неотложные",
+      "description": "Экстренные урологические состояния",
+      "url": "/#/emergency",
+      "icons": [{ "src": "logo192.png", "sizes": "96x96" }]
+    }
+  ]
+}

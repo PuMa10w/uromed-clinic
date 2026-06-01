@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-31T17:19:33.067Z",
+  "totalDiseases": 184,
+  "qualityReady": 184,
+  "highPriorityGaps": 0,
+  "needsEditorialPass": 0,
+  "waveAOpen": 0,
+  "waveBOpen": 0,
+  "waveCOpen": 0,
+  "missingBlockCounts": {
+    "diagnostic_algorithm": 0,
+    "differential_depth": 0,
+    "red_flags_route": 0,
+    "treatment_lines": 0,
+    "followup_protocol": 0,
+    "labs_or_imaging_norms": 0,
+    "clinical_cases": 0,
+    "source_pack": 0,
+    "guideline_freshness": 0
+  }
+}

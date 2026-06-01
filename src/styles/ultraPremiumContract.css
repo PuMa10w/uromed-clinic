@@ -1,0 +1,682 @@
+/*
+ * UroMed UltraPremium UI contract.
+ * This file is intentionally imported after the base styles: it acts as a
+ * small release-safety layer for iPhone touch targets, safe areas and overflow.
+ */
+
+:root {
+  --up-touch-target: 44px;
+  --up-mobile-gutter: clamp(0.78rem, 3.2vw, 1.05rem);
+  --up-reading-width: 68ch;
+  --up-section-max-width: 74rem;
+  --up-service-max-width: 40rem;
+  --up-density-gap: clamp(0.72rem, 2.6vw, 1.05rem);
+  --up-card-radius: 24px;
+  --up-control-radius: 999px;
+  --up-control-min-width: 2.75rem;
+  --up-hairline: rgba(154, 177, 202, 0.18);
+  --up-focus-ring: 0 0 0 3px rgba(88, 224, 193, 0.2);
+  --up-sticky-tabs-top: calc(var(--sat) + 4.8rem);
+  --up-fixed-action-bottom: calc(var(--sab) + 0.68rem);
+  --up-bottom-nav-space: calc(var(--sab) + 7.4rem);
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  min-width: 0;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: var(--up-focus-ring);
+}
+
+.section,
+.home-shell,
+.home-destination-grid,
+.cards-grid,
+.subsection-grid,
+.drug-reference,
+.tools-section,
+.calculators-page,
+.favorites-page,
+.emergency-page,
+.sitemap-page,
+.modal-content,
+.modal-body,
+.content-block {
+  min-width: 0;
+}
+
+.content-block p,
+.content-block li,
+.clinical-table-card,
+.premium-clinical-table,
+.drug-card,
+.tool-section,
+.calculator-card,
+.disease-card {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.content-block > p,
+.content-block > ul,
+.content-block > ol,
+.content-block > .clinical-table-card,
+.modal-tabpanel > p,
+.modal-tabpanel > ul,
+.modal-tabpanel > ol {
+  max-width: var(--up-reading-width);
+}
+
+@media (max-width: 700px) {
+  .navbar button,
+  .navbar a,
+  .navbar-section-btn,
+  .search-toggle,
+  .theme-toggle,
+  .hamburger-btn,
+  .bottom-nav button,
+  .mobile-shell-nav button,
+  .modal-mobile-quickbtn,
+  .tabs button,
+  .calculator-category-tabs button,
+  .calculator-tool-tabs button,
+  .drug-search-hints button,
+  .drug-filter-chip,
+  .tool-tab,
+  .questionnaire-option {
+    min-height: var(--up-touch-target);
+  }
+
+  .tabs[data-scrollable='x'],
+  .tabs-shell .tabs[data-scrollable='x'],
+  .calculator-category-tabs,
+  .calculator-tool-tabs,
+  .drug-search-hints,
+  .drug-filters,
+  .tool-tabs {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    touch-action: pan-x;
+  }
+
+  .tabs[data-scrollable='x']::-webkit-scrollbar,
+  .tabs-shell .tabs[data-scrollable='x']::-webkit-scrollbar,
+  .calculator-category-tabs::-webkit-scrollbar,
+  .calculator-tool-tabs::-webkit-scrollbar,
+  .drug-search-hints::-webkit-scrollbar,
+  .drug-filters::-webkit-scrollbar,
+  .tool-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section,
+  .home-shell,
+  .drug-reference,
+  .tools-section,
+  .calculators-page {
+    padding-left: max(var(--up-mobile-gutter), var(--sal));
+    padding-right: max(var(--up-mobile-gutter), var(--sar));
+  }
+
+  .content-block > p,
+  .content-block > ul,
+  .content-block > ol,
+  .content-block > .clinical-table-card,
+  .modal-tabpanel > p,
+  .modal-tabpanel > ul,
+  .modal-tabpanel > ol {
+    max-width: 100%;
+  }
+
+  .tabs-shell {
+    top: var(--up-sticky-tabs-top);
+    z-index: calc(var(--z-sticky) + 12);
+  }
+
+  .modal-mobile-quickbar.is-fixed,
+  .modal-overlay > .modal-mobile-quickbar.is-fixed {
+    bottom: var(--up-fixed-action-bottom);
+    z-index: calc(var(--z-fixed) + 30);
+  }
+
+  .modal-body {
+    padding-bottom: var(--up-bottom-nav-space);
+  }
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+  :root {
+    --up-sticky-tabs-top: calc(var(--sat) + 3.9rem);
+    --up-bottom-nav-space: calc(var(--sab) + 6.4rem);
+  }
+
+  .navbar-primary-switch {
+    min-height: var(--up-touch-target);
+  }
+
+  .modal-body {
+    padding-bottom: var(--up-bottom-nav-space);
+  }
+}
+
+@media (max-width: 390px) {
+  :root {
+    --up-mobile-gutter: clamp(0.68rem, 3vw, 0.9rem);
+  }
+}
+
+/* v11 Wave A lock: one iPhone contract for shell, rails, reading flow and service pages. */
+@media (max-width: 700px) {
+  body {
+    text-rendering: optimizeLegibility;
+  }
+
+  .page-content,
+  .section,
+  .service-page-shell,
+  .home-shell,
+  .modal-content,
+  .modal-body,
+  .modal-tabpanel,
+  .content-block,
+  .service-card-shell,
+  .tool-section,
+  .drug-card,
+  .calculator-card,
+  .disease-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .service-page-shell,
+  .tools-section,
+  .calculators-page,
+  .drug-reference,
+  .favorites-page,
+  .emergency-page,
+  .sitemap-page {
+    max-width: min(100%, 38rem);
+    margin-inline: auto;
+  }
+
+  .content-block p,
+  .content-block li,
+  .modal-tabpanel p,
+  .modal-tabpanel li,
+  .service-page-shell p,
+  .service-page-shell li,
+  .question-text,
+  .result-panel,
+  .drug-detail-value,
+  .sperm-tree-node {
+    max-width: 100%;
+    line-height: 1.62;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
+  .content-block > p,
+  .modal-tabpanel > p,
+  .content-block > ul,
+  .content-block > ol,
+  .modal-tabpanel > ul,
+  .modal-tabpanel > ol {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tabs[data-scrollable='x'],
+  .tabs-shell .tabs[data-scrollable='x'],
+  .calculator-category-tabs,
+  .calculator-tool-tabs,
+  .drug-search-hints,
+  .drug-filters,
+  .tool-tabs,
+  .sperm-source-row,
+  .sperm-tree-linkbar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.42rem;
+    scroll-snap-type: x proximity;
+  }
+
+  .tabs[data-scrollable='x'] > *,
+  .tabs-shell .tabs[data-scrollable='x'] > *,
+  .calculator-category-tabs > *,
+  .calculator-tool-tabs > *,
+  .drug-search-hints > *,
+  .drug-filters > *,
+  .tool-tabs > *,
+  .sperm-source-row > *,
+  .sperm-tree-linkbar > * {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .tabs-shell .tab,
+  .calculator-category-tabs button,
+  .calculator-tool-tabs button,
+  .drug-search-hints button,
+  .drug-filter-chip,
+  .tool-tab {
+    max-width: min(78vw, 18rem);
+  }
+
+  .modal-overlay .tabs-shell {
+    position: sticky;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    transform: translateZ(0);
+  }
+
+  .modal-overlay > .modal-mobile-quickbar.is-fixed,
+  .modal-mobile-quickbar.is-fixed {
+    position: fixed !important;
+    left: max(0.72rem, var(--sal)) !important;
+    right: max(0.72rem, var(--sar)) !important;
+    width: auto !important;
+    max-width: min(38rem, calc(100vw - max(1.44rem, var(--sal) + var(--sar)))) !important;
+    margin-inline: auto !important;
+    transform: translateZ(0) !important;
+  }
+
+  body.modal-open .mobile-shell-nav,
+  body.modal-open .bottom-nav {
+    display: none !important;
+  }
+
+  body.modal-open .navbar {
+    pointer-events: none;
+  }
+
+  .mobile-shell-nav {
+    box-sizing: border-box;
+    max-width: min(38rem, calc(100vw - max(1.36rem, var(--sal) + var(--sar))));
+    margin-inline: auto;
+    backdrop-filter: blur(22px) saturate(1.35);
+  }
+
+  .service-page-shell table,
+  .service-page-shell thead,
+  .service-page-shell tbody,
+  .service-page-shell tr,
+  .service-page-shell td,
+  .service-page-shell th {
+    max-width: 100%;
+  }
+
+  .service-page-shell input,
+  .service-page-shell textarea,
+  .service-page-shell select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sitemap-item,
+  .sitemap-service-item {
+    min-height: 3.25rem;
+    padding-top: 0.72rem;
+    padding-bottom: 0.72rem;
+    align-items: center;
+  }
+
+  .sitemap-item-icon,
+  .sitemap-item-name,
+  .sitemap-item-icd {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .tabs-shell .tab,
+  .calculator-category-tabs button,
+  .calculator-tool-tabs button,
+  .drug-search-hints button,
+  .drug-filter-chip,
+  .tool-tab {
+    max-width: min(82vw, 15rem);
+  }
+}
+
+/* v12 Big Release: Clinical Luxury contract across every public section. */
+@media (max-width: 700px) {
+  .page-content {
+    isolation: isolate;
+    padding-top: calc(var(--sat) + 7.7rem) !important;
+  }
+
+  .page-content:has(.home-shell) {
+    padding-top: calc(var(--sat) + 8.15rem) !important;
+  }
+
+  .page-content,
+  .section,
+  .home-shell,
+  .subsection-selector,
+  .service-page-shell,
+  .tools-section,
+  .calculators-page,
+  .drug-reference,
+  .favorites-page,
+  .emergency-page,
+  .sitemap-page,
+  .surgery-page,
+  .metastaphylaxis-page,
+  .glossary-page,
+  .uro-humor-page {
+    width: min(100%, var(--up-section-max-width));
+    margin-inline: auto;
+    padding-inline: min(var(--up-mobile-gutter), 4vw);
+  }
+
+  .subsection-selector,
+  .service-page-shell,
+  .tools-section,
+  .calculators-page,
+  .drug-reference,
+  .favorites-page,
+  .emergency-page,
+  .sitemap-page,
+  .surgery-page,
+  .metastaphylaxis-page,
+  .glossary-page,
+  .uro-humor-page {
+    padding-top: max(0.55rem, env(safe-area-inset-top, 0px) * 0);
+  }
+
+  .service-page-shell,
+  .tools-section,
+  .calculators-page,
+  .drug-reference,
+  .favorites-page,
+  .emergency-page,
+  .sitemap-page,
+  .surgery-page,
+  .metastaphylaxis-page,
+  .glossary-page,
+  .uro-humor-page {
+    max-width: min(100%, var(--up-service-max-width));
+  }
+
+  .section-title,
+  .service-page-hero h1,
+  .drug-reference-hero h1,
+  .subsection-selector > .section-title {
+    max-width: 10ch;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+  }
+
+  .section-subtitle,
+  .service-page-hero p,
+  .drug-reference-hero p,
+  .subsection-selector > .section-subtitle {
+    max-width: min(100%, 35rem);
+    text-wrap: pretty;
+  }
+
+  .home-destination-grid,
+  .subsection-grid,
+  .cards-grid,
+  .meta-rules-grid,
+  .meta-diet-grid,
+  .service-grid,
+  .sitemap-grid,
+  .favorites-grid {
+    gap: var(--up-density-gap);
+  }
+
+  .subsection-card,
+  .disease-card,
+  .tool-section,
+  .calculator-card,
+  .drug-card,
+  .service-card-shell,
+  .meta-rule-card,
+  .meta-diet-card,
+  .sitemap-item,
+  .sitemap-service-item,
+  .favorite-card,
+  .emergency-card {
+    border-radius: var(--up-card-radius);
+    min-width: 0;
+  }
+
+  .subsection-card,
+  .disease-card,
+  .tool-section,
+  .calculator-card,
+  .drug-card,
+  .service-card-shell,
+  .meta-rule-card,
+  .meta-diet-card {
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.18);
+  }
+
+  .service-page-shell button,
+  .service-page-shell a,
+  .tools-section button,
+  .calculators-page button,
+  .drug-reference button,
+  .favorites-page button,
+  .emergency-page button,
+  .sitemap-page button,
+  .surgery-page button,
+  .metastaphylaxis-page [role='button'],
+  .glossary-page button,
+  .uro-humor-page button {
+    min-height: var(--up-touch-target);
+    min-width: var(--up-control-min-width);
+  }
+
+  .drug-filters,
+  .tool-tabs,
+  .calculator-category-tabs,
+  .calculator-tool-tabs,
+  .subsection-grid,
+  .sitemap-service-list {
+    max-width: 100%;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .drug-filters,
+  .tool-tabs,
+  .calculator-category-tabs,
+  .calculator-tool-tabs,
+  .sitemap-service-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+
+  .drug-filters::-webkit-scrollbar,
+  .tool-tabs::-webkit-scrollbar,
+  .calculator-category-tabs::-webkit-scrollbar,
+  .calculator-tool-tabs::-webkit-scrollbar,
+  .sitemap-service-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .content-block,
+  .modal-tabpanel,
+  .service-page-shell,
+  .tools-section,
+  .calculators-page,
+  .drug-reference {
+    text-wrap: pretty;
+  }
+
+  .content-block > p,
+  .content-block > ul,
+  .content-block > ol,
+  .modal-tabpanel > p,
+  .modal-tabpanel > ul,
+  .modal-tabpanel > ol,
+  .clinical-table-card,
+  .premium-clinical-table,
+  .spermogram-premium-shell,
+  .premium-questionnaire-panel,
+  .premium-form-card {
+    width: 100%;
+    max-width: min(100%, var(--up-reading-width));
+  }
+
+  .premium-clinical-table,
+  .clinical-table-card,
+  .styled-table,
+  .surgery-complications {
+    table-layout: fixed;
+  }
+
+  .premium-clinical-table th,
+  .premium-clinical-table td,
+  .styled-table th,
+  .styled-table td {
+    overflow-wrap: anywhere;
+  }
+
+  .modal-content {
+    overscroll-behavior: contain;
+  }
+
+  .tabs-shell {
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+  }
+
+  .modal-mobile-quickbar.is-fixed {
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.34);
+  }
+}
+
+@media (min-width: 701px) {
+  .service-page-shell,
+  .tools-section,
+  .calculators-page,
+  .drug-reference,
+  .favorites-page,
+  .emergency-page,
+  .sitemap-page,
+  .surgery-page,
+  .metastaphylaxis-page,
+  .glossary-page,
+  .uro-humor-page {
+    width: min(100%, var(--up-section-max-width));
+    margin-inline: auto;
+  }
+}
+
+/* v17.1 iPhone landscape contract: compact shell, no first-screen overlap. */
+@media (max-width: 940px) and (orientation: landscape) {
+  .navbar {
+    grid-template-columns: auto minmax(13rem, 1fr) auto !important;
+    grid-template-rows: minmax(44px, auto) !important;
+    align-items: center !important;
+    gap: 0.42rem !important;
+    padding: 0.42rem !important;
+    border-radius: 1.08rem !important;
+  }
+
+  .navbar-left {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .navbar-primary-switch {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    min-height: 44px !important;
+    padding: 0.16rem !important;
+  }
+
+  .navbar-right {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+  }
+
+  .navbar-brand-lockup {
+    max-width: 7rem !important;
+  }
+
+  .navbar-brand-uro,
+  .navbar-brand-accent {
+    font-size: 1.02rem !important;
+  }
+
+  .search-toggle,
+  .theme-toggle,
+  .hamburger-btn {
+    width: 44px !important;
+    height: 44px !important;
+    flex-basis: 44px !important;
+  }
+
+  .navbar-section-btn {
+    min-height: 40px !important;
+    padding: 0.48rem 0.58rem !important;
+  }
+
+  .page-content,
+  .page-content:has(.home-shell) {
+    padding-top: calc(var(--sat) + 4.82rem) !important;
+    padding-bottom: calc(var(--sab) + 5.8rem) !important;
+  }
+
+  .service-page-hero,
+  .drug-reference-hero,
+  .premium-tools-hero,
+  .home-destination-card,
+  .subsection-card,
+  .disease-card,
+  .tool-section,
+  .calculator-card,
+  .drug-card {
+    border-radius: 1.05rem !important;
+  }
+
+  .section-title,
+  .service-page-hero h1,
+  .drug-reference-hero h1,
+  .subsection-selector > .section-title {
+    max-width: min(100%, 18ch) !important;
+    font-size: clamp(1.82rem, 5.2vw, 2.65rem) !important;
+    line-height: 0.98 !important;
+  }
+
+  .section-subtitle,
+  .service-page-hero p,
+  .drug-reference-hero p,
+  .subsection-selector > .section-subtitle {
+    max-width: min(100%, 46rem) !important;
+    font-size: 0.92rem !important;
+    line-height: 1.42 !important;
+  }
+
+  .service-page-hero,
+  .drug-reference-hero,
+  .premium-tools-hero {
+    padding: 0.82rem 0.95rem !important;
+  }
+
+  .mobile-shell-nav {
+    max-width: min(34rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:19:34.597Z",
+  "encoding_user_facing_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v18 user-facing route, SEO and component strings are UTF-8 clean",
+        "status": "pass",
+        "findings": []
+      },
+      {
+        "label": "App SEO and accessibility strings are readable Russian",
+        "status": "pass"
+      },
+      {
+        "label": "route metadata is readable Russian",
+        "status": "pass"
+      },
+      {
+        "label": "navigation metadata is readable Russian",
+        "status": "pass"
+      },
+      {
+        "label": "disease tabs accessible label is readable Russian",
+        "status": "pass"
+      }
+    ]
+  },
+  "iphone_modal_shell_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "disease modal renders through body portal",
+        "status": "pass"
+      },
+      {
+        "label": "final v18.1 disease modal cascade lock is present",
+        "status": "pass"
+      },
+      {
+        "label": "modal overlay is fixed to dynamic viewport",
+        "status": "pass"
+      },
+      {
+        "label": "disease tabs stick to viewport top safe-area",
+        "status": "pass"
+      },
+      {
+        "label": "disease tabs are iPhone horizontal rails",
+        "status": "pass"
+      },
+      {
+        "label": "quickbar is docked to viewport bottom with safe-area support",
+        "status": "pass"
+      }
+    ]
+  },
+  "service_shell_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v18 service shell contract is present",
+        "status": "pass"
+      },
+      {
+        "label": "calculator and surgery rails are covered",
+        "status": "pass"
+      },
+      {
+        "label": "drug and atlas rails are covered",
+        "status": "pass"
+      },
+      {
+        "label": "rails center on larger phones and align left on narrow phones",
+        "status": "pass"
+      },
+      {
+        "label": "landscape shell navigation polish is present",
+        "status": "pass"
+      }
+    ]
+  },
+  "oncology_cards_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "canonical subsection disease helper exists",
+        "status": "pass"
+      },
+      {
+        "label": "oncology section uses canonical subsection source",
+        "status": "pass"
+      },
+      {
+        "label": "oncology priority order is explicit",
+        "status": "pass"
+      },
+      {
+        "label": "oncology visible-card smoke exists",
+        "status": "pass"
+      }
+    ]
+  },
+  "smoke_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "tall iPhone disease modal smoke exists",
+        "status": "pass"
+      },
+      {
+        "label": "portrait and landscape sticky stack smoke exists",
+        "status": "pass"
+      },
+      {
+        "label": "verify:premium includes v18 quality audit",
+        "status": "pass"
+      }
+    ]
+  }
+}

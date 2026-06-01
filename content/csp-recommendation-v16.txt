@@ -1,0 +1,14 @@
+# UroMed v16 CSP recommendation for Cloudflare Pages
+
+Content-Security-Policy:
+  default-src 'self';
+  script-src 'self' https://www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline';
+  img-src 'self' data: blob:;
+  font-src 'self' data:;
+  connect-src 'self' https://*.ingest.sentry.io https://www.google-analytics.com;
+  frame-ancestors 'none';
+  base-uri 'self';
+  form-action 'self';
+
+Deploy note: keep as a recommendation artifact until analytics/Sentry domains are confirmed in production.

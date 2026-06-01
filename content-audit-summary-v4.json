@@ -1,0 +1,16 @@
+{
+  "totalDiseases": 184,
+  "completeMinimum": 184,
+  "partial": 0,
+  "highPriorityGaps": 0,
+  "renderableComplete": 184,
+  "renderablePartial": 0,
+  "renderableHighPriorityGaps": 0,
+  "missingModules": 0,
+  "clinicalMinimumEnriched": 32,
+  "sourcePackMinimumEnriched": 15,
+  "sourcePackCoverage": 184,
+  "priorityTargets": 36,
+  "priorityTargetsCovered": 36,
+  "priorityTargetsMissing": 0
+}

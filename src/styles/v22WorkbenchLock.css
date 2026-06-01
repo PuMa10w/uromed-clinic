@@ -1,0 +1,344 @@
+/* v22 final iPhone workbench lock: one predictable mobile cascade above legacy overrides. */
+:root {
+  --v22-focus-ring: 0 0 0 3px rgba(91, 219, 202, 0.28);
+  --v22-modal-tabs-height: 3.92rem;
+  --v22-modal-actions-height: 4.4rem;
+}
+
+body.light-mode {
+  --v22-focus-ring: 0 0 0 3px rgba(8, 126, 139, 0.22);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role='button']:focus-visible,
+[tabindex]:focus-visible {
+  outline: 0 !important;
+  box-shadow: var(--v22-focus-ring) !important;
+}
+
+@media (max-width: 940px) {
+  html,
+  body,
+  #root,
+  .App {
+    max-width: 100% !important;
+    overflow-x: clip !important;
+  }
+
+  [data-scrollable='x'],
+  .tabs[data-scrollable='x'],
+  .calculator-category-tabs,
+  .calculator-tool-tabs,
+  .drug-search-hints,
+  .drug-risk-filters,
+  .drug-filters,
+  .tool-tabs,
+  .surgery-tabs,
+  .clinical-atlas-rail {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior-x: contain !important;
+    touch-action: pan-x pan-y !important;
+    scrollbar-width: none !important;
+  }
+
+  [data-scrollable='x']::-webkit-scrollbar,
+  .tabs[data-scrollable='x']::-webkit-scrollbar,
+  .calculator-category-tabs::-webkit-scrollbar,
+  .calculator-tool-tabs::-webkit-scrollbar,
+  .drug-search-hints::-webkit-scrollbar,
+  .drug-risk-filters::-webkit-scrollbar,
+  .drug-filters::-webkit-scrollbar,
+  .tool-tabs::-webkit-scrollbar,
+  .surgery-tabs::-webkit-scrollbar,
+  .clinical-atlas-rail::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .section,
+  .page-content,
+  .service-page-hero,
+  .tool-section,
+  .drug-reference,
+  .clinical-atlas-section,
+  .disease-card,
+  .premium-card {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body.modal-open {
+    width: 100% !important;
+    overflow: hidden !important;
+    overscroll-behavior: none !important;
+  }
+
+  body.modal-open .navbar,
+  body.modal-open .navbar-primary-switch,
+  body.modal-open .clinical-operating-system,
+  body.modal-open [data-v20-clinical-os='true'],
+  body.modal-open [data-v21-clinical-os='true'],
+  body.modal-open .mobile-shell-nav,
+  body.modal-open .bottom-nav,
+  body.modal-open .scroll-top-btn {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  body.modal-open .modal-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 2147482000 !important;
+    display: block !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    isolation: isolate !important;
+    overscroll-behavior: none !important;
+    background: rgba(2, 6, 14, 0.94) !important;
+  }
+
+  body.modal-open .modal-content {
+    --v22-tabs-total: calc(env(safe-area-inset-top, 0px) + var(--v22-modal-tabs-height));
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100dvh !important;
+    max-height: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    transform: none !important;
+    translate: none !important;
+    overflow-x: clip !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+    scroll-padding-top: calc(var(--v22-tabs-total) + 0.9rem) !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--v22-modal-actions-height) + 1.6rem) !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--v22-modal-actions-height) + 1.9rem) !important;
+    background:
+      radial-gradient(circle at top left, rgba(34, 211, 178, 0.08), transparent 34%),
+      linear-gradient(180deg, rgba(5, 12, 23, 0.99), rgba(6, 13, 25, 0.995)) !important;
+  }
+
+  body.light-mode.modal-open .modal-content {
+    background:
+      radial-gradient(circle at top left, rgba(11, 128, 142, 0.08), transparent 34%),
+      linear-gradient(180deg, rgba(250, 252, 255, 0.99), rgba(243, 247, 251, 0.995)) !important;
+  }
+
+  body.modal-open .modal-reading-progress {
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top, 0px) + var(--v22-modal-tabs-height) - 2px) !important;
+    left: 0 !important;
+    z-index: 2147483600 !important;
+    height: 2px !important;
+  }
+
+  body.modal-open .modal-header {
+    position: relative !important;
+    z-index: 1 !important;
+    min-height: 0 !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + var(--v22-modal-tabs-height) + 0.78rem) !important;
+    padding-bottom: 0.84rem !important;
+    overflow: visible !important;
+  }
+
+  body.modal-open .modal-body {
+    position: relative !important;
+    z-index: 2147483400 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--v22-modal-actions-height) + 2rem) !important;
+    pointer-events: none !important;
+  }
+
+  body.modal-open .modal-body > *,
+  body.modal-open .modal-body .tabs-shell,
+  body.modal-open .modal-body .tabs-shell *,
+  body.modal-open .modal-body .modal-body-content,
+  body.modal-open .modal-body .modal-body-content * {
+    pointer-events: auto !important;
+  }
+
+  body.modal-open .tabs-shell {
+    position: fixed !important;
+    top: env(safe-area-inset-top, 0px) !important;
+    left: 0 !important;
+    right: 0 !important;
+    inset-inline: 0 !important;
+    z-index: 2147483500 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-height: var(--v22-modal-tabs-height) !important;
+    margin: 0 !important;
+    margin-inline: 0 !important;
+    padding: 0.42rem 0 0.38rem !important;
+    box-sizing: border-box !important;
+    transform: translate3d(0, 0, 0) !important;
+    background:
+      linear-gradient(180deg, rgba(5, 11, 21, 0.995), rgba(7, 15, 27, 0.975)),
+      rgba(7, 15, 27, 0.98) !important;
+    border-top: 1px solid rgba(148, 163, 184, 0.1) !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.16) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34) !important;
+    backdrop-filter: blur(20px) saturate(1.22) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(1.22) !important;
+    pointer-events: auto !important;
+  }
+
+  body.light-mode.modal-open .tabs-shell {
+    background:
+      linear-gradient(180deg, rgba(253, 251, 246, 0.995), rgba(246, 250, 253, 0.975)),
+      rgba(248, 250, 252, 0.98) !important;
+    border-bottom-color: rgba(15, 23, 42, 0.11) !important;
+    box-shadow: 0 16px 34px rgba(38, 70, 83, 0.12) !important;
+  }
+
+  body.modal-open .tabs-shell .tabs,
+  body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 0.42rem !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0.04rem max(3.8rem, env(safe-area-inset-right, 0px) + 1rem) 0.08rem max(0.82rem, env(safe-area-inset-left, 0px) + 0.82rem) !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior-x: contain !important;
+    touch-action: pan-x pan-y !important;
+    scrollbar-width: none !important;
+  }
+
+  body.modal-open .tabs-shell .tab,
+  body.modal-open .tabs-shell .tabs button {
+    flex: 0 0 auto !important;
+    min-width: max-content !important;
+    max-width: min(72vw, 11.5rem) !important;
+    min-height: 44px !important;
+    border-radius: 999px !important;
+    white-space: nowrap !important;
+  }
+
+  body.modal-open .modal-tabpanel,
+  body.modal-open .modal-tabpanel > .content-block {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--v22-modal-actions-height) + 2rem) !important;
+  }
+
+  body.modal-open .modal-mobile-quickbar,
+  body.modal-open .modal-mobile-quickbar.is-fixed,
+  body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
+    position: fixed !important;
+    top: auto !important;
+    bottom: max(0.72rem, calc(env(safe-area-inset-bottom, 0px) + 0.72rem)) !important;
+    left: max(0.78rem, env(safe-area-inset-left, 0px) + 0.78rem) !important;
+    right: max(0.78rem, env(safe-area-inset-right, 0px) + 0.78rem) !important;
+    z-index: 2147483700 !important;
+    width: auto !important;
+    max-width: min(25rem, calc(100vw - 1.56rem)) !important;
+    min-height: var(--v22-modal-actions-height) !important;
+    max-height: var(--v22-modal-actions-height) !important;
+    margin-inline: auto !important;
+    transform: translate3d(0, 0, 0) !important;
+    translate: none !important;
+    pointer-events: auto !important;
+  }
+}
+
+@media (max-width: 940px) and (orientation: landscape) {
+  :root {
+    --v22-modal-tabs-height: 3.24rem;
+    --v22-modal-actions-height: 3.1rem;
+  }
+
+  body.modal-open .modal-content {
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + var(--v22-modal-tabs-height) + 0.5rem) !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--v22-modal-actions-height) + 1rem) !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--v22-modal-actions-height) + 1.2rem) !important;
+  }
+
+  body.modal-open .modal-header {
+    padding-top: calc(env(safe-area-inset-top, 0px) + var(--v22-modal-tabs-height) + 0.42rem) !important;
+    padding-bottom: 0.48rem !important;
+  }
+
+  body.modal-open .modal-header-icon,
+  body.modal-open .modal-header-eyebrow,
+  body.modal-open .modal-header-lead,
+  body.modal-open .modal-summary-grid,
+  body.modal-open .modal-risk-row,
+  body.modal-open .modal-pathway-row {
+    display: none !important;
+  }
+
+  body.modal-open .modal-title {
+    font-size: clamp(1.12rem, 4.1vw, 1.66rem) !important;
+    line-height: 1 !important;
+    max-width: calc(100vw - 7.5rem) !important;
+  }
+
+  body.modal-open .tabs-shell {
+    min-height: var(--v22-modal-tabs-height) !important;
+    padding-block: 0.22rem !important;
+  }
+
+  body.modal-open .tabs-shell .tab,
+  body.modal-open .tabs-shell .tabs button {
+    min-height: 44px !important;
+    padding-block: 0.4rem !important;
+  }
+
+  body.modal-open .modal-body,
+  body.modal-open .modal-tabpanel,
+  body.modal-open .modal-tabpanel > .content-block {
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--v22-modal-actions-height) + 1.2rem) !important;
+  }
+
+  body.modal-open .modal-mobile-quickbar,
+  body.modal-open .modal-mobile-quickbar.is-fixed,
+  body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
+    left: auto !important;
+    right: max(0.52rem, env(safe-area-inset-right, 0px) + 0.52rem) !important;
+    bottom: max(0.42rem, calc(env(safe-area-inset-bottom, 0px) + 0.42rem)) !important;
+    width: min(12.8rem, calc(100vw - 1.2rem)) !important;
+    max-width: min(12.8rem, calc(100vw - 1.2rem)) !important;
+    min-height: var(--v22-modal-actions-height) !important;
+    max-height: var(--v22-modal-actions-height) !important;
+    padding: 0.22rem !important;
+    border-radius: 0.95rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

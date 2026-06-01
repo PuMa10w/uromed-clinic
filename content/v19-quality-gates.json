@@ -1,0 +1,133 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:19:34.896Z",
+  "clinical_workbench_gate": {
+    "name": "clinical_workbench_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "home exposes v19 Clinical Workbench shell",
+        "status": "pass"
+      },
+      {
+        "label": "ClinicalPageShell component contract exists",
+        "status": "pass"
+      },
+      {
+        "label": "workbench connects diagnosis, drugs, spermogram and atlas",
+        "status": "pass"
+      }
+    ]
+  },
+  "iphone_15_17_gate": {
+    "name": "iphone_15_17_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "portrait iPhone 15-17 viewports are covered",
+        "status": "pass"
+      },
+      {
+        "label": "landscape iPhone 15-17 viewports are covered",
+        "status": "pass"
+      },
+      {
+        "label": "v19 workbench smoke is present",
+        "status": "pass"
+      },
+      {
+        "label": "landscape first screen is compacted in CSS",
+        "status": "pass"
+      }
+    ]
+  },
+  "drug_navigation_gate": {
+    "name": "drug_navigation_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "drug cockpit flow is rendered",
+        "status": "pass"
+      },
+      {
+        "label": "drug cards expose normalized clinical task and monitoring priority",
+        "status": "pass"
+      },
+      {
+        "label": "drug 500 catalog still passes",
+        "status": "pass",
+        "totalDrugs": 528
+      },
+      {
+        "label": "drug cockpit is horizontally safe on mobile",
+        "status": "pass"
+      }
+    ]
+  },
+  "atlas_fallback_gate": {
+    "name": "atlas_fallback_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "atlas page exposes v19 fallback policy",
+        "status": "pass"
+      },
+      {
+        "label": "atlas metadata keeps reduced-motion and fallback assets",
+        "status": "pass"
+      },
+      {
+        "label": "atlas fallback smoke is present",
+        "status": "pass"
+      }
+    ]
+  },
+  "source_registry_gate": {
+    "name": "source_registry_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "source registry covers all v19 required source families",
+        "status": "pass"
+      },
+      {
+        "label": "source registry records URLs and canonical guideline labels",
+        "status": "pass",
+        "registryWithUrls": 6
+      },
+      {
+        "label": "source registry freshness dates remain explicit",
+        "status": "pass"
+      }
+    ]
+  },
+  "artifact_encoding_gate": {
+    "name": "artifact_encoding_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "no generated or user-facing mojibake fragments remain",
+        "status": "pass",
+        "findings": []
+      },
+      {
+        "label": "v19 quality audit is part of verify:premium",
+        "status": "pass"
+      }
+    ]
+  },
+  "calculators_local_tool_gate": {
+    "name": "calculators_local_tool_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "calculators expose local-only clinical flow hint",
+        "status": "pass"
+      },
+      {
+        "label": "calculator flow has input-progress-interpretation-next-step copy",
+        "status": "pass"
+      }
+    ]
+  }
+}

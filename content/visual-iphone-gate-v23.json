@@ -1,0 +1,1321 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:24:40.377Z",
+  "visual_iPhone_gate_v23": {
+    "name": "visual_iPhone_gate_v23",
+    "status": "pass",
+    "inheritedV22Status": "pass",
+    "checkedRoutes": 50,
+    "checkedViewports": 7,
+    "themeRoutes": 8,
+    "blockers": [],
+    "screenshots": [
+      {
+        "route": "/",
+        "theme": "dark",
+        "viewport": "iPhone Pro Max portrait",
+        "path": "test-results/v22-visual-screenshots/home-dark-430x932.png"
+      },
+      {
+        "route": "/",
+        "theme": "light",
+        "viewport": "iPhone Pro Max portrait",
+        "path": "test-results/v22-visual-screenshots/home-light-430x932.png"
+      },
+      {
+        "route": "/urology/stones/urolithiasis",
+        "theme": "dark",
+        "viewport": "iPhone Pro Max portrait",
+        "path": "test-results/v22-visual-screenshots/disease-modal-portrait-430x932.png"
+      },
+      {
+        "route": "/urology/oncology/prostate-cancer",
+        "theme": "dark",
+        "viewport": "iPhone 15 landscape",
+        "path": "test-results/v22-visual-screenshots/disease-modal-landscape-852x393.png"
+      },
+      {
+        "route": "/drugs",
+        "theme": "light",
+        "viewport": "iPhone Pro Max portrait",
+        "path": "test-results/v22-visual-screenshots/drugs-light-430x932.png"
+      },
+      {
+        "route": "/calculators?tool=sperm-tree",
+        "theme": "dark",
+        "viewport": "iPhone Pro Max portrait",
+        "path": "test-results/v22-visual-screenshots/spermogram-dark-430x932.png"
+      },
+      {
+        "route": "/",
+        "theme": "dark",
+        "viewport": "iPhone SE stress portrait",
+        "path": "test-results/v23-visual-screenshots/home-dark-320x568.png"
+      },
+      {
+        "route": "/urology/stones/urolithiasis",
+        "theme": "dark",
+        "viewport": "iPhone SE stress portrait",
+        "path": "test-results/v23-visual-screenshots/disease-modal-320x568.png"
+      },
+      {
+        "route": "/drugs",
+        "theme": "dark",
+        "viewport": "iPhone SE stress portrait",
+        "path": "test-results/v23-visual-screenshots/drugs-dark-320x568.png"
+      }
+    ]
+  },
+  "stressResults": [
+    {
+      "route": "/",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 1615,
+            "left": 22,
+            "right": 298,
+            "bottom": 1943,
+            "width": 277,
+            "height": 328
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/urology",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 301,
+            "left": 22,
+            "right": 298,
+            "bottom": 338,
+            "width": 277,
+            "height": 37
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/andrology",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 301,
+            "left": 22,
+            "right": 298,
+            "bottom": 376,
+            "width": 277,
+            "height": 75
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/pediatric",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 8,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 264,
+            "left": 22,
+            "right": 298,
+            "bottom": 414,
+            "width": 277,
+            "height": 150
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/drugs",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 340,
+            "left": 37,
+            "right": 283,
+            "bottom": 406,
+            "width": 246,
+            "height": 66
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/tools",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": null,
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/calculators?tool=sperm-tree",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 345,
+            "left": 40,
+            "right": 280,
+            "bottom": 413,
+            "width": 241,
+            "height": 67
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/surgery",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 354,
+            "left": 40,
+            "right": 280,
+            "bottom": 466,
+            "width": 240,
+            "height": 112
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/atlas",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 328,
+            "left": 40,
+            "right": 280,
+            "bottom": 402,
+            "width": 240,
+            "height": 75
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/favorites",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": null,
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/emergency",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 354,
+            "left": 40,
+            "right": 280,
+            "bottom": 429,
+            "width": 240,
+            "height": 75
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/sitemap",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 320,
+            "left": 22,
+            "right": 298,
+            "bottom": 358,
+            "width": 277,
+            "height": 37
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/glossary",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 294,
+            "left": 61,
+            "right": 259,
+            "bottom": 331,
+            "width": 197,
+            "height": 37
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/metaphylaxis",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 0,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 294,
+            "left": 22,
+            "right": 298,
+            "bottom": 369,
+            "width": 277,
+            "height": 75
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/urology/oncology",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": false,
+        "diseaseCardCount": 18,
+        "rects": {
+          "navbar": {
+            "top": 7,
+            "left": 12,
+            "right": 308,
+            "bottom": 129,
+            "width": 297,
+            "height": 122
+          },
+          "title": {
+            "top": 264,
+            "left": 22,
+            "right": 298,
+            "bottom": 339,
+            "width": 277,
+            "height": 75
+          },
+          "modal": null,
+          "tabs": null,
+          "quickbar": null,
+          "bottomNav": {
+            "top": 494,
+            "left": 11,
+            "right": 309,
+            "bottom": 558,
+            "width": 298,
+            "height": 63
+          }
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/urology/stones/urolithiasis",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 6,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 241,
+            "width": 277,
+            "height": 112
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/urology/infections/urosepsis",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 23,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 241,
+            "width": 277,
+            "height": 112
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/urology/oncology/prostate-cancer",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 18,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 204,
+            "width": 277,
+            "height": 75
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/urology/oncology/kidney-cancer",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 18,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 204,
+            "width": 277,
+            "height": 75
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/urology/oncology/bladder-cancer",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 18,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 204,
+            "width": 277,
+            "height": 75
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/urology/reconstructive/urethral-stricture",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 25,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 241,
+            "width": 277,
+            "height": 112
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/andrology/sexual/erectile-dysfunction",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 23,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 391,
+            "width": 277,
+            "height": 262
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/andrology/endocrine/hypogonadism",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 10,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 278,
+            "width": 277,
+            "height": 150
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/andrology/fertility/male-infertility",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 13,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 241,
+            "width": 277,
+            "height": 112
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    },
+    {
+      "route": "/pediatric/enuresis",
+      "viewport": "iPhone SE stress portrait",
+      "size": "320x568",
+      "status": "pass",
+      "metrics": {
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "documentScrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "hasModal": true,
+        "diseaseCardCount": 8,
+        "rects": {
+          "navbar": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "title": {
+            "top": 129,
+            "left": 22,
+            "right": 298,
+            "bottom": 278,
+            "width": 277,
+            "height": 150
+          },
+          "modal": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 568,
+            "width": 320,
+            "height": 568
+          },
+          "tabs": {
+            "top": 0,
+            "left": 0,
+            "right": 320,
+            "bottom": 64,
+            "width": 320,
+            "height": 64
+          },
+          "quickbar": {
+            "top": 490,
+            "left": 12,
+            "right": 308,
+            "bottom": 556,
+            "width": 295,
+            "height": 67
+          },
+          "bottomNav": null
+        },
+        "railIssues": [],
+        "clippedControls": []
+      }
+    }
+  ],
+  "inheritedV22": {
+    "updated_at": "2026-05-31T17:24:14.067Z",
+    "status": "pass",
+    "checkedRoutes": 25,
+    "checkedViewports": 6
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:19:34.388Z",
+  "workflow_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "command search documents workflow intent, next step and risk level",
+        "status": "pass"
+      },
+      {
+        "label": "command cards expose workflow metadata to tests and assistive tooling",
+        "status": "pass"
+      },
+      {
+        "label": "command cards show clinician next-step guidance",
+        "status": "pass"
+      },
+      {
+        "label": "v17 clinical workflow and tool result contracts are public",
+        "status": "pass"
+      }
+    ]
+  },
+  "privacy_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "tool state remains local-only in browser storage",
+        "status": "pass"
+      },
+      {
+        "label": "tools do not request patient-identifying fields",
+        "status": "pass"
+      },
+      {
+        "label": "CSP recommendation covers clickjacking and form exfiltration basics",
+        "status": "pass"
+      }
+    ]
+  },
+  "keyboard_a11y_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "keyboard smoke covers command center open, close and navigation",
+        "status": "pass"
+      },
+      {
+        "label": "keyboard smoke covers disease modal tabs and quickbar",
+        "status": "pass"
+      },
+      {
+        "label": "search keyboard handlers support Escape and Enter",
+        "status": "pass"
+      },
+      {
+        "label": "command search hotkey supports code-based Ctrl/Cmd+K capture",
+        "status": "pass"
+      },
+      {
+        "label": "keyboard smoke covers Ctrl/Cmd+K shortcut variants",
+        "status": "pass"
+      }
+    ]
+  },
+  "encoding_user_facing_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "user-facing source files are free of mojibake markers",
+        "status": "pass",
+        "findings": []
+      }
+    ]
+  },
+  "deploy_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "verify:premium includes v17 quality audit",
+        "status": "pass"
+      }
+    ]
+  }
+}

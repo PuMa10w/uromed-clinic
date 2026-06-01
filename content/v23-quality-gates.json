@@ -1,0 +1,192 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:24:40.597Z",
+  "v23_iphone_geometry_gate": {
+    "name": "v23_iphone_geometry_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v23 visual report passes",
+        "status": "pass",
+        "blockers": 0
+      },
+      {
+        "label": "v23 inherits v22 portrait/landscape matrix and adds 320px stress viewport",
+        "status": "pass",
+        "checkedViewports": 7
+      },
+      {
+        "label": "v23 stress pass covers all required route families",
+        "status": "pass",
+        "stressRoutes": 25
+      },
+      {
+        "label": "no horizontal overflow blockers remain",
+        "status": "pass"
+      },
+      {
+        "label": "no navbar/tabs/quickbar overlap blockers remain",
+        "status": "pass"
+      }
+    ]
+  },
+  "v23_theme_contrast_gate": {
+    "name": "v23_theme_contrast_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "v23 CSS defines dark clinical surface tokens",
+        "status": "pass"
+      },
+      {
+        "label": "v23 CSS defines light-mode token equivalents",
+        "status": "pass"
+      },
+      {
+        "label": "v23 focus-visible remains enforced for keyboard users",
+        "status": "pass"
+      },
+      {
+        "label": "v22 theme symmetry remains green under v23",
+        "status": "pass"
+      }
+    ]
+  },
+  "v23_route_consistency_gate": {
+    "name": "v23_route_consistency_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "App imports v23 workbench lock globally",
+        "status": "pass"
+      },
+      {
+        "label": "Disease modal imports v23 lock after v22",
+        "status": "pass"
+      },
+      {
+        "label": "critical sections remain non-empty in visual smoke",
+        "status": "pass"
+      },
+      {
+        "label": "all disease cards remain quality-ready",
+        "status": "pass",
+        "qualityReady": 184,
+        "totalDiseases": 184
+      },
+      {
+        "label": "ICD coverage remains green",
+        "status": "pass"
+      }
+    ]
+  },
+  "v23_clinical_readability_gate": {
+    "name": "v23_clinical_readability_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "clinical action header remains machine-detectable",
+        "status": "pass"
+      },
+      {
+        "label": "disease content renders premium clinical tables",
+        "status": "pass"
+      },
+      {
+        "label": "v23 CSS applies controlled reading width",
+        "status": "pass"
+      },
+      {
+        "label": "modal stress routes keep tabs and quickbar present",
+        "status": "pass",
+        "modalStressRoutes": 10
+      }
+    ]
+  },
+  "v23_service_cockpit_gate": {
+    "name": "v23_service_cockpit_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "drug catalog remains 500+",
+        "status": "pass",
+        "totalDrugs": 528
+      },
+      {
+        "label": "drug cockpit markers remain present",
+        "status": "pass"
+      },
+      {
+        "label": "calculator flow remains local-only and route-aware",
+        "status": "pass"
+      },
+      {
+        "label": "service rails are locked by v23 CSS",
+        "status": "pass"
+      }
+    ]
+  },
+  "v23_search_retrieval_gate": {
+    "name": "v23_search_retrieval_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "command search exposes grouped results",
+        "status": "pass"
+      },
+      {
+        "label": "command cards expose workflow metadata",
+        "status": "pass"
+      },
+      {
+        "label": "AI navigator remains retrieval/discovery oriented",
+        "status": "pass"
+      },
+      {
+        "label": "SearchRetrievalResult public contract exists",
+        "status": "pass"
+      }
+    ]
+  },
+  "v23_atlas_interaction_gate": {
+    "name": "v23_atlas_interaction_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "atlas remains progressive and iPhone-gated",
+        "status": "pass"
+      },
+      {
+        "label": "atlas hotspot public contract exists",
+        "status": "pass"
+      },
+      {
+        "label": "AnatomyModelMeta keeps reduced-motion behavior",
+        "status": "pass"
+      }
+    ]
+  },
+  "v23_deploy_freshness_gate": {
+    "name": "v23_deploy_freshness_gate",
+    "status": "pass",
+    "checks": [
+      {
+        "label": "verify:premium includes v23 visual and quality gates",
+        "status": "pass"
+      },
+      {
+        "label": "premium gate can read v23 report fields",
+        "status": "pass"
+      },
+      {
+        "label": "v22 gates remain green before v23",
+        "status": "pass"
+      },
+      {
+        "label": "v23 visual report stores screenshot artifacts",
+        "status": "pass",
+        "screenshots": 9
+      }
+    ]
+  }
+}

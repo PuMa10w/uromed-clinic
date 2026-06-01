@@ -1,0 +1,60 @@
+{
+  "version": "v13",
+  "updated_at": "2026-05-10",
+  "sources": [
+    {
+      "id": "EAU",
+      "label": "European Association of Urology",
+      "url": "https://uroweb.org/guidelines",
+      "canonical_guideline": "EAU Guidelines 2026",
+      "scope": "urology, andrology, oncology, infections, stones",
+      "source_last_checked_at": "2026-05-10",
+      "sla_days": 90
+    },
+    {
+      "id": "AUA_ASRM",
+      "label": "AUA / ASRM",
+      "url": "https://www.auanet.org/guidelines-and-quality/guidelines/male-infertility",
+      "canonical_guideline": "AUA/ASRM Male Infertility 2024 Amendment",
+      "scope": "male infertility, sexual medicine, reproductive pathways",
+      "source_last_checked_at": "2026-05-10",
+      "sla_days": 180
+    },
+    {
+      "id": "WHO",
+      "label": "World Health Organization",
+      "url": "https://www.who.int/publications/i/item/9789240030787",
+      "canonical_guideline": "WHO semen manual 6th edition 2021",
+      "scope": "semen analysis, laboratory standards, public health context",
+      "source_last_checked_at": "2026-05-10",
+      "sla_days": 365
+    },
+    {
+      "id": "ESHRE",
+      "label": "European Society of Human Reproduction and Embryology",
+      "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines",
+      "canonical_guideline": "ESHRE reproductive medicine guidance",
+      "scope": "couple infertility, ART context, reproductive endocrinology",
+      "source_last_checked_at": "2026-05-10",
+      "sla_days": 180
+    },
+    {
+      "id": "RU",
+      "label": "Russian clinical recommendations",
+      "url": "https://cr.minzdrav.gov.ru",
+      "canonical_guideline": "Клинические рекомендации Минздрава РФ",
+      "scope": "Russian clinical routing, standards of care, local recommendations",
+      "source_last_checked_at": "2026-05-10",
+      "sla_days": 180
+    },
+    {
+      "id": "AU",
+      "label": "Australian guidance",
+      "url": "https://www.health.gov.au/resources/collections/clinical-practice-guidelines",
+      "canonical_guideline": "Australian clinical guidance",
+      "scope": "primary-care triage, antimicrobial stewardship, patient routing",
+      "source_last_checked_at": "2026-05-10",
+      "sla_days": 365
+    }
+  ]
+}

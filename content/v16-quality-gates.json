@@ -1,0 +1,99 @@
+{
+  "status": "pass",
+  "updated_at": "2026-05-31T17:19:34.183Z",
+  "security_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "clinical HTML is centralized in SafeClinicalMarkup",
+        "status": "pass"
+      },
+      {
+        "label": "XSS fixtures cover clinical markup sanitization",
+        "status": "pass"
+      },
+      {
+        "label": "no raw user-facing HTML sinks remain outside SafeClinicalMarkup",
+        "status": "pass",
+        "findings": []
+      },
+      {
+        "label": "service worker update banner is DOM-assembled and accessible",
+        "status": "pass"
+      }
+    ]
+  },
+  "performance_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "web vitals are emitted without production console noise and support INP when available",
+        "status": "pass"
+      }
+    ]
+  },
+  "artifact_encoding_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "generated clinical artifacts are free of mojibake markers",
+        "status": "pass",
+        "findings": []
+      }
+    ]
+  },
+  "a11y_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "service worker update banner is DOM-assembled and accessible",
+        "status": "pass"
+      }
+    ]
+  },
+  "post_deploy_gate": {
+    "status": "pass",
+    "checks": [
+      {
+        "label": "post-deploy retry policy remains covered by Playwright rerun workflow",
+        "status": "pass"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "label": "clinical HTML is centralized in SafeClinicalMarkup",
+      "status": "pass"
+    },
+    {
+      "label": "XSS fixtures cover clinical markup sanitization",
+      "status": "pass"
+    },
+    {
+      "label": "no raw user-facing HTML sinks remain outside SafeClinicalMarkup",
+      "status": "pass",
+      "findings": []
+    },
+    {
+      "label": "service worker update banner is DOM-assembled and accessible",
+      "status": "pass"
+    },
+    {
+      "label": "web vitals are emitted without production console noise and support INP when available",
+      "status": "pass"
+    },
+    {
+      "label": "generated clinical artifacts are free of mojibake markers",
+      "status": "pass",
+      "findings": []
+    },
+    {
+      "label": "CSP recommendation artifact exists",
+      "status": "pass"
+    },
+    {
+      "label": "v16 public contracts are documented",
+      "status": "pass"
+    }
+  ]
+}

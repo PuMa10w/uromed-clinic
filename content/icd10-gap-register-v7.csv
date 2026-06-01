@@ -1,0 +1,185 @@
+section,subsection,diseaseId,name,icd10,moduleFile,priority,missingBlocks,sourceCoverage,reviewStatus,owner,dueDate
+andrology,sexual,erectile-dysfunction,Эректильная дисфункция,N52,erectileDysfunctionData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+andrology,sexual,premature-ejaculation,Преждевременная эякуляция,N53,prematureEjaculationData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+andrology,sexual,priapism,Приапизм,N48.3,priapismData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+andrology,sexual,psychogenic-ed,Психогенная эректильная дисфункция,F52.2,psychogenicEdData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+andrology,sexual,psychogenic-premature-ejaculation,Психогенная преждевременная эякуляция,F52.4,psychogenicPrematureEjaculationData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,functional,overactive-bladder,Гиперактивный мочевой пузырь,N32.8,overactiveBladderData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,functional,urge-incontinence,Ургентное недержание мочи,N39.4,urgeIncontinenceData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,functional,urinary-retention,Острая задержка мочи,R33,urinaryRetentionData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,infections,acute-bacterial-prostatitis,Острый бактериальный простатит,N41.0,acuteBacterialProstatitisData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,infections,acute-cystitis,Острый цистит,N30.0,acuteCystitisData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,infections,device-associated-uti,"ИМП, связанная с катетером/устройством",T83.5,deviceAssociatedUtiData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,infections,fournier-gangrene,Гангрена Фурнье,N49.2,fournierGangreneData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,infections,pyelonephritis,Пиелонефрит,N10,pyelonephritisData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,infections,recurrent-uti,Рецидивирующая ИМП,N39.0,recurrentUtiData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,infections,renal-tuberculosis,Туберкулёз почки,A18.1,renalTuberculosisData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,infections,urosepsis,Уросепсис,N13.6 + A41.9,urosepsisData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,reconstructive,hydronephrosis,Гидронефроз,N13,hydronephrosisData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,reconstructive,testicular-torsion,Перекрут яичка,N44,testicularTorsionData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,stones,kidney-stone,Камень почки,N20.0,kidneyStoneData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,stones,kidney-ureter-stones,Камни почки с камнями мочеточника,N20.2,kidneyUreterStonesData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,stones,renal-colic,Почечная колика,N23,renalColicData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+urology,stones,ureteral-stone,Камень мочеточника,N20.1,ureteralStoneData.js,A,,traceable,quality-ready,medical-qa,2026-05-15
+andrology,endocrine,hypogonadism,Мужской гипогонадизм,E29.1,hypogonadismData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,fertility,asthenozoospermia,Астенозооспермия,N46,asthenozoospermiaData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,fertility,azoospermia,Азооспермия,N46,azoospermiaData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,fertility,cryptorchidism,Крипторхизм,Q53,cryptorchidismData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,fertility,leukocytospermia,Лейкоцитоспермия,N46,leukocytospermiaData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,fertility,male-infertility,Мужское бесплодие,N46,maleInfertilityData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,fertility,oligospermia,Олигозооспермия,N46,oligospermiaData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,fertility,teratozoospermia,Тератозооспермия,N46,teratozoospermiaData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,fertility,varicocele,Варикоцеле,I86.1,varicoceleData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,sexual,cavernous-fibrosis,Фиброз кавернозных тел,N48.6,cavernousFibrosisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,sexual,chronic-bacterial-prostatitis,Хронический бактериальный простатит,N41.1,chronicBacterialProstatitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,sexual,chronic-prostatitis-cpps,Хронический простатит / СХТБ,N41.1,chronicProstatitisCPPSData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,sexual,funiculitis,Фуникулит,N49.2,funiculitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,sexual,peyronie,Болезнь Пейрони,N48.6,peyronieData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+pediatric,,hydrocele,Гидроцеле,N43,hydroceleData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+pediatric,,hypospadias,Гипоспадия,Q54,hypospadiasData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+pediatric,,phimosis,Фимоз,N47,phimosisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+pediatric,,posterior-urethral-valves,Клапаны задней уретры,Q64.2,posteriorUrethralValvesData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,bladder-neck-obstruction,Обструкция шейки мочевого пузыря,N32.0,bladderNeckObstructionData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,bph,ДГПЖ / Аденома простаты,N40,bphData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,interstitial-cystitis,Интерстициальный цистит / СБМП,N30.1,interstitialCystitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,neurogenic-bladder,Нейрогенный мочевой пузырь,N31,neurogenicBladderData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,neurogenic-bladder-child,Нейрогенный мочевой пузырь у детей,N31.2,neurogenicBladderChildData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,post-prostatectomy-incontinence,Послеоперационное недержание,N39.4,postProstatectomyIncontinenceData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,prostatic-calculi,Камни простаты,N42.0,prostaticCalculiData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,prostatic-cyst,Кисты простаты,N42.0,prostaticCystData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,stress-incontinence,Стрессовое недержание мочи,N39.3,stressIncontinenceData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,functional,underactive-bladder,Гипоактивный мочевой пузырь,N31.2,underactiveBladderData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,balanoposthitis,Баланопостит,N48.1,balanoposthitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,chronic-cystitis,Хронический цистит,N30.2,chronicCystitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,cystitis,Цистит,N30,cystitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,emphysematous-pyelonephritis,Эмфизематозный пиелонефрит,N13.6,emphysematousPyelonephritisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,epididymitis,Эпидидимит,N45,epididymitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,epididymo-orchitis,Эпидидимоорхит,N45.9,epididymoOrchitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,orchitis,Орхит,N45,orchitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,prostate-abscess,Абсцесс простаты,N41.2,prostateAbscessData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,prostatitis,Простатит / ХТБС,N41,prostatitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,urethral-syndrome,Уретральный синдром,N30.9,urethralSyndromeData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,infections,uti-unspecified,ИМП без уточнения,N39.0,utiUnspecifiedData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,bladder-cancer,Рак мочевого пузыря,C67,bladderCancerData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,elevated-psa,Повышенный ПСА,R97,elevatedPsaData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,kidney-cancer,Рак почки,C64,kidneyCancerData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,neuroendocrine-bladder,Нейроэндокринная опухоль мочевого пузыря,C67.9,neuroendocrineBladderData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,papillary-rcc,Папиллярный рак почки,C64,papillaryRccData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,penile-cancer,Рак полового члена,C60,penileCancerData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,prostate-cancer,Рак предстательной железы,C61,prostateCancerData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,sarcoma-prostate,Саркома предстательной железы,C61,sarcomaProstateData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,testicular-cancer,Рак яичка,C62,testicularCancerData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,upper-tract-uc,Уротелиальный рак верхних мочевых путей,C65-C66,upperTractUCData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,urethral-cancer,Рак уретры,C68.0,urethralCancerData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,oncology,wilms-tumor,Опухоль Вильмса (нефробластома),C64,wilmsTumorData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,pain,bladder-pain-syndrome,Болевой синдром мочевого пузыря,N30.1,bladderPainSyndromeData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,pain,radiation-cystitis,Лучевой цистит,N30.4,radiationCystitisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,reconstructive,bladder-exstrophy,Экстрофия мочевого пузыря,Q64.1,bladderExstrophyData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,reconstructive,paraphimosis,Парафимоз,N47.1,paraphimosisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,reconstructive,postprocedural-urethral-stricture,Постпроцедурная стриктура уретры,N99.1,postproceduralUrethralStrictureData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,reconstructive,retroperitoneal-fibrosis,Ретроперитонеальный фиброз,N13.5,retroperitonealFibrosisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,reconstructive,upj-obstruction,Обструкция ЛМС,N13.5,upjObstructionData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,reconstructive,ureteral-stricture-benign,Доброкачественная стриктура мочеточника,N13.5,ureteralStrictureBenignData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,reconstructive,urethral-stricture,Стриктура уретры,N35,urethralStrictureData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,reconstructive,vesicoureteral-reflux,Пузырно-мочеточниковый рефлюкс,N13.7,vesicoureteralRefluxData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,stones,bladder-stones,Камни мочевого пузыря,N21.0,bladderStonesData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+urology,stones,urolithiasis,Мочекаменная болезнь,N20-N23,urolithiasisData.js,B,,traceable,quality-ready,content-lead,2026-05-29
+andrology,endocrine,androgen-resistance-syndrome,Синдром андрогенной резистентности,E34.5,androgenResistanceSyndromeData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,endocrine,hyperprolactinemia-male,Гиперпролактинемия у мужчин,E22.1,hyperprolactinemiaMaleData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,endocrine,hyperthyroidism-ed,ЭД на фоне гипертиреоза,E05.9,hyperthyroidismEdData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,endocrine,kallmann-syndrome,Синдром Каллмана,E23.0,kallmannSyndromeData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,endocrine,klein-felter,Синдром Клайнфельтера,Q97.0,kleinFelterData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,endocrine,male-climacterium,Мужской климакс (LOH),E29.1,maleClimacteriumData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,endocrine,male-osteoporosis-hypogonadism,Остеопороз при гипогонадизме,M81.8,maleOsteoporosisHypogonadismData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,endocrine,metabolic-syndrome-ed,ЭД на фоне метаболического синдрома,E88.8,metabolicSyndromeEdData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,endocrine,subclinical-hypogonadism,Субклинический гипогонадизм,E29.1,subclinicalHypogonadismData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,fertility,ejaculatory-duct-obstruction,Обструкция семявыбрасывающих протоков,N53.8,ejaculatoryDuctObstructionData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,fertility,fertility-preservation-male,Сохранение фертильности у мужчин,Z31.6,fertilityPreservationMaleData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,fertility,male-contraception,Мужская контрацепция,Z30.0,maleContraceptionData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,fertility,varicocele-recurrence,Рецидив варикоцеле,I86.1,varicoceleRecurrenceData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,anejaculation,Анэякуляция,N53.8,anejaculationData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,aspermatism,Асперматизм,N53.8,aspermatismData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,delayed-ejaculation,Замедленная эякуляция,N53.8,delayedEjaculationData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,hematospermia,Гематоспермия,N53.8,hematospermiaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,male-genital-lichen-planus,Генитальный красный плоский лишай,L43.9,maleGenitalLichenPlanusData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,male-pelvic-floor-dysfunction,Дисфункция тазового дна у мужчин,M62.8,malePelvicFloorDysfunctionData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,orchialgia,Орхиалгия (хроническая боль в яичке),N50.8,orchialgiaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,penile-lichen-sclerosus,Склероатрофический лихен полового члена,L90.0,penileLichenSclerosusData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,penile-mondor-disease,Болезнь Мондора полового члена,I80.8,penileMondorDiseaseData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,penile-trauma,Травма полового члена,S39.8,penileTraumaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,post-vasectomy-pain,Поствазэктомический болевой синдром,N53.8,postVasectomyPainData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,retrograde-ejaculation,Ретроградная эякуляция,N53.8,retrogradeEjaculationData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,spermatorrhea,Сперматорея,N53.8,spermatorrheaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+andrology,sexual,testicular-atrophy,Атрофия яичка,N50.0,testicularAtrophyData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+pediatric,,enuresis,Энурез (ночное недержание),F98.0,enuresisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+pediatric,,spermatocele,Сперматоцеле,N50.3,spermatoceleData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,functional,bladder-outlet-obstruction,Обструкция выхода мочевого пузыря,N32.0,bladderOutletObstructionData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,functional,nocturia,Ноктурия,R35.1,nocturiaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,functional,pollakiuria,Поллакиурия,R35.0,pollakiuriaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,functional,seminal-vesicle-disease,Заболевания семенных пузырьков,N50.0,seminalVesicleData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,functional,urethral-hypersensitivity,Гиперчувствительность уретры,N36.8,urethralHypersensitivityData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,functional,vesicocutaneous-fistula,Пузырно-кожный свищ,N82.8,vesicocutaneousFistulaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,actinomycosis-gu,Актиномикоз мочеполовой,A42.8,actinomycosisGUData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,asymptomatic-bacteriuria,Бессимптомная бактериурия,R82.7,asymptomaticBacteriuriaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,candida-balanitis,Кандидозный баланопостит,B37.4,candidaBalanitisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,chronic-pyelonephritis,Хронический пиелонефрит,N11,chronicPyelonephritisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,condyloma-acuminata,Остроконечные кондиломы (ВПЧ),A63.0,condylomaAcuminataData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,cowperitis,Куперит (бульбоуретрит),N34.2,cowperitisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,genital-herpes,Герпес генитальный,A60.0,genitalHerpesData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,genital-mycoplasma,Микоплазменная инфекция мочеполовая,A49.3,genitalMycoplasmaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,prostatovesiculitis,Простатовезикулит,N50.0,prostatovesiculitisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,schistosomiasis-gu,Шистосомоз мочеполовой,B65.0,schistosomiasisGuData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,trichomoniasis-gu,Трихомониаз мочеполовой,A59.0,trichomoniasisGuData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,urethritis,Уретрит,N34,urethritisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,infections,xanthogranulomatous-pyelonephritis,Ксантогранулематозный пиелонефрит,N12,xanthogranulomatousPyelonephritisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,acute-kidney-injury,Острое повреждение почек (ОПП),N17,acuteKidneyInjuryData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,analgesic-nephropathy,Анальгетическая нефропатия,N14.0,analgesicNephropathyData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,ckd,Хроническая болезнь почек,N18,ckdData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,cystinuria,Цистинурия,E72.0,cystinuriaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,diabetic-nephropathy,Диабетическая нефропатия,E11.2,diabeticNephropathyData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,glomerulonephritis,Гломерулонефрит,N00-N08,glomerulonephritisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,hypercalciuria,Гиперкальциурия,E83.5,hypercalciuriaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,hyperoxaluria,Гипероксалурия,E72.5,hyperoxaluriaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,hyperuricosuria,Гиперурикозурия,E79.0,hyperuricosuriaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,iga-nephropathy,IgA-нефропатия (Берже),N02,igaNephropathyData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,interstitial-nephritis,Интерстициальный нефрит,N10,interstitialNephritisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,membranous-nephropathy,Мембранозная нефропатия,N05,membranousNephropathyData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,nephroptosis,Нефроптоз,N28.8,nephroptosisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,nephrotic-syndrome,Нефротический синдром,N04,nephroticSyndromeData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,papillary-necrosis,Папиллярный некроз,N17.0,papillaryNecrosisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,polycystic-kidney,Поликистозная болезнь почек,Q61.2,polycysticKidneyData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,renal-abscess,Абсцесс почки,N15.1,renalAbscessData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,renal-angiomyolipoma,Ангиомиолипома почки,D30.0,renalAngiomyolipomaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,renal-artery-stenosis,Стеноз почечной артерии,I70.1,renalArteryStenosisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,renal-cysts,Кисты почек,N28.1,renalCystsData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,renal-infarction,Инфаркт почки,N28.0,renalInfarctionData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,renal-trauma,Травма почки,S37.0,renalTraumaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,renal-vein-thrombosis,Тромбоз почечной вены,I82.3,renalVeinThrombosisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,nephrology,ureteral-trauma,Травма мочеточника,S37.1,ureteralTraumaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,oncology,adrenal-cancer,Рак надпочечника,C74.0,adrenalCancerData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,oncology,adrenal-incidentaloma,Инциденталома надпочечника,E27.8,adrenalIncidentalomaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,oncology,benign-bladder-neoplasm,Доброкачественное новообразование мочевого пузыря,D30.3,benignBladderNeoplasmData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,oncology,bladder-carcinoma-in-situ,Карцинома in situ мочевого пузыря,D09.0,bladderCarcinomaInSituData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,oncology,paraganglioma-bladder,Параганглиома мочевого пузыря,D35.4,paragangliomaBladderData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,oncology,prostatic-intraepithelial-neoplasia,Простатическая интраэпителиальная неоплазия (PIN),D40.0,prostaticIntraepithelialNeoplasiaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,pain,malakoplakia,Малакоплакия мочевого пузыря,N32.8,malakoplakiaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,bladder-diverticulum,Дивертикул мочевого пузыря,N32.3,bladderDiverticulumData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,bladder-endometriosis,Эндометриоз мочевого пузыря,N80.1,bladderEndometriosisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,bladder-rupture,Разрыв мочевого пузыря,S37.2,bladderRuptureData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,catheter-complication,Механическое осложнение мочевого катетера,T83.0,catheterComplicationData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,chyluria,Хилурия,R82.0,chyluriaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,enterovesical-fistula,Кишечно-пузырный свищ,N32.1,enterovesicalFistulaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,hematuria,Гематурия,R31,hematuriaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,leukoplakia,Лейкоплакия мочевого пузыря,N32.8,leukoplakiaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,meatal-stenosis,Стеноз наружного меатуса,N36.0,meatalStenosisData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,pelvic-fracture-urethral-injury,Травма уретры при переломе таза,S37.2,pelvicFractureUrethralInjuryData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,penile-fracture,Перелом полового члена,S39.8,penileFractureData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,scrotal-trauma,Травма мошонки,S30.2,scrotalTraumaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,stent-symptoms,Стент-симптомы,T83.1,stentSymptomsData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,urethral-caruncle,Уретральный карункул,N36.8,urethralCaruncleData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,urethral-diverticulum,Дивертикул уретры,N36.2,urethralDiverticulumData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,urethral-prolapse,Выпадение уретры,N36.1,urethralProlapseData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,urethral-trauma,Травма уретры,S37.3,urethralTraumaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,urogenital-fistula,Урогенитальные свищи,N82,urogenitalFistulaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,reconstructive,vesicovaginal-fistula,Пузырно-влагалищный свищ,N82.0,vesicovaginalFistulaData.js,C,,traceable,quality-ready,content-lead,2026-06-12
+urology,stones,urethral-stones,Камни уретры,N21.1,urethralStonesData.js,C,,traceable,quality-ready,content-lead,2026-06-12
