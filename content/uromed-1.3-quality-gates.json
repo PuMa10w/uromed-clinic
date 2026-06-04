@@ -1,0 +1,799 @@
+{
+  "status": "pass",
+  "updated_at": "2026-06-04T12:23:03.058Z",
+  "release": "UroMed 1.3 Knowledge Atlas",
+  "production_domain": "https://uromed-clinic.pages.dev",
+  "diseaseCount": 184,
+  "subsectionCounts": {
+    "urologyInfections": 32,
+    "urologyOncology": 18,
+    "urologyReconstructive": 29,
+    "andrologyFertility": 12,
+    "andrologySexual": 24,
+    "pediatric": 6
+  },
+  "rangeFindings": [
+    {
+      "range": "N20-N23",
+      "directCount": 7,
+      "targetStatus": "covered-core"
+    },
+    {
+      "range": "N30-N39",
+      "directCount": 30,
+      "targetStatus": "covered-core"
+    },
+    {
+      "range": "N40-N42",
+      "directCount": 8,
+      "targetStatus": "covered-core"
+    },
+    {
+      "range": "N43-N51",
+      "directCount": 24,
+      "targetStatus": "covered-core"
+    },
+    {
+      "range": "C60-C68",
+      "directCount": 11,
+      "targetStatus": "covered-core"
+    },
+    {
+      "range": "Q53-Q64",
+      "directCount": 5,
+      "targetStatus": "covered-core"
+    },
+    {
+      "range": "A54/A56/A60/A63",
+      "directCount": 2,
+      "targetStatus": "covered-core"
+    },
+    {
+      "range": "S37",
+      "directCount": 5,
+      "targetStatus": "covered-core"
+    },
+    {
+      "range": "N99",
+      "directCount": 1,
+      "targetStatus": "covered-core"
+    }
+  ],
+  "stiCoverage": {
+    "A54": true,
+    "A56": true,
+    "A60": true,
+    "A63": true
+  },
+  "missingLazyRoutes": [],
+  "knowledgeGate": {
+    "name": "knowledgeGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "knowledge atlas keeps at least 184 canonical cards",
+        "details": {
+          "diseases": 184
+        }
+      },
+      {
+        "status": "pass",
+        "label": "all current disease cards remain quality-ready",
+        "details": {
+          "qualityReady": 184,
+          "totalDiseases": 184
+        }
+      },
+      {
+        "status": "pass",
+        "label": "no high-priority content gaps remain",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "content audit and quality audit totals stay aligned",
+        "details": {
+          "contentAuditTotal": 184,
+          "contentQualityTotal": 184
+        }
+      },
+      {
+        "status": "pass",
+        "label": "every canonical card has a lazy detail route",
+        "details": {
+          "missingLazyRoutes": []
+        }
+      },
+      {
+        "status": "pass",
+        "label": "core clinical subsections are non-empty",
+        "details": {
+          "urologyInfections": 32,
+          "urologyOncology": 18,
+          "urologyReconstructive": 29,
+          "andrologyFertility": 12,
+          "andrologySexual": 24,
+          "pediatric": 6
+        }
+      },
+      {
+        "status": "pass",
+        "label": "source registry carries freshness metadata",
+        "details": {
+          "sourceCount": 6,
+          "missingSourceDates": 0
+        }
+      }
+    ]
+  },
+  "icdExpansionGate": {
+    "name": "icdExpansionGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "base ICD coverage audit passes",
+        "details": {
+          "status": "pass"
+        }
+      },
+      {
+        "status": "pass",
+        "label": "v1.3 priority ICD ranges are registered",
+        "details": {
+          "requiredRanges": [
+            "N20-N23",
+            "N30-N39",
+            "N40-N42",
+            "N43-N51",
+            "C60-C68",
+            "Q53-Q64",
+            "A54/A56/A60/A63",
+            "S37",
+            "N99"
+          ]
+        }
+      },
+      {
+        "status": "pass",
+        "label": "v1.3 priority ICD targets are marked covered-core",
+        "details": {
+          "rangeFindings": [
+            {
+              "range": "N20-N23",
+              "directCount": 7,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "N30-N39",
+              "directCount": 30,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "N40-N42",
+              "directCount": 8,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "N43-N51",
+              "directCount": 24,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "C60-C68",
+              "directCount": 11,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "Q53-Q64",
+              "directCount": 5,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "A54/A56/A60/A63",
+              "directCount": 2,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "S37",
+              "directCount": 5,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "N99",
+              "directCount": 1,
+              "targetStatus": "covered-core"
+            }
+          ]
+        }
+      },
+      {
+        "status": "pass",
+        "label": "STI target codes are covered by canonical syndrome/cards",
+        "details": {
+          "A54": true,
+          "A56": true,
+          "A60": true,
+          "A63": true
+        }
+      },
+      {
+        "status": "pass",
+        "label": "S37 trauma coverage has multiple visible cards",
+        "details": {
+          "s37Cards": 5
+        }
+      },
+      {
+        "status": "pass",
+        "label": "post-procedural N99 coverage is visible",
+        "details": {
+          "n99Cards": 1
+        }
+      },
+      {
+        "status": "pass",
+        "label": "expanded STI/infection cards are visible in UrologyInfections",
+        "details": {
+          "missing": []
+        }
+      }
+    ]
+  },
+  "expertContentGate": {
+    "name": "expertContentGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "Knowledge Atlas and clinical content contracts are public",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "STI and trauma cards participate in clinical enrichment",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "trauma/N99 priority cards participate in expert enrichment",
+        "details": {
+          "missing": []
+        }
+      },
+      {
+        "status": "pass",
+        "label": "disease modal keeps action-header workflow surface",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "expert atlas builds on full quality-ready baseline",
+        "details": {}
+      }
+    ]
+  },
+  "iphoneVisualGate": {
+    "name": "iphoneVisualGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "App exposes UroMed 1.3 Knowledge Atlas release markers",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "Clinical Premium 1.3 cascade layer is imported after previous layers",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "strict iPhone visual gate report is green",
+        "details": {
+          "blockerCount": 0
+        }
+      },
+      {
+        "status": "pass",
+        "label": "strict visual gate covers portrait and landscape iPhone matrix",
+        "details": {
+          "checkedViewports": 13
+        }
+      },
+      {
+        "status": "pass",
+        "label": "strict visual gate covers light and dark themes",
+        "details": {}
+      }
+    ]
+  },
+  "themeGate": {
+    "name": "themeGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "Clinical Premium 1.3 is isolated in a cascade layer",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer enforces 44px touch targets and focus visibility",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer defines light/dark semantic tokens",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer locks disease modal tabs and quickbar",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer covers landscape and safe areas",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer respects reduced motion",
+        "details": {}
+      }
+    ]
+  },
+  "drugCockpitGate": {
+    "name": "drugCockpitGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "drug intelligence catalog remains at least 528 entries",
+        "details": {
+          "status": "pass",
+          "totalDrugs": 528
+        }
+      },
+      {
+        "status": "pass",
+        "label": "drug catalog mandatory fields and duplicates are clean",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "Drugs page exposes clinical cockpit workflow",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "drug filters and monitoring surface are present",
+        "details": {}
+      }
+    ]
+  },
+  "searchRetrievalGate": {
+    "name": "searchRetrievalGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "command search groups results",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "command search carries workflow intent and next step",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "command documents connect tools, drugs and models",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "AI navigator remains retrieval-only in UI copy",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "atlas has progressive/fallback language",
+        "details": {}
+      }
+    ]
+  },
+  "deployFreshnessGate": {
+    "name": "deployFreshnessGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "knowledge:atlas script is registered",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "quality:uro:1.3 delegates to Knowledge Atlas audit",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "verify:premium includes UroMed 1.3 gate",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "verify:premium keeps strict visual gate before deploy",
+        "details": {}
+      }
+    ]
+  },
+  "knowledge_gate": {
+    "name": "knowledgeGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "knowledge atlas keeps at least 184 canonical cards",
+        "details": {
+          "diseases": 184
+        }
+      },
+      {
+        "status": "pass",
+        "label": "all current disease cards remain quality-ready",
+        "details": {
+          "qualityReady": 184,
+          "totalDiseases": 184
+        }
+      },
+      {
+        "status": "pass",
+        "label": "no high-priority content gaps remain",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "content audit and quality audit totals stay aligned",
+        "details": {
+          "contentAuditTotal": 184,
+          "contentQualityTotal": 184
+        }
+      },
+      {
+        "status": "pass",
+        "label": "every canonical card has a lazy detail route",
+        "details": {
+          "missingLazyRoutes": []
+        }
+      },
+      {
+        "status": "pass",
+        "label": "core clinical subsections are non-empty",
+        "details": {
+          "urologyInfections": 32,
+          "urologyOncology": 18,
+          "urologyReconstructive": 29,
+          "andrologyFertility": 12,
+          "andrologySexual": 24,
+          "pediatric": 6
+        }
+      },
+      {
+        "status": "pass",
+        "label": "source registry carries freshness metadata",
+        "details": {
+          "sourceCount": 6,
+          "missingSourceDates": 0
+        }
+      }
+    ]
+  },
+  "icd_expansion_gate": {
+    "name": "icdExpansionGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "base ICD coverage audit passes",
+        "details": {
+          "status": "pass"
+        }
+      },
+      {
+        "status": "pass",
+        "label": "v1.3 priority ICD ranges are registered",
+        "details": {
+          "requiredRanges": [
+            "N20-N23",
+            "N30-N39",
+            "N40-N42",
+            "N43-N51",
+            "C60-C68",
+            "Q53-Q64",
+            "A54/A56/A60/A63",
+            "S37",
+            "N99"
+          ]
+        }
+      },
+      {
+        "status": "pass",
+        "label": "v1.3 priority ICD targets are marked covered-core",
+        "details": {
+          "rangeFindings": [
+            {
+              "range": "N20-N23",
+              "directCount": 7,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "N30-N39",
+              "directCount": 30,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "N40-N42",
+              "directCount": 8,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "N43-N51",
+              "directCount": 24,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "C60-C68",
+              "directCount": 11,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "Q53-Q64",
+              "directCount": 5,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "A54/A56/A60/A63",
+              "directCount": 2,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "S37",
+              "directCount": 5,
+              "targetStatus": "covered-core"
+            },
+            {
+              "range": "N99",
+              "directCount": 1,
+              "targetStatus": "covered-core"
+            }
+          ]
+        }
+      },
+      {
+        "status": "pass",
+        "label": "STI target codes are covered by canonical syndrome/cards",
+        "details": {
+          "A54": true,
+          "A56": true,
+          "A60": true,
+          "A63": true
+        }
+      },
+      {
+        "status": "pass",
+        "label": "S37 trauma coverage has multiple visible cards",
+        "details": {
+          "s37Cards": 5
+        }
+      },
+      {
+        "status": "pass",
+        "label": "post-procedural N99 coverage is visible",
+        "details": {
+          "n99Cards": 1
+        }
+      },
+      {
+        "status": "pass",
+        "label": "expanded STI/infection cards are visible in UrologyInfections",
+        "details": {
+          "missing": []
+        }
+      }
+    ]
+  },
+  "expert_content_gate": {
+    "name": "expertContentGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "Knowledge Atlas and clinical content contracts are public",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "STI and trauma cards participate in clinical enrichment",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "trauma/N99 priority cards participate in expert enrichment",
+        "details": {
+          "missing": []
+        }
+      },
+      {
+        "status": "pass",
+        "label": "disease modal keeps action-header workflow surface",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "expert atlas builds on full quality-ready baseline",
+        "details": {}
+      }
+    ]
+  },
+  "iphone_visual_gate": {
+    "name": "iphoneVisualGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "App exposes UroMed 1.3 Knowledge Atlas release markers",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "Clinical Premium 1.3 cascade layer is imported after previous layers",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "strict iPhone visual gate report is green",
+        "details": {
+          "blockerCount": 0
+        }
+      },
+      {
+        "status": "pass",
+        "label": "strict visual gate covers portrait and landscape iPhone matrix",
+        "details": {
+          "checkedViewports": 13
+        }
+      },
+      {
+        "status": "pass",
+        "label": "strict visual gate covers light and dark themes",
+        "details": {}
+      }
+    ]
+  },
+  "theme_gate": {
+    "name": "themeGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "Clinical Premium 1.3 is isolated in a cascade layer",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer enforces 44px touch targets and focus visibility",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer defines light/dark semantic tokens",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer locks disease modal tabs and quickbar",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer covers landscape and safe areas",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "1.3 layer respects reduced motion",
+        "details": {}
+      }
+    ]
+  },
+  "drug_cockpit_gate": {
+    "name": "drugCockpitGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "drug intelligence catalog remains at least 528 entries",
+        "details": {
+          "status": "pass",
+          "totalDrugs": 528
+        }
+      },
+      {
+        "status": "pass",
+        "label": "drug catalog mandatory fields and duplicates are clean",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "Drugs page exposes clinical cockpit workflow",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "drug filters and monitoring surface are present",
+        "details": {}
+      }
+    ]
+  },
+  "search_retrieval_gate": {
+    "name": "searchRetrievalGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "command search groups results",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "command search carries workflow intent and next step",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "command documents connect tools, drugs and models",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "AI navigator remains retrieval-only in UI copy",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "atlas has progressive/fallback language",
+        "details": {}
+      }
+    ]
+  },
+  "deploy_freshness_gate": {
+    "name": "deployFreshnessGate",
+    "status": "pass",
+    "checks": [
+      {
+        "status": "pass",
+        "label": "knowledge:atlas script is registered",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "quality:uro:1.3 delegates to Knowledge Atlas audit",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "verify:premium includes UroMed 1.3 gate",
+        "details": {}
+      },
+      {
+        "status": "pass",
+        "label": "verify:premium keeps strict visual gate before deploy",
+        "details": {}
+      }
+    ]
+  }
+}

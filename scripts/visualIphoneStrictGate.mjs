@@ -120,7 +120,8 @@ async function preparePage(page, baseUrl, route, theme) {
   const isDiseaseRoute = routePath.split('/').filter(Boolean).length >= 3;
   if (isDiseaseRoute) {
     await page.waitForLoadState('networkidle', { timeout: 2500 }).catch(() => {});
-    await page.waitForSelector('.modal-content .tabs-shell', { timeout: 5000 }).catch(() => {});
+    await page.waitForSelector('.modal-content', { timeout: 5000 }).catch(() => {});
+    await page.waitForSelector('.tabs-shell', { timeout: 1200 }).catch(() => {});
   }
   await page.evaluate((activeTheme) => {
     document.body.classList.toggle('light-mode', activeTheme === 'light');

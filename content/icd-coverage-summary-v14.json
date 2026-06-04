@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "updated_at": "2026-06-01T10:19:56.864Z",
+  "updated_at": "2026-06-04T12:09:52.030Z",
   "totalDiseases": 178,
   "icdCoverageTargets": [
     {
@@ -439,7 +439,7 @@
       "range": "A54/A56/A60/A63",
       "label": "STI и урогенитальные инфекции",
       "priority": "B",
-      "status": "needs-wave-expansion",
+      "status": "covered-core",
       "diseaseCount": 2,
       "canonicalExamples": [
         {
@@ -449,7 +449,7 @@
           "module_status": "data-module",
           "clinical_priority": "B",
           "source_pack": "EAU + AUA/ASRM + WHO + RU",
-          "coverage_status": "needs-wave-expansion"
+          "coverage_status": "covered-core"
         },
         {
           "id": "condyloma-acuminata",
@@ -458,7 +458,7 @@
           "module_status": "data-module",
           "clinical_priority": "B",
           "source_pack": "EAU + AUA/ASRM + WHO + RU",
-          "coverage_status": "needs-wave-expansion"
+          "coverage_status": "covered-core"
         }
       ]
     },
@@ -466,7 +466,7 @@
       "range": "S37",
       "label": "Травмы мочеполовых органов",
       "priority": "B",
-      "status": "needs-wave-expansion",
+      "status": "covered-core",
       "diseaseCount": 5,
       "canonicalExamples": [
         {
@@ -476,7 +476,7 @@
           "module_status": "data-module",
           "clinical_priority": "B",
           "source_pack": "EAU + AUA/ASRM + WHO + RU",
-          "coverage_status": "needs-wave-expansion"
+          "coverage_status": "covered-core"
         },
         {
           "id": "urethral-trauma",
@@ -485,7 +485,7 @@
           "module_status": "data-module",
           "clinical_priority": "B",
           "source_pack": "EAU + AUA/ASRM + WHO + RU",
-          "coverage_status": "needs-wave-expansion"
+          "coverage_status": "covered-core"
         },
         {
           "id": "renal-trauma",
@@ -494,7 +494,7 @@
           "module_status": "data-module",
           "clinical_priority": "B",
           "source_pack": "EAU + AUA/ASRM + WHO + RU",
-          "coverage_status": "needs-wave-expansion"
+          "coverage_status": "covered-core"
         },
         {
           "id": "ureteral-trauma",
@@ -503,7 +503,7 @@
           "module_status": "data-module",
           "clinical_priority": "B",
           "source_pack": "EAU + AUA/ASRM + WHO + RU",
-          "coverage_status": "needs-wave-expansion"
+          "coverage_status": "covered-core"
         },
         {
           "id": "pelvic-fracture-urethral-injury",
@@ -512,7 +512,25 @@
           "module_status": "data-module",
           "clinical_priority": "B",
           "source_pack": "EAU + AUA/ASRM + WHO + RU",
-          "coverage_status": "needs-wave-expansion"
+          "coverage_status": "covered-core"
+        }
+      ]
+    },
+    {
+      "range": "N99",
+      "label": "Послеоперационные и постпроцедурные состояния",
+      "priority": "B",
+      "status": "covered-core",
+      "diseaseCount": 1,
+      "canonicalExamples": [
+        {
+          "id": "postprocedural-urethral-stricture",
+          "icd10_code": "N99.1",
+          "canonical_route": "/urology/reconstructive/postprocedural-urethral-stricture",
+          "module_status": "data-module",
+          "clinical_priority": "B",
+          "source_pack": "EAU + AUA/ASRM + WHO + RU",
+          "coverage_status": "covered-core"
         }
       ]
     },

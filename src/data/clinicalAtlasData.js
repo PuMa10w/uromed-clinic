@@ -194,8 +194,9 @@ export const icdCoverageTargets = [
   { range: 'N43-N51', label: 'Мужские половые органы, фертильность, сексуальная медицина', priority: 'A', status: 'covered-core' },
   { range: 'C60-C68', label: 'Онкоурология', priority: 'A', status: 'covered-core' },
   { range: 'Q53-Q64', label: 'Педиатрическая урология и врождённые аномалии', priority: 'B', status: 'covered-core' },
-  { range: 'A54/A56/A60/A63', label: 'STI и урогенитальные инфекции', priority: 'B', status: 'needs-wave-expansion' },
-  { range: 'S37', label: 'Травмы мочеполовых органов', priority: 'B', status: 'needs-wave-expansion' },
+  { range: 'A54/A56/A60/A63', label: 'STI и урогенитальные инфекции', priority: 'B', status: 'covered-core' },
+  { range: 'S37', label: 'Травмы мочеполовых органов', priority: 'B', status: 'covered-core' },
+  { range: 'N99', label: 'Послеоперационные и постпроцедурные состояния', priority: 'B', status: 'covered-core' },
   { range: 'Z30-Z31', label: 'Контрацепция, фертильность, ART-контекст', priority: 'B', status: 'covered-core' },
 ];
 

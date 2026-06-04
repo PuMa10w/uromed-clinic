@@ -39,6 +39,13 @@
  * @property {{status: 'pass'|'fail'}} performanceGate
  * @property {{status: 'pass'|'fail'}} securityGate
  * @property {{status: 'pass'|'fail'}} deployGate
+ * @property {{status: 'pass'|'fail'}} knowledgeGate
+ * @property {{status: 'pass'|'fail'}} icdExpansionGate
+ * @property {{status: 'pass'|'fail'}} expertContentGate
+ * @property {{status: 'pass'|'fail'}} iphoneVisualGate
+ * @property {{status: 'pass'|'fail'}} drugCockpitGate
+ * @property {{status: 'pass'|'fail'}} searchRetrievalGate
+ * @property {{status: 'pass'|'fail'}} deployFreshnessGate
  */
 
 /**
@@ -51,6 +58,16 @@
  * @property {Array<{question: string, answer: string, sourceIds: string[]}>} FAQ
  * @property {Array<{title: string, nextStep: string, sourceIds: string[]}>} cases
  * @property {string[]} sources
+ * @property {string} lastCheckedAt
+ */
+
+/**
+ * @typedef {Object} KnowledgeAtlasMeta
+ * @property {string} icd10Code
+ * @property {'covered-core'|'covered-syndrome'|'planned'|'out-of-scope'} coverageStatus
+ * @property {string} canonicalRoute
+ * @property {'A'|'B'|'C'} clinicalPriority
+ * @property {string[]} sourceIds
  * @property {string} lastCheckedAt
  */
 

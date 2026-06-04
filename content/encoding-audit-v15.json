@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "updated_at": "2026-06-01T10:19:57.345Z",
-  "scannedFiles": 288,
+  "updated_at": "2026-06-04T12:09:52.508Z",
+  "scannedFiles": 290,
   "findings": [],
   "note": "User-facing mojibake is a release blocker. Intentional fixtures belong in test files, which are excluded."
 }

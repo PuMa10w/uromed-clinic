@@ -6,6 +6,7 @@ import './styles/v22WorkbenchLock.css';
 import './styles/v23ClinicalWorkbench.css';
 import './styles/clinicalPremium11.css';
 import './styles/clinicalPremium12.css';
+import './styles/clinicalPremium13.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SeoHelmet from './components/SeoHelmet';
@@ -211,6 +212,8 @@ function App() {
           role="main"
           data-v23-workbench="true"
           data-clinical-premium="true"
+          data-knowledge-atlas="true"
+          data-product-release="1.3"
           data-product-version="1.2"
         >
           <a href="#main-content" className="skip-link">Перейти к основному контенту</a>

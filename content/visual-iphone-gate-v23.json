@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "updated_at": "2026-06-01T10:25:08.272Z",
+  "updated_at": "2026-06-04T12:15:09.779Z",
   "visual_iPhone_gate_v23": {
     "name": "visual_iPhone_gate_v23",
     "status": "pass",
@@ -80,22 +80,8 @@
         "hasModal": false,
         "diseaseCardCount": 0,
         "rects": {
-          "navbar": {
-            "top": 7,
-            "left": 12,
-            "right": 308,
-            "bottom": 129,
-            "width": 297,
-            "height": 122
-          },
-          "title": {
-            "top": 1595,
-            "left": 22,
-            "right": 298,
-            "bottom": 1923,
-            "width": 277,
-            "height": 328
-          },
+          "navbar": null,
+          "title": null,
           "modal": null,
           "tabs": null,
           "quickbar": null,
@@ -751,12 +737,12 @@
             "height": 112
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -767,12 +753,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -791,7 +777,7 @@
         "documentScrollWidth": 320,
         "bodyScrollWidth": 320,
         "hasModal": true,
-        "diseaseCardCount": 23,
+        "diseaseCardCount": 32,
         "rects": {
           "navbar": {
             "top": 0,
@@ -810,12 +796,12 @@
             "height": 112
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -826,12 +812,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -869,12 +855,12 @@
             "height": 75
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -885,12 +871,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -928,12 +914,12 @@
             "height": 75
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -944,12 +930,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -987,12 +973,12 @@
             "height": 75
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -1003,12 +989,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -1046,12 +1032,12 @@
             "height": 112
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -1062,12 +1048,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -1105,12 +1091,12 @@
             "height": 262
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -1121,12 +1107,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -1164,12 +1150,12 @@
             "height": 150
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -1180,12 +1166,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -1223,12 +1209,12 @@
             "height": 112
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -1239,12 +1225,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -1282,12 +1268,12 @@
             "height": 150
           },
           "modal": {
-            "top": 0,
+            "top": 74,
             "left": 0,
             "right": 320,
-            "bottom": 568,
+            "bottom": 484,
             "width": 320,
-            "height": 568
+            "height": 410
           },
           "tabs": {
             "top": 0,
@@ -1298,12 +1284,12 @@
             "height": 65
           },
           "quickbar": {
-            "top": 493,
+            "top": 499,
             "left": 12,
             "right": 308,
             "bottom": 558,
             "width": 296,
-            "height": 65
+            "height": 59
           },
           "bottomNav": null
         },
@@ -1313,7 +1299,7 @@
     }
   ],
   "inheritedV22": {
-    "updated_at": "2026-06-01T10:24:41.434Z",
+    "updated_at": "2026-06-04T12:14:42.524Z",
     "status": "pass",
     "checkedRoutes": 25,
     "checkedViewports": 6

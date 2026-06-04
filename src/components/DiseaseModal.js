@@ -6,6 +6,7 @@ import '../styles/v21ModalVisualLock.css';
 import '../styles/v22WorkbenchLock.css';
 import '../styles/v23ClinicalWorkbench.css';
 import '../styles/modalStack11.css';
+import '../styles/diseaseModal13Lock.css';
 import { normalizeDisease } from './diseaseModal/normalizeDisease';
 import { getDiseaseModalTabs, DEFAULT_TAB } from './diseaseModal/tabs';
 import DiseaseModalHeader from './diseaseModal/DiseaseModalHeader';
@@ -75,6 +76,7 @@ const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate 
   const normalizedDisease = normalizeDisease(disease);
   const [activeTab, setActiveTab] = useState(DEFAULT_TAB);
   const [isMobile, setIsMobile] = useState(false);
+  const overlayRef = useRef(null);
   const modalRef = useRef(null);
   const previousFocusRef = useRef(null);
   const touchStartY = useRef(0);
@@ -115,8 +117,9 @@ const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate 
   useEffect(() => {
     previousFocusRef.current = document.activeElement;
     document.body.classList.add('modal-open');
-    if (modalRef.current) {
-      const focusableElements = modalRef.current.querySelectorAll(
+    const focusScope = overlayRef.current || modalRef.current;
+    if (focusScope) {
+      const focusableElements = focusScope.querySelectorAll(
         'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
       );
       if (focusableElements.length > 0) {
@@ -168,22 +171,45 @@ const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate 
       const modalElement = modalRef.current;
       if (!modalElement) return;
 
-      const tabsShell = modalElement.querySelector('.tabs-shell');
+      const tabsShell = document.querySelector('.modal-tabs-fixed-layer .tabs-shell')
+        || modalElement.querySelector('.tabs-shell');
       const tabsRail = tabsShell?.querySelector('.tabs');
       const quickbar = document.querySelector('.modal-mobile-quickbar.is-fixed');
+      const isLandscape = window.matchMedia('(orientation: landscape)').matches;
+      const modalTopOffset = isLandscape
+        ? 'calc(env(safe-area-inset-top, 0px) + var(--disease-tabs-safe-height, 3.45rem))'
+        : 'calc(env(safe-area-inset-top, 0px) + var(--disease-tabs-safe-height, 4.65rem))';
+      const modalBottomOffset = isLandscape
+        ? 'calc(3.7rem + env(safe-area-inset-bottom, 0px))'
+        : 'calc(var(--cp13-bottom-action-height, 84px) + 12px)';
+      const modalMaxHeight = isLandscape
+        ? 'calc(100dvh - var(--disease-tabs-safe-height, 3.45rem) - 3.7rem - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px))'
+        : 'calc(100dvh - var(--disease-tabs-safe-height, 4.65rem) - var(--cp13-bottom-action-height, 84px) - env(safe-area-inset-top, 0px) - 12px)';
 
       modalElement.style.setProperty('position', 'fixed', 'important');
-      modalElement.style.setProperty('inset', '0', 'important');
+      modalElement.style.removeProperty('inset');
+      modalElement.style.setProperty('top', modalTopOffset, 'important');
+      modalElement.style.setProperty('right', '0', 'important');
+      modalElement.style.setProperty('bottom', modalBottomOffset, 'important');
+      modalElement.style.setProperty('left', '0', 'important');
       modalElement.style.setProperty('width', '100vw', 'important');
       modalElement.style.setProperty('max-width', '100vw', 'important');
-      modalElement.style.setProperty('height', '100dvh', 'important');
-      modalElement.style.setProperty('max-height', '100dvh', 'important');
+      modalElement.style.setProperty('height', 'auto', 'important');
+      modalElement.style.setProperty('min-height', '0', 'important');
+      modalElement.style.setProperty('max-height', modalMaxHeight, 'important');
       modalElement.style.setProperty('overflow-x', 'clip', 'important');
       modalElement.style.setProperty('overflow-y', 'auto', 'important');
+      modalElement.style.setProperty('contain', 'none', 'important');
+      modalElement.style.setProperty('transform', 'none', 'important');
+      modalElement.style.setProperty(
+        'scroll-padding-bottom',
+        'calc(var(--cp13-bottom-action-height, 84px) + 2rem)',
+        'important'
+      );
 
       if (tabsShell) {
         tabsShell.style.setProperty('position', 'fixed', 'important');
-        tabsShell.style.setProperty('top', '0px', 'important');
+        tabsShell.style.setProperty('top', 'env(safe-area-inset-top, 0px)', 'important');
         tabsShell.style.setProperty('left', '0px', 'important');
         tabsShell.style.setProperty('right', '0px', 'important');
         tabsShell.style.setProperty('width', '100vw', 'important');
@@ -270,9 +296,11 @@ const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate 
         onNavigate(1);
       }
       if (e.key === 'Tab' && modalRef.current) {
-        const focusableElements = modalRef.current.querySelectorAll(
+        const focusScope = overlayRef.current || modalRef.current;
+        const focusableElements = focusScope.querySelectorAll(
           'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
         );
+        if (!focusableElements.length) return;
         const firstElement = focusableElements[0];
         const lastElement = focusableElements[focusableElements.length - 1];
 
@@ -317,6 +345,7 @@ const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate 
 
   const modalNode = (
     <div
+      ref={overlayRef}
       className="modal-overlay"
       onClick={onClose}
       role="dialog"
@@ -344,7 +373,7 @@ const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate 
         />
 
         <div className="modal-body">
-          <DiseaseModalTabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
+          {!isMobile && <DiseaseModalTabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />}
           <div
             key={activeTab}
             className="modal-tabpanel"
@@ -364,6 +393,12 @@ const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate 
         </div>
 
       </div>
+
+      {isMobile && (
+        <div className="modal-tabs-fixed-layer" onClick={(e) => e.stopPropagation()}>
+          <DiseaseModalTabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
+        </div>
+      )}
 
       {isMobile && (
         <div className="modal-mobile-quickbar is-fixed" onClick={(e) => e.stopPropagation()}>
