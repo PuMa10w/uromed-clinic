@@ -255,7 +255,11 @@ function main() {
   ]);
 
   const iphoneVisualGate = makeGate('iphoneVisualGate', [
-    check(appJs.includes("data-product-release=\"1.3\"") && appJs.includes("data-knowledge-atlas=\"true\""), 'App exposes UroMed 1.3 Knowledge Atlas release markers'),
+    check(
+      appJs.includes("data-knowledge-atlas=\"true\"")
+        && (appJs.includes("data-product-release=\"1.3\"") || appJs.includes("data-product-previous-release=\"1.3\"")),
+      'App preserves UroMed 1.3 Knowledge Atlas release markers'
+    ),
     check(appJs.includes("clinicalPremium13.css"), 'Clinical Premium 1.3 cascade layer is imported after previous layers'),
     check(strictVisual.status === 'pass' && strictVisual.visual_iphone_strict_gate?.status === 'pass', 'strict iPhone visual gate report is green', {
       blockerCount: strictVisual.visual_iphone_strict_gate?.blockerCount ?? null,

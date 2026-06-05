@@ -55,6 +55,20 @@ const viewports = [
 ];
 
 const themes = ['dark', 'light'];
+const release = 'UroMed 1.4 Professional iPhone Premium Finish';
+const renderedMojibakePattern = [
+  '\\u0420\\u045f',
+  '\\u0420\\u040c',
+  '\\u0420\\u201d',
+  '\\u0420\\u2014',
+  '\\u0421\\u0453',
+  '\\u0421\\u201a',
+  '\\u0432\\u0402',
+  '\\u0432\\u20ac',
+  '\\u00d0\\u00a0',
+  '\\u00d0\\u009f',
+  '\\u00d1\\u0081',
+].join('|');
 
 const readySelector = [
   '.home-shell',
@@ -113,8 +127,44 @@ function createStaticServer() {
   });
 }
 
+function isTransientNavigationError(error) {
+  return /Execution context was destroyed|Navigation failed because page was closed|Target page, context or browser has been closed/i
+    .test(String(error?.message || error));
+}
+
+async function gotoStable(page, url) {
+  let lastError;
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20000 });
+      await page.waitForFunction(() => Boolean(document.querySelector('#root .App')), null, { timeout: 5000 });
+      await page.waitForTimeout(140);
+      return;
+    } catch (error) {
+      lastError = error;
+      if (!isTransientNavigationError(error)) break;
+      await page.waitForTimeout(250);
+    }
+  }
+  throw lastError;
+}
+
+async function evaluateStable(page, fn, arg) {
+  let lastError;
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      return await page.evaluate(fn, arg);
+    } catch (error) {
+      lastError = error;
+      if (!isTransientNavigationError(error)) break;
+      await page.waitForTimeout(250);
+    }
+  }
+  throw lastError;
+}
+
 async function preparePage(page, baseUrl, route, theme) {
-  await page.goto(`${baseUrl}${route}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+  await gotoStable(page, `${baseUrl}${route}`);
   await page.waitForFunction((selector) => Boolean(document.querySelector(selector)), readySelector, { timeout: 800 }).catch(() => {});
   const routePath = route.split('?')[0];
   const isDiseaseRoute = routePath.split('/').filter(Boolean).length >= 3;
@@ -123,7 +173,7 @@ async function preparePage(page, baseUrl, route, theme) {
     await page.waitForSelector('.modal-content', { timeout: 5000 }).catch(() => {});
     await page.waitForSelector('.tabs-shell', { timeout: 1200 }).catch(() => {});
   }
-  await page.evaluate((activeTheme) => {
+  await evaluateStable(page, (activeTheme) => {
     document.body.classList.toggle('light-mode', activeTheme === 'light');
     const modal = document.querySelector('.modal-content');
     if (modal) modal.scrollTop = Math.min(1200, Math.max(520, modal.scrollHeight / 3));
@@ -140,7 +190,7 @@ async function preparePage(page, baseUrl, route, theme) {
 }
 
 async function getMetrics(page) {
-  return page.evaluate(() => {
+  return evaluateStable(page, (mojibakePattern) => {
     const rect = (selector) => {
       const element = document.querySelector(selector);
       if (!element) return null;
@@ -236,6 +286,8 @@ async function getMetrics(page) {
     const navbar = document.querySelector('.navbar');
     const navbarStyle = navbar ? window.getComputedStyle(navbar) : null;
     const bodyText = document.body.innerText || '';
+    const renderedMojibake = new RegExp(mojibakePattern, 'g');
+    const mojibakeSamples = [...new Set(bodyText.match(renderedMojibake) || [])].slice(0, 10);
 
     return {
       innerWidth: window.innerWidth,
@@ -248,7 +300,8 @@ async function getMetrics(page) {
         : false,
       diseaseCardCount: document.querySelectorAll('.disease-card').length,
       bodyTextSample: bodyText.slice(0, 180),
-      mojibakeFound: /Рџ|Рњ|РЎ|РІР‚|вЂ|пїЅ/.test(bodyText),
+      mojibakeFound: mojibakeSamples.length > 0,
+      mojibakeSamples,
       rects: {
         navbar: rect('.navbar'),
         title: rect('.section-title, .service-page-hero h1, .drug-reference-hero h1, .home-destination-card'),
@@ -263,7 +316,7 @@ async function getMetrics(page) {
       railIssues: rails.filter((item) => item.left < -2 || item.right > window.innerWidth + 2 || (item.scrollWidth > item.clientWidth && !/(auto|scroll)/.test(item.overflowX))),
       textNodes,
     };
-  });
+  }, renderedMojibakePattern);
 }
 
 function evaluate(route, viewport, theme, metrics) {
@@ -273,7 +326,7 @@ function evaluate(route, viewport, theme, metrics) {
 
   if (metrics.documentScrollWidth > metrics.innerWidth + 2) add('document_horizontal_overflow', { documentScrollWidth: metrics.documentScrollWidth, innerWidth: metrics.innerWidth });
   if (metrics.bodyScrollWidth > metrics.innerWidth + 2) add('body_horizontal_overflow', { bodyScrollWidth: metrics.bodyScrollWidth, innerWidth: metrics.innerWidth });
-  if (metrics.mojibakeFound) add('visible_mojibake', { bodyTextSample: metrics.bodyTextSample });
+  if (metrics.mojibakeFound) add('visible_mojibake', { bodyTextSample: metrics.bodyTextSample, samples: metrics.mojibakeSamples });
   if (metrics.clippedControls.length) add('clipped_controls', { clippedControls: metrics.clippedControls.slice(0, 6) });
   if (metrics.railIssues.length) add('rail_geometry_issue', { railIssues: metrics.railIssues.slice(0, 6) });
 
@@ -337,6 +390,7 @@ async function main() {
               clippedControlCount: metrics.clippedControls.length,
               tinyControlCount: metrics.tinyControls.length,
               railIssueCount: metrics.railIssues.length,
+              mojibakeSamples: metrics.mojibakeSamples || [],
               textNodes: metrics.textNodes.slice(0, 4),
             },
           });
@@ -372,9 +426,22 @@ async function main() {
   const report = {
     status: blockers.length === 0 ? 'pass' : 'fail',
     updated_at: new Date().toISOString(),
+    release,
     visual_iphone_strict_gate: {
       name: 'visual_iphone_strict_gate',
       status: blockers.length === 0 ? 'pass' : 'fail',
+      release,
+      checkedRoutes: routes.length,
+      checkedViewports: viewports.length,
+      checkedThemes: themes,
+      blockerCount: blockers.length,
+      blockers,
+      screenshots,
+    },
+    visual_iphone_1_4_gate: {
+      name: 'visual_iphone_1_4_gate',
+      status: blockers.length === 0 ? 'pass' : 'fail',
+      release,
       checkedRoutes: routes.length,
       checkedViewports: viewports.length,
       checkedThemes: themes,

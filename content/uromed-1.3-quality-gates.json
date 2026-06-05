@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "updated_at": "2026-06-04T12:23:03.058Z",
+  "updated_at": "2026-06-05T08:13:12.996Z",
   "release": "UroMed 1.3 Knowledge Atlas",
   "production_domain": "https://uromed-clinic.pages.dev",
   "diseaseCount": 184,
@@ -280,7 +280,7 @@
     "checks": [
       {
         "status": "pass",
-        "label": "App exposes UroMed 1.3 Knowledge Atlas release markers",
+        "label": "App preserves UroMed 1.3 Knowledge Atlas release markers",
         "details": {}
       },
       {
@@ -645,7 +645,7 @@
     "checks": [
       {
         "status": "pass",
-        "label": "App exposes UroMed 1.3 Knowledge Atlas release markers",
+        "label": "App preserves UroMed 1.3 Knowledge Atlas release markers",
         "details": {}
       },
       {

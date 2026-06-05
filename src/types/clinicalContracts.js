@@ -46,6 +46,11 @@
  * @property {{status: 'pass'|'fail'}} drugCockpitGate
  * @property {{status: 'pass'|'fail'}} searchRetrievalGate
  * @property {{status: 'pass'|'fail'}} deployFreshnessGate
+ * @property {{status: 'pass'|'fail'}} modalStackGate
+ * @property {{status: 'pass'|'fail'}} iphoneGeometryGate
+ * @property {{status: 'pass'|'fail'}} routeVisualGate
+ * @property {{status: 'pass'|'fail'}} renderedEncodingGate
+ * @property {{status: 'pass'|'fail'}} serviceUxGate
  */
 
 /**
@@ -113,6 +118,18 @@
  * @property {'navbar-tabs-content-quickbar'|'navbar-content-bottom-actions'} expectedStickyStack
  * @property {'no-body-overflow'} overflowPolicy
  * @property {44} minTouchTarget
+ * @property {'pass'|'fail'} safeAreaStatus
+ * @property {Array<Record<string, unknown>>} overlapFindings
+ * @property {Array<Record<string, unknown>>} clippedControls
+ */
+
+/**
+ * @typedef {Object} ThemeQualityContract
+ * @property {ClinicalSurfaceTokenSet} dark
+ * @property {ClinicalSurfaceTokenSet} light
+ * @property {'pass'|'fail'} contrastStatus
+ * @property {'pass'|'fail'} focusStatus
+ * @property {'pass'|'fail'} readabilityStatus
  */
 
 /**
@@ -187,10 +204,12 @@
 /**
  * @typedef {Object} DiseaseModalStackContract
  * @property {true} appNavHidden
+ * @property {true} bottomNavHidden
  * @property {true} tabsFixedTop
  * @property {true} quickbarFixedBottom
  * @property {true} contentSafePadding
  * @property {true} railXScroll
+ * @property {true} portraitLandscapeStable
  */
 
 /**

@@ -1,0 +1,131 @@
+/* UroMed 1.4 final disease modal stack lock.
+   This file is imported last by DiseaseModal and owns iPhone Safari geometry. */
+
+@media (max-width: 980px) {
+  html body.modal-open {
+    --disease-tabs-safe-height: 4.65rem;
+    --disease-quickbar-safe-height: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+
+  html body.modal-open :where(.navbar, .mobile-shell-nav, .bottom-shell-nav, .mobile-bottom-nav, .bottom-nav, .floating-scroll-top, .scroll-top-button, .app-section-switch) {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  html body.modal-open .modal-overlay.modal-overlay {
+    inset: 0 !important;
+    max-width: 100vw !important;
+    overflow: clip !important;
+  }
+
+  html body.modal-open .modal-content.modal-content.modal-content {
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top, 0px) + var(--disease-tabs-safe-height, 4.65rem)) !important;
+    right: 0 !important;
+    bottom: calc(var(--disease-quickbar-safe-height, 72px) + 12px) !important;
+    left: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: calc(100dvh - var(--disease-tabs-safe-height, 4.65rem) - var(--disease-quickbar-safe-height, 72px) - env(safe-area-inset-top, 0px) - 12px) !important;
+    overflow-x: clip !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain !important;
+    contain: none !important;
+    transform: none !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + var(--disease-tabs-safe-height, 4.65rem)) !important;
+    scroll-padding-bottom: calc(var(--disease-quickbar-safe-height, 72px) + 2.4rem) !important;
+  }
+
+  html body.modal-open .modal-tabs-fixed-layer.modal-tabs-fixed-layer {
+    position: fixed !important;
+    top: env(safe-area-inset-top, 0px) !important;
+    right: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    z-index: 2147483600 !important;
+    pointer-events: auto !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  html body.modal-open .tabs-shell.tabs-shell.tabs-shell {
+    position: fixed !important;
+    top: env(safe-area-inset-top, 0px) !important;
+    right: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    overflow-x: clip !important;
+    overflow-y: hidden !important;
+    z-index: 2147483600 !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  html body.modal-open .tabs-shell .tabs,
+  html body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    overscroll-behavior-x: contain !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-x !important;
+  }
+
+  html body.modal-open .modal-mobile-quickbar.modal-mobile-quickbar.modal-mobile-quickbar,
+  html body.modal-open .modal-mobile-quickbar.is-fixed.modal-mobile-quickbar.is-fixed,
+  html body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed.modal-mobile-quickbar.is-fixed {
+    position: fixed !important;
+    top: auto !important;
+    right: max(0.72rem, env(safe-area-inset-right, 0px)) !important;
+    bottom: max(0.62rem, env(safe-area-inset-bottom, 0px)) !important;
+    left: max(0.72rem, env(safe-area-inset-left, 0px)) !important;
+    width: auto !important;
+    max-width: none !important;
+    min-height: 3.65rem !important;
+    z-index: 2147483647 !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  html body.modal-open :where(.modal-body, .modal-tabpanel, .modal-tabpanel > .content-block, .clinical-readability-rail, .clinical-reading-rail) {
+    padding-bottom: calc(var(--disease-quickbar-safe-height, 72px) + 2.6rem) !important;
+  }
+}
+
+@media (max-width: 980px) and (orientation: landscape) {
+  html body.modal-open {
+    --disease-tabs-safe-height: 3.45rem;
+    --disease-quickbar-safe-height: calc(52px + env(safe-area-inset-bottom, 0px));
+  }
+
+  html body.modal-open .modal-content.modal-content.modal-content {
+    top: calc(env(safe-area-inset-top, 0px) + var(--disease-tabs-safe-height, 3.45rem)) !important;
+    bottom: calc(var(--disease-quickbar-safe-height, 52px) + 0.42rem) !important;
+    max-height: calc(100dvh - var(--disease-tabs-safe-height, 3.45rem) - var(--disease-quickbar-safe-height, 52px) - env(safe-area-inset-top, 0px) - 0.42rem) !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.6rem) !important;
+    scroll-padding-bottom: calc(var(--disease-quickbar-safe-height, 52px) + 1.3rem) !important;
+  }
+
+  html body.modal-open .tabs-shell.tabs-shell.tabs-shell {
+    padding-block: 0.18rem 0.22rem !important;
+  }
+
+  html body.modal-open .modal-mobile-quickbar.modal-mobile-quickbar.modal-mobile-quickbar,
+  html body.modal-open .modal-mobile-quickbar.is-fixed.modal-mobile-quickbar.is-fixed,
+  html body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed.modal-mobile-quickbar.is-fixed {
+    right: max(0.5rem, env(safe-area-inset-right, 0px)) !important;
+    bottom: max(0.42rem, env(safe-area-inset-bottom, 0px)) !important;
+    left: auto !important;
+    width: min(13.2rem, calc(100vw - 1.2rem)) !important;
+    max-width: min(13.2rem, calc(100vw - 1.2rem)) !important;
+    min-height: 3.12rem !important;
+    max-height: 3.12rem !important;
+  }
+}

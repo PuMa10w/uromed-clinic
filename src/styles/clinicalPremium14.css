@@ -1,0 +1,256 @@
+@layer clinical-premium-14 {
+  :root {
+    --cp14-bg-dark: #07101c;
+    --cp14-bg-light: #fbf7ef;
+    --cp14-surface-dark: rgba(12, 21, 35, 0.94);
+    --cp14-surface-light: rgba(255, 252, 245, 0.94);
+    --cp14-text-dark: #f7f1e7;
+    --cp14-text-light: #172033;
+    --cp14-muted-dark: #b6c3d6;
+    --cp14-muted-light: #59677d;
+    --cp14-border-dark: rgba(186, 215, 242, 0.18);
+    --cp14-border-light: rgba(31, 51, 79, 0.15);
+    --cp14-accent: #2dd4bf;
+    --cp14-gold: #d7ad58;
+    --cp14-focus: #5eead4;
+    --cp14-radius: 26px;
+    --cp14-touch: 44px;
+    --cp14-safe-top: max(env(safe-area-inset-top, 0px), 0px);
+    --cp14-safe-bottom: max(env(safe-area-inset-bottom, 0px), 0px);
+    --cp14-modal-tabs-height: 4.65rem;
+    --cp14-modal-quickbar-height: calc(72px + var(--cp14-safe-bottom));
+  }
+
+  .App[data-product-release='1.4'] {
+    color: var(--cp14-text-dark);
+    background:
+      radial-gradient(circle at 16% -10%, rgba(45, 212, 191, 0.15), transparent 34rem),
+      radial-gradient(circle at 96% 0%, rgba(215, 173, 88, 0.12), transparent 30rem),
+      linear-gradient(180deg, var(--cp14-bg-dark), #09111f 54%, #070f1a);
+    overflow-x: clip;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body.light-mode .App[data-product-release='1.4'] {
+    color: var(--cp14-text-light);
+    background:
+      radial-gradient(circle at 14% -10%, rgba(15, 118, 110, 0.13), transparent 34rem),
+      radial-gradient(circle at 94% 2%, rgba(215, 173, 88, 0.17), transparent 30rem),
+      linear-gradient(180deg, var(--cp14-bg-light), #f5efe4 58%, #f2eadc);
+  }
+
+  .App[data-product-release='1.4'] :where(button, a, input, select, textarea, [role='button'], [role='tab']) {
+    min-height: var(--cp14-touch);
+    touch-action: manipulation;
+  }
+
+  .App[data-product-release='1.4'] :where(button, a, input, select, textarea, [role='button'], [role='tab']):focus-visible {
+    outline: 3px solid color-mix(in oklab, var(--cp14-focus) 82%, white 18%);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 7px rgba(45, 212, 191, 0.16);
+  }
+
+  .App[data-product-release='1.4'] :where(.section, .service-page-hero, .tool-section, .drug-reference, .surgery-page, .clinical-atlas-section, .favorites-page, .emergency-page, .sitemap-page, .glossary-page, .metaphylaxis-page) {
+    width: min(1180px, calc(100vw - 24px));
+    max-width: calc(100vw - 24px);
+    margin-inline: auto;
+  }
+
+  .App[data-product-release='1.4'] :where(.clinical-card, .disease-card, .service-card, .drug-card, .tool-section, .operation-card, .atlas-card, .model-card, .result-panel, .empty-state, .loading-state, .error-state) {
+    border: 1px solid var(--cp14-border-dark);
+    border-radius: var(--cp14-radius);
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.018)),
+      var(--cp14-surface-dark);
+    box-shadow: 0 18px 52px rgba(0, 0, 0, 0.22);
+  }
+
+  body.light-mode .App[data-product-release='1.4'] :where(.clinical-card, .disease-card, .service-card, .drug-card, .tool-section, .operation-card, .atlas-card, .model-card, .result-panel, .empty-state, .loading-state, .error-state) {
+    border-color: var(--cp14-border-light);
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(255, 249, 237, 0.76)),
+      var(--cp14-surface-light);
+    box-shadow: 0 18px 48px rgba(66, 51, 30, 0.1);
+  }
+
+  .App[data-product-release='1.4'] :where(.calc-tabs, .calculator-category-tabs, .calculator-tool-tabs, .surgery-tabs, .drug-risk-filters, .drug-filters, .sort-controls, .filter-rail, .source-chips, .clinical-rail, .clinical-atlas-rail, .atlas-hotspot-rail, .tabs-nav, [data-scrollable='x']) {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+  }
+
+  .App[data-product-release='1.4'] :where(.calc-tabs, .calculator-category-tabs, .calculator-tool-tabs, .surgery-tabs, .drug-risk-filters, .drug-filters, .sort-controls, .filter-rail, .source-chips, .clinical-rail, .clinical-atlas-rail, .atlas-hotspot-rail, .tabs-nav, [data-scrollable='x'])::-webkit-scrollbar {
+    display: none;
+  }
+
+  .App[data-product-release='1.4'] :where(.calc-tabs > *, .calculator-category-tabs > *, .calculator-tool-tabs > *, .surgery-tabs > *, .drug-risk-filters > *, .drug-filters > *, .sort-controls > *, .filter-rail > *, .source-chips > *, .clinical-rail > *, .clinical-atlas-rail > *, .atlas-hotspot-rail > *, .tabs-nav > *, [data-scrollable='x'] > *) {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .App[data-product-release='1.4'] :where(table, .clinical-table, .responsive-table, .spermogram-table) {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+    overflow: clip;
+  }
+
+  .App[data-product-release='1.4'] :where(.section-title, .service-page-title, .disease-modal-title, h1, h2) {
+    text-wrap: balance;
+    letter-spacing: -0.04em;
+  }
+
+  .App[data-product-release='1.4'] :where(.section-subtitle, .clinical-card p, .disease-modal-content p, .modal-tabpanel p, .tool-section p) {
+    max-width: min(100%, 74ch);
+  }
+
+  @media (max-width: 980px) {
+    html,
+    body,
+    #root,
+    .App[data-product-release='1.4'] {
+      max-width: 100%;
+      overflow-x: clip;
+    }
+
+    .App[data-product-release='1.4'] {
+      padding-bottom: calc(94px + var(--cp14-safe-bottom));
+    }
+
+    .App[data-product-release='1.4'] :where(.section, .service-page-hero, .tool-section, .drug-reference, .surgery-page, .clinical-atlas-section) {
+      width: min(100%, calc(100vw - 20px));
+      max-width: calc(100vw - 20px);
+    }
+
+    .App[data-product-release='1.4'] :where(.service-page-hero, .section-hero, .clinical-dashboard) {
+      min-height: auto;
+      padding-block: clamp(18px, 6vw, 34px);
+    }
+
+    .App[data-product-release='1.4'] :where(.section-title, .service-page-title) {
+      font-size: clamp(2.2rem, 12vw, 4.35rem);
+      line-height: 0.92;
+    }
+
+    .App[data-product-release='1.4'] :where(.disease-card-grid, .cards-grid, .drug-grid, .operation-grid, .atlas-grid, .clinical-grid) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    body.modal-open .App[data-product-release='1.4'] :where(.navbar, .mobile-shell-nav, .bottom-shell-nav, .floating-scroll-top, .scroll-top-button, .app-section-switch, .clinical-os-strip) {
+      visibility: hidden !important;
+      pointer-events: none !important;
+      opacity: 0 !important;
+    }
+
+    body.modal-open .App[data-product-release='1.4'] :where(.modal-overlay, .modal-content, .modal-body, .modal-tabpanel) {
+      max-width: 100vw !important;
+      overflow-x: clip !important;
+    }
+
+    body.modal-open .App[data-product-release='1.4'] .tabs-shell {
+      position: fixed !important;
+      top: var(--cp14-safe-top) !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100vw !important;
+      max-width: 100vw !important;
+      margin: 0 !important;
+      z-index: 2147483600 !important;
+      border-bottom: 1px solid var(--cp14-border-dark);
+      background:
+        linear-gradient(180deg, rgba(7, 16, 28, 0.98), rgba(7, 16, 28, 0.91)),
+        var(--cp14-bg-dark);
+      backdrop-filter: blur(22px) saturate(1.18);
+      -webkit-backdrop-filter: blur(22px) saturate(1.18);
+    }
+
+    body.light-mode.modal-open .App[data-product-release='1.4'] .tabs-shell {
+      border-bottom-color: var(--cp14-border-light);
+      background:
+        linear-gradient(180deg, rgba(251, 247, 239, 0.98), rgba(251, 247, 239, 0.91)),
+        var(--cp14-bg-light);
+    }
+
+    body.modal-open .App[data-product-release='1.4'] .tabs-shell :where(.tabs, .tabs-nav) {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    body.modal-open .App[data-product-release='1.4'] .modal-mobile-quickbar {
+      position: fixed !important;
+      left: max(0.72rem, env(safe-area-inset-left, 0px)) !important;
+      right: max(0.72rem, env(safe-area-inset-right, 0px)) !important;
+      bottom: max(0.62rem, env(safe-area-inset-bottom, 0px)) !important;
+      z-index: 2147483647 !important;
+      min-height: 3.65rem;
+      border: 1px solid color-mix(in oklab, var(--cp14-gold) 42%, var(--cp14-border-dark));
+      border-radius: 24px;
+      background:
+        linear-gradient(180deg, rgba(24, 35, 52, 0.97), rgba(13, 21, 35, 0.99)),
+        var(--cp14-surface-dark);
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
+      transform: translate3d(0, 0, 0) !important;
+    }
+
+    body.light-mode.modal-open .App[data-product-release='1.4'] .modal-mobile-quickbar {
+      border-color: color-mix(in oklab, var(--cp14-gold) 42%, var(--cp14-border-light));
+      background:
+        linear-gradient(180deg, rgba(255, 252, 245, 0.97), rgba(248, 242, 230, 0.99)),
+        var(--cp14-surface-light);
+      box-shadow: 0 18px 42px rgba(72, 55, 30, 0.16);
+    }
+  }
+
+  @media (max-width: 980px) and (orientation: landscape) {
+    :root {
+      --cp14-modal-tabs-height: 3.45rem;
+      --cp14-modal-quickbar-height: calc(52px + var(--cp14-safe-bottom));
+    }
+
+    .App[data-product-release='1.4'] :where(.service-page-hero, .section-hero, .clinical-dashboard) {
+      padding-block: 12px;
+    }
+
+    .App[data-product-release='1.4'] :where(.section-title, .service-page-title) {
+      font-size: clamp(1.8rem, 7vw, 3.1rem);
+      line-height: 0.94;
+    }
+
+    body.modal-open .App[data-product-release='1.4'] .tabs-shell {
+      padding-block: 0.18rem 0.22rem !important;
+    }
+
+    body.modal-open .App[data-product-release='1.4'] .modal-mobile-quickbar {
+      left: auto !important;
+      right: max(0.5rem, env(safe-area-inset-right, 0px)) !important;
+      bottom: max(0.42rem, env(safe-area-inset-bottom, 0px)) !important;
+      width: min(13.2rem, calc(100vw - 1.2rem)) !important;
+      min-height: 3.12rem !important;
+      max-height: 3.12rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .App[data-product-release='1.4'] *,
+    .App[data-product-release='1.4'] *::before,
+    .App[data-product-release='1.4'] *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}

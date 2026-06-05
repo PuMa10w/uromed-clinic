@@ -7,6 +7,7 @@ import '../styles/v22WorkbenchLock.css';
 import '../styles/v23ClinicalWorkbench.css';
 import '../styles/modalStack11.css';
 import '../styles/diseaseModal13Lock.css';
+import '../styles/diseaseModal14Lock.css';
 import { normalizeDisease } from './diseaseModal/normalizeDisease';
 import { getDiseaseModalTabs, DEFAULT_TAB } from './diseaseModal/tabs';
 import DiseaseModalHeader from './diseaseModal/DiseaseModalHeader';

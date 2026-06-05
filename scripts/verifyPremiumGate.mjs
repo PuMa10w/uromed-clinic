@@ -98,6 +98,9 @@ function main() {
   const uromed13Quality = readOptionalJson('content/uromed-1.3-quality-gates.json', {
     status: 'fail',
   });
+  const uromed14Quality = readOptionalJson('content/uromed-1.4-quality-gates.json', {
+    status: 'fail',
+  });
   const strictIphoneVisual = readOptionalJson('content/visual-iphone-strict-gate-v11.json', {
     status: 'fail',
     visual_iphone_strict_gate: {
@@ -114,7 +117,9 @@ function main() {
   const premium11Css = readText('src/styles/clinicalPremium11.css');
   const premium12Css = readText('src/styles/clinicalPremium12.css');
   const premium13Css = readText('src/styles/clinicalPremium13.css');
+  const premium14Css = readText('src/styles/clinicalPremium14.css');
   const modalStack11Css = readText('src/styles/modalStack11.css');
+  const modal14Css = readText('src/styles/diseaseModal14Lock.css');
   const strictVisualScript = readText('scripts/visualIphoneStrictGate.mjs');
   const appCss = readText('src/App.css');
   const diseaseModalContent = readText('src/components/diseaseModal/DiseaseModalContent.js');
@@ -596,8 +601,24 @@ function main() {
     check(uromed13Quality.searchRetrievalGate?.status === 'pass', 'search retrieval gate passes for UroMed 1.3'),
   ]);
 
+  const uromed14PremiumGate = makeGate('uromed_1_4_professional_iphone_gate', [
+    check(uromed14Quality.status === 'pass', 'UroMed 1.4 professional iPhone quality audit passes'),
+    check(packageJson.scripts['quality:uro:1.4'] === 'node scripts/uromed14QualityAudit.mjs', 'UroMed 1.4 quality audit script is registered'),
+    check(packageJson.scripts['verify:premium']?.includes('quality:uro:1.4'), 'UroMed 1.4 audit is part of verify:premium'),
+    check(premium14Css.includes('@layer clinical-premium-14') && premium14Css.includes('--cp14-touch: 44px'), 'Clinical Premium 1.4 layer enforces semantic tokens and 44px touch targets'),
+    check(premium14Css.includes('body.light-mode') && premium14Css.includes('prefers-reduced-motion'), 'Clinical Premium 1.4 supports light/dark and reduced motion'),
+    check(premium14Css.includes('orientation: landscape') && premium14Css.includes('env(safe-area-inset-bottom'), 'Clinical Premium 1.4 covers iPhone landscape and safe area'),
+    check(modal14Css.includes('modal-tabs-fixed-layer') && modal14Css.includes('modal-mobile-quickbar.is-fixed'), 'UroMed 1.4 modal lock owns fixed tabs and quickbar'),
+    check(uromed14Quality.modalStackGate?.status === 'pass', '1.4 modal stack gate passes'),
+    check(uromed14Quality.iphoneGeometryGate?.status === 'pass', '1.4 iPhone geometry gate passes'),
+    check(uromed14Quality.themeGate?.status === 'pass', '1.4 theme gate passes'),
+    check(uromed14Quality.routeVisualGate?.status === 'pass', '1.4 route visual gate passes'),
+    check(uromed14Quality.renderedEncodingGate?.status === 'pass', '1.4 rendered encoding gate passes'),
+    check(uromed14Quality.serviceUxGate?.status === 'pass', '1.4 service UX gate passes'),
+  ]);
+
   const report = {
-    status: [uiGate, contentGate, clinicalGate, deployGate, discoverabilityGate, visualGate, drugGate, sourceFreshnessGate, icdCoverageGate, encodingGate, model3dGate, aiSearchGate, clinicalExpertGate, securityGate, a11yGate, performanceGate, artifactEncodingGate, postDeployGate, workflowGate, privacyGate, keyboardA11yGate, encodingUserFacingGate, iphonePortraitGate, iphoneLandscapeGate, stickyStackGate, v18EncodingGate, v18ModalShellGate, v18ServiceShellGate, v18OncologyCardsGate, v18SmokeGate, v19ClinicalWorkbenchGate, v19Iphone1517Gate, v19DrugNavigationGate, v19AtlasFallbackGate, v19SourceRegistryGate, v19ArtifactEncodingGate, v20ClinicalOsGate, v20IphoneInteractionGate, v20ExpertWorkflowGate, v20DrugCockpitGate, v20SearchAiSafetyGate, v20AtlasPerformanceGate, v20VisualRegressionGate, v20SourceFreshnessGate, v21WorkbenchGate, v21DiseaseExpertGate, v21DrugCockpitGate, v21IcdExpansionGate, v21AtlasHotspotGate, v21AiRetrievalSafetyGate, v21VisualConsistencyGate, v21VisualIphoneGate, v22IphoneOverlapGate, v22ThemeSymmetryGate, v22ModalStackGate, v22SectionEmptyGate, v22DeployFreshnessGate, v23IphoneGeometryGate, v23ThemeContrastGate, v23RouteConsistencyGate, v23ClinicalReadabilityGate, v23ServiceCockpitGate, v23SearchRetrievalGate, v23AtlasInteractionGate, v23DeployFreshnessGate, strictIphoneVisualGate, uromed12PremiumGate, uromed13PremiumGate].every((gate) => gate.status === 'pass') ? 'pass' : 'fail',
+    status: [uiGate, contentGate, clinicalGate, deployGate, discoverabilityGate, visualGate, drugGate, sourceFreshnessGate, icdCoverageGate, encodingGate, model3dGate, aiSearchGate, clinicalExpertGate, securityGate, a11yGate, performanceGate, artifactEncodingGate, postDeployGate, workflowGate, privacyGate, keyboardA11yGate, encodingUserFacingGate, iphonePortraitGate, iphoneLandscapeGate, stickyStackGate, v18EncodingGate, v18ModalShellGate, v18ServiceShellGate, v18OncologyCardsGate, v18SmokeGate, v19ClinicalWorkbenchGate, v19Iphone1517Gate, v19DrugNavigationGate, v19AtlasFallbackGate, v19SourceRegistryGate, v19ArtifactEncodingGate, v20ClinicalOsGate, v20IphoneInteractionGate, v20ExpertWorkflowGate, v20DrugCockpitGate, v20SearchAiSafetyGate, v20AtlasPerformanceGate, v20VisualRegressionGate, v20SourceFreshnessGate, v21WorkbenchGate, v21DiseaseExpertGate, v21DrugCockpitGate, v21IcdExpansionGate, v21AtlasHotspotGate, v21AiRetrievalSafetyGate, v21VisualConsistencyGate, v21VisualIphoneGate, v22IphoneOverlapGate, v22ThemeSymmetryGate, v22ModalStackGate, v22SectionEmptyGate, v22DeployFreshnessGate, v23IphoneGeometryGate, v23ThemeContrastGate, v23RouteConsistencyGate, v23ClinicalReadabilityGate, v23ServiceCockpitGate, v23SearchRetrievalGate, v23AtlasInteractionGate, v23DeployFreshnessGate, strictIphoneVisualGate, uromed12PremiumGate, uromed13PremiumGate, uromed14PremiumGate].every((gate) => gate.status === 'pass') ? 'pass' : 'fail',
     updated_at: 'runtime',
     ui_gate: uiGate,
     content_gate: contentGate,
@@ -672,6 +693,8 @@ function main() {
     premium_1_2_gate: uromed12PremiumGate,
     uromed_1_3_knowledge_atlas_gate: uromed13PremiumGate,
     premium_1_3_gate: uromed13PremiumGate,
+    uromed_1_4_professional_iphone_gate: uromed14PremiumGate,
+    premium_1_4_gate: uromed14PremiumGate,
     knowledge_atlas_gate: uromed13Quality.knowledgeGate || uromed13PremiumGate,
     knowledgeGate: uromed13Quality.knowledgeGate || uromed13PremiumGate,
     icdExpansionGate: uromed13Quality.icdExpansionGate || uromed13PremiumGate,
@@ -681,6 +704,12 @@ function main() {
     drugCockpitGate: uromed13Quality.drugCockpitGate || uromed13PremiumGate,
     searchRetrievalGate: uromed13Quality.searchRetrievalGate || uromed13PremiumGate,
     deployFreshnessGate: uromed13Quality.deployFreshnessGate || uromed13PremiumGate,
+    modalStackGate14: uromed14Quality.modalStackGate || uromed14PremiumGate,
+    iphoneGeometryGate14: uromed14Quality.iphoneGeometryGate || uromed14PremiumGate,
+    themeGate14: uromed14Quality.themeGate || uromed14PremiumGate,
+    routeVisualGate14: uromed14Quality.routeVisualGate || uromed14PremiumGate,
+    renderedEncodingGate14: uromed14Quality.renderedEncodingGate || uromed14PremiumGate,
+    serviceUxGate14: uromed14Quality.serviceUxGate || uromed14PremiumGate,
     visual_iphone_strict_gate: strictIphoneVisualGate,
   };
 

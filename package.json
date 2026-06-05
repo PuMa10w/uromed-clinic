@@ -49,9 +49,10 @@
     "quality:uro:1.2": "node scripts/uromed12QualityAudit.mjs",
     "knowledge:atlas": "node scripts/uromed13KnowledgeAudit.mjs",
     "quality:uro:1.3": "npm run knowledge:atlas",
+    "quality:uro:1.4": "node scripts/uromed14QualityAudit.mjs",
     "clinical:governance": "node scripts/clinicalGovernanceAudit.mjs",
     "premium:gate": "node scripts/verifyPremiumGate.mjs",
-    "verify:premium": "npm run build && npm test -- --watchAll=false && npx playwright test tests/mobile-overflow.spec.mjs --reporter=line && npm run content:quality && npm run content:audit && npm run icd:coverage && npm run drug:500 && npm run encoding:audit && npm run v16:quality && npm run v17:quality && npm run v18:quality && npm run v19:quality && npm run v20:quality && npm run v21:visual && npm run v21:quality && npm run v22:visual && npm run v22:quality && npm run v23:visual && npm run v23:quality && npm run visual:iphone:strict && npm run quality:uro:1.2 && npm run quality:uro:1.3 && npm run clinical:governance && npm run premium:gate",
+    "verify:premium": "npm run build && npm test -- --watchAll=false && npx playwright test tests/mobile-overflow.spec.mjs --reporter=line && npm run content:quality && npm run content:audit && npm run icd:coverage && npm run drug:500 && npm run encoding:audit && npm run v16:quality && npm run v17:quality && npm run v18:quality && npm run v19:quality && npm run v20:quality && npm run v21:visual && npm run v21:quality && npm run v22:visual && npm run v22:quality && npm run v23:visual && npm run v23:quality && npm run visual:iphone:strict && npm run quality:uro:1.2 && npm run quality:uro:1.3 && npm run quality:uro:1.4 && npm run clinical:governance && npm run premium:gate",
     "analyze": "npm run build && npx source-map-explorer build/assets/*.js"
   },
   "eslintConfig": {

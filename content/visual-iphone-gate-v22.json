@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "updated_at": "2026-06-04T12:14:42.524Z",
+  "updated_at": "2026-06-05T08:04:33.145Z",
   "visual_iPhone_gate_v22": {
     "name": "visual_iPhone_gate_v22",
     "status": "pass",
@@ -11477,7 +11477,7 @@
       "status": "pass",
       "tokens": {
         "bodyBg": "rgba(0, 0, 0, 0)",
-        "bodyColor": "rgb(58, 68, 82)",
+        "bodyColor": "rgb(89, 98, 111)",
         "mainBg": "rgba(0, 0, 0, 0)",
         "mainColor": "rgb(24, 34, 49)"
       }
@@ -11499,7 +11499,7 @@
       "status": "pass",
       "tokens": {
         "bodyBg": "rgba(0, 0, 0, 0)",
-        "bodyColor": "rgb(114, 123, 136)",
+        "bodyColor": "rgb(238, 246, 255)",
         "mainBg": "rgba(0, 0, 0, 0)",
         "mainColor": "rgb(24, 34, 49)"
       }
@@ -11543,7 +11543,7 @@
       "status": "pass",
       "tokens": {
         "bodyBg": "rgba(0, 0, 0, 0)",
-        "bodyColor": "rgb(89, 98, 111)",
+        "bodyColor": "rgb(43, 53, 67)",
         "mainBg": "rgba(0, 0, 0, 0)",
         "mainColor": "rgb(24, 34, 49)"
       }
