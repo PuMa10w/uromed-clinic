@@ -74,7 +74,8 @@ const defaultProps = {
 };
 
 const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate = () => {}, onClose, onNavigateToDisease }) => {
-  console.log('DiseaseModal render:', { id: disease?.id, name: disease?.name, hasDisease: !!disease });
+  console.log('DiseaseModal render:', { id: disease?.id, name: disease?.name });
+  // BUILD_HASH: d914ec5-force-new-bundle
   const normalizedDisease = normalizeDisease(disease);
   const [activeTab, setActiveTab] = useState(DEFAULT_TAB);
   const [isMobile, setIsMobile] = useState(false);
