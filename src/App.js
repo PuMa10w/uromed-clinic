@@ -12,6 +12,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SeoHelmet from './components/SeoHelmet';
 import SectionRenderer from './components/SectionRenderer';
+import DiseaseModal from './components/DiseaseModal';
+import { allDiseases } from './data';
 import DebugPanel from './components/DebugPanel';
 import ClinicalOperatingSystem from './components/ClinicalOperatingSystem';
 import { sectionNames, subsectionLabels } from './data/navigationMeta';
@@ -280,6 +282,14 @@ function App() {
             />
           </div>
           <Footer onNavigate={handleNavigate} activeSection={activeSection} />
+          {selectedDisease && (
+            <DiseaseModal
+              disease={selectedDisease}
+              allDiseases={allDiseases}
+              onNavigate={handleNavigate}
+              onClose={closeDisease}
+            />
+          )}
           {showDebugPanel && (
             <DebugPanel
               showPerformance
