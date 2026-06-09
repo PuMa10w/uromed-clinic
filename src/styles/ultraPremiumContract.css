@@ -309,7 +309,7 @@ textarea:focus-visible {
 
     .mobile-shell-nav {
       box-sizing: border-box;
-      max-width: min(38rem, calc(100vw - max(1.36rem, var(--sal) + var(--sar)));
+      max-width: min(38rem, calc(100vw - max(1.36rem, var(--sal) + var(--sar))));
       margin-inline: auto;
       backdrop-filter: blur(22px) saturate(1.35);
     }

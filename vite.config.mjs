@@ -21,11 +21,12 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       react({
+        jsxImportSource: 'react',
         babel: {
           presets: ['@babel/preset-react'],
         },
       }),
-    ],
+  ],
     define: {
       'process.env': JSON.stringify(compatibleEnv),
     },

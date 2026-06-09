@@ -74,6 +74,7 @@ const defaultProps = {
 };
 
 const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate = () => {}, onClose, onNavigateToDisease }) => {
+  console.log('DiseaseModal render:', { id: disease?.id, name: disease?.name, hasDisease: !!disease });
   const normalizedDisease = normalizeDisease(disease);
   const [activeTab, setActiveTab] = useState(DEFAULT_TAB);
   const [isMobile, setIsMobile] = useState(false);
@@ -345,26 +346,50 @@ const DiseaseModal = ({ disease, allDiseases = [], currentIndex = 0, onNavigate 
   };
 
   const modalNode = (
-    <div
-      ref={overlayRef}
-      className="modal-overlay"
-      onClick={onClose}
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-title"
-    >
       <div
-        ref={modalRef}
-        className="modal-content"
-        style={isMobile && dragOffset > 0 ? { transform: `translateY(${dragOffset}px)` } : undefined}
-        onClick={(e) => e.stopPropagation()}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
+        ref={overlayRef}
+        className="modal-overlay"
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: 'var(--z-modal, 2147482000)',
+          width: '100vw',
+          height: '100dvh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          backdropFilter: 'blur(20px)',
+        }}
+        onClick={onClose}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
       >
-        <div className="modal-reading-progress" style={{ width: `${readingProgress}%` }} />
-
-        <DiseaseModalHeader
+        <div
+          ref={modalRef}
+          className="modal-content"
+          style={{
+            position: 'relative',
+            zIndex: 'var(--z-modal-content, 2147482100)',
+            maxWidth: 'min(56rem, calc(100vw - 2rem))',
+            maxHeight: 'calc(100dvh - 4rem)',
+            width: '100%',
+            maxHeight: '90vh',
+            overflow: 'auto',
+            backgroundColor: 'var(--surface-overlay)',
+            borderRadius: 'var(--radius-xl)',
+            boxShadow: 'var(--shadow-premium)',
+            margin: '2rem',
+            transform: isMobile && dragOffset > 0 ? `translateY(${dragOffset}px)` : undefined,
+          }}
+          onClick={(e) => e.stopPropagation()}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
+                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'var(--gradient-teal)', width: `${readingProgress}%` }} />
+                  <DiseaseModalHeader
           disease={normalizedDisease}
           isMobile={isMobile}
           allDiseases={allDiseases}
