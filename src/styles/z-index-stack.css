@@ -1,0 +1,70 @@
+/* UroMed Z-Index Layer Stack
+ * Consolidated and conflict-free
+ * Based on Material Design layers
+ */
+
+:root {
+  /* Base layers */
+  --z-negative: -1;
+  --z-default: 1;
+  --z-sticky: 100;
+  --z-fixed: 200;
+  --z-dropdown: 300;
+  --z-sticky-header: 400;
+  --z-overlay: 500;
+  --z-modal: 600;
+  --z-modal-header: 650;
+  --z-modal-quickbar: 675;
+  --z-popover: 700;
+  --z-tooltip: 800;
+  --z-toast: 900;
+  --z-notification: 1000;
+}
+
+/* Modal overlay - covers everything */
+.modal-overlay {
+  z-index: var(--z-modal) !important;
+}
+
+/* Modal header - visible over overlay */
+.modal-header {
+  z-index: calc(var(--z-modal) + 50) !important;
+}
+
+/* Tabs shell - above header */
+.tabs-shell {
+  z-index: calc(var(--z-modal) + 75) !important;
+}
+
+/* Quickbar - highest modal element */
+.modal-mobile-quickbar {
+  z-index: calc(var(--z-modal) + 100) !important;
+}
+
+/* Fixed navbar */
+.navbar {
+  z-index: var(--z-sticky-header) !important;
+}
+
+/* Mobile shell nav */
+.mobile-shell-nav {
+  z-index: var(--z-fixed) !important;
+}
+
+/* Toast notifications */
+.toast-container {
+  z-index: var(--z-toast) !important;
+}
+
+/* Tooltips */
+.tooltip {
+  z-index: var(--z-tooltip) !important;
+}
+
+/* Ensure proper stacking contexts */
+.modal-overlay,
+.modal-content,
+.tabs-shell,
+.modal-mobile-quickbar {
+  isolation: isolate;
+}

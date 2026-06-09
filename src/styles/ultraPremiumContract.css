@@ -289,32 +289,32 @@ textarea:focus-visible {
 
   .modal-overlay > .modal-mobile-quickbar.is-fixed,
   .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    left: max(0.72rem, var(--sal)) !important;
-    right: max(0.72rem, var(--sar)) !important;
-    width: auto !important;
+    position: fixed  !important;
+    left: max(0.72rem, var(--sal))  !important;
+    right: max(0.72rem, var(--sar))  !important;
+    width: auto  !important;
     max-width: min(38rem, calc(100vw - max(1.44rem, var(--sal) + var(--sar)))) !important;
-    margin-inline: auto !important;
-    transform: translateZ(0) !important;
+    margin-inline: auto  !important;
+    transform: translateZ(0)  !important;
   }
 
   body.modal-open .mobile-shell-nav,
   body.modal-open .bottom-nav {
-    display: none !important;
+    display: none  !important;
   }
 
   body.modal-open .navbar {
-    pointer-events: none;
-  }
+      pointer-events: none;
+    }
 
-  .mobile-shell-nav {
-    box-sizing: border-box;
-    max-width: min(38rem, calc(100vw - max(1.36rem, var(--sal) + var(--sar))));
-    margin-inline: auto;
-    backdrop-filter: blur(22px) saturate(1.35);
-  }
+    .mobile-shell-nav {
+      box-sizing: border-box;
+      max-width: min(38rem, calc(100vw - max(1.36rem, var(--sal) + var(--sar)));
+      margin-inline: auto;
+      backdrop-filter: blur(22px) saturate(1.35);
+    }
 
-  .service-page-shell table,
+    .service-page-shell table,
   .service-page-shell thead,
   .service-page-shell tbody,
   .service-page-shell tr,
@@ -360,11 +360,11 @@ textarea:focus-visible {
 @media (max-width: 700px) {
   .page-content {
     isolation: isolate;
-    padding-top: calc(var(--sat) + 7.7rem) !important;
+    padding-top: calc(var(--sat) + 7.7rem)  !important;
   }
 
   .page-content:has(.home-shell) {
-    padding-top: calc(var(--sat) + 8.15rem) !important;
+    padding-top: calc(var(--sat) + 8.15rem)  !important;
   }
 
   .page-content,
@@ -587,57 +587,57 @@ textarea:focus-visible {
 /* v17.1 iPhone landscape contract: compact shell, no first-screen overlap. */
 @media (max-width: 940px) and (orientation: landscape) {
   .navbar {
-    grid-template-columns: auto minmax(13rem, 1fr) auto !important;
-    grid-template-rows: minmax(44px, auto) !important;
-    align-items: center !important;
-    gap: 0.42rem !important;
-    padding: 0.42rem !important;
-    border-radius: 1.08rem !important;
+    grid-template-columns: auto minmax(13rem, 1fr) auto  !important;
+    grid-template-rows: minmax(44px, auto)  !important;
+    align-items: center  !important;
+    gap: 0.42rem  !important;
+    padding: 0.42rem  !important;
+    border-radius: 1.08rem  !important;
   }
 
   .navbar-left {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
+    grid-column: 1  !important;
+    grid-row: 1  !important;
   }
 
   .navbar-primary-switch {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-    min-height: 44px !important;
-    padding: 0.16rem !important;
+    grid-column: 2  !important;
+    grid-row: 1  !important;
+    min-height: 44px  !important;
+    padding: 0.16rem  !important;
   }
 
   .navbar-right {
-    grid-column: 3 !important;
-    grid-row: 1 !important;
+    grid-column: 3  !important;
+    grid-row: 1  !important;
   }
 
   .navbar-brand-lockup {
-    max-width: 7rem !important;
+    max-width: 7rem  !important;
   }
 
   .navbar-brand-uro,
   .navbar-brand-accent {
-    font-size: 1.02rem !important;
+    font-size: 1.02rem  !important;
   }
 
   .search-toggle,
   .theme-toggle,
   .hamburger-btn {
-    width: 44px !important;
-    height: 44px !important;
-    flex-basis: 44px !important;
+    width: 44px  !important;
+    height: 44px  !important;
+    flex-basis: 44px  !important;
   }
 
   .navbar-section-btn {
-    min-height: 40px !important;
-    padding: 0.48rem 0.58rem !important;
+    min-height: 40px  !important;
+    padding: 0.48rem 0.58rem  !important;
   }
 
   .page-content,
   .page-content:has(.home-shell) {
-    padding-top: calc(var(--sat) + 4.82rem) !important;
-    padding-bottom: calc(var(--sab) + 5.8rem) !important;
+    padding-top: calc(var(--sat) + 4.82rem)  !important;
+    padding-bottom: calc(var(--sab) + 5.8rem)  !important;
   }
 
   .service-page-hero,
@@ -649,34 +649,34 @@ textarea:focus-visible {
   .tool-section,
   .calculator-card,
   .drug-card {
-    border-radius: 1.05rem !important;
+    border-radius: 1.05rem  !important;
   }
 
   .section-title,
   .service-page-hero h1,
   .drug-reference-hero h1,
   .subsection-selector > .section-title {
-    max-width: min(100%, 18ch) !important;
-    font-size: clamp(1.82rem, 5.2vw, 2.65rem) !important;
-    line-height: 0.98 !important;
+    max-width: min(100%, 18ch)  !important;
+    font-size: clamp(1.82rem, 5.2vw, 2.65rem)  !important;
+    line-height: 0.98  !important;
   }
 
   .section-subtitle,
   .service-page-hero p,
   .drug-reference-hero p,
   .subsection-selector > .section-subtitle {
-    max-width: min(100%, 46rem) !important;
-    font-size: 0.92rem !important;
-    line-height: 1.42 !important;
+    max-width: min(100%, 46rem)  !important;
+    font-size: 0.92rem  !important;
+    line-height: 1.42  !important;
   }
 
   .service-page-hero,
   .drug-reference-hero,
   .premium-tools-hero {
-    padding: 0.82rem 0.95rem !important;
+    padding: 0.82rem 0.95rem  !important;
   }
 
   .mobile-shell-nav {
-    max-width: min(34rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
+    max-width: min(34rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar))))  !important;
   }
 }

@@ -1,0 +1,179 @@
+/* UroMed Premium Design System v1.0
+ * Inspired by: Linear, Stripe, Apple, Notion
+ * Medical-grade interface with clinical precision
+ */
+
+:root {
+  /* Premium spacing scale (8pt grid, fluid) */
+  --space-3xs: clamp(2px, 0.25vw, 4px);
+  --space-2xs: clamp(4px, 0.5vw, 6px);
+  --space-xs: clamp(6px, 0.75vw, 8px);
+  --space-sm: clamp(8px, 1vw, 12px);
+  --space-md: clamp(12px, 1.5vw, 16px);
+  --space-lg: clamp(16px, 2vw, 24px);
+  --space-xl: clamp(24px, 3vw, 32px);
+  --space-2xl: clamp(32px, 4vw, 48px);
+  --space-3xl: clamp(48px, 6vw, 64px);
+
+  /* Premium radius scale */
+  --radius-sm: clamp(6px, 1vw, 8px);
+  --radius-md: clamp(8px, 1.2vw, 12px);
+  --radius-lg: clamp(12px, 1.5vw, 16px);
+  --radius-xl: clamp(16px, 2vw, 24px);
+  --radius-full: 9999px;
+
+  /* Premium shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 24px 80px rgba(0, 0, 0, 0.16);
+  --shadow-premium: 
+    0 16px 60px -12px rgba(0, 0, 0, 0.22),
+    0 4px 24px -4px rgba(0, 0, 0, 0.14);
+
+  /* Premium transitions */
+  --ease-in-out: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.28, -0.01, 0.22, 1);
+  --duration-fast: 120ms;
+  --duration-base: 240ms;
+  --duration-slow: 400ms;
+}
+
+/* ==================== DARK THEME ==================== */
+[data-theme="dark"] {
+  --surface-primary: #0a0e14;
+  --surface-secondary: #121822;
+  --surface-tertiary: #1a212d;
+  --surface-elevated: rgba(26, 33, 45, 0.72);
+  --surface-overlay: rgba(18, 24, 34, 0.96);
+
+  --text-primary: #f0f7ff;
+  --text-secondary: #a8b5c5;
+  --text-tertiary: #7a8999;
+  --text-disabled: #525e6b;
+
+  --border-primary: rgba(148, 163, 184, 0.12);
+  --border-secondary: rgba(148, 163, 184, 0.08);
+  --border-focus: rgba(94, 234, 212, 0.4);
+
+  --brand-primary: #2dd4bf;
+  --brand-secondary: #7871f9;
+  --brand-accent: #f4d47f;
+
+  --status-success: #4ade80;
+  --status-warning: #fbbf24;
+  --status-danger: #fb7185;
+  --status-info: #60a5fa;
+
+  /* Medical semantic colors */
+  --medical-low: #86efac;
+  --medical-moderate: #fde047;
+  --medical-high: #fb923c;
+  --medical-severe: #f87171;
+}
+
+/* ==================== LIGHT THEME ==================== */
+[data-theme="light"] {
+  --surface-primary: #fdfcff;
+  --surface-secondary: #f8faff;
+  --surface-tertiary: #f2f5fa;
+  --surface-elevated: rgba(248, 250, 255, 0.72);
+  --surface-overlay: rgba(253, 252, 255, 0.96);
+
+  --text-primary: #182231;
+  --text-secondary: #4a586a;
+  --text-tertiary: #7a8999;
+  --text-disabled: #9aa4b2;
+
+  --border-primary: rgba(30, 41, 59, 0.12);
+  --border-secondary: rgba(30, 41, 59, 0.06);
+  --border-focus: rgba(45, 166, 155, 0.4);
+
+  --brand-primary: #087f7b;
+  --brand-secondary: #6366f1;
+  --brand-accent: #9a6a08;
+
+  --status-success: #16a34a;
+  --status-warning: #ca8a04;
+  --status-danger: #dc2626;
+  --status-info: #2563eb;
+
+  /* Medical semantic colors */
+  --medical-low: #16a34a;
+  --medical-moderate: #ca8a04;
+  --medical-high: #ea580c;
+  --medical-severe: #dc2626;
+}
+
+/* Default dark theme */
+:root {
+  --surface-primary: #0a0e14;
+  --surface-secondary: #121822;
+  --surface-tertiary: #1a212d;
+  --surface-elevated: rgba(26, 33, 45, 0.72);
+  --surface-overlay: rgba(18, 24, 34, 0.96);
+
+  --text-primary: #f0f7ff;
+  --text-secondary: #a8b5c5;
+  --text-tertiary: #7a8999;
+  --text-disabled: #525e6b;
+
+  --border-primary: rgba(148, 163, 184, 0.12);
+  --border-secondary: rgba(148, 163, 184, 0.08);
+  --border-focus: rgba(94, 234, 212, 0.4);
+
+  --brand-primary: #2dd4bf;
+  --brand-secondary: #7871f9;
+  --brand-accent: #f4d47f;
+
+  --status-success: #4ade80;
+  --status-warning: #fbbf24;
+  --status-danger: #fb7185;
+  --status-info: #60a5fa;
+
+  --medical-low: #86efac;
+  --medical-moderate: #fde047;
+  --medical-high: #fb923c;
+  --medical-severe: #f87171;
+}
+
+/* ==================== TYPOGRAPHY ==================== */
+:root {
+  --font-system: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Inter, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+
+  /* Fluid scale: 1.25 ratio */
+  --text-xs: clamp(0.75rem, 0.875vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 1vw, 1rem);
+  --text-base: clamp(1rem, 1.125vw, 1.125rem);
+  --text-md: clamp(1.125rem, 1.25vw, 1.25rem);
+  --text-lg: clamp(1.25rem, 1.5vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 2vw, 2rem);
+  --text-2xl: clamp(2rem, 2.5vw, 2.5rem);
+  --text-3xl: clamp(2.5rem, 3vw, 3.5rem);
+  --text-4xl: clamp(3rem, 4vw, 4.5rem);
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-relaxed: 1.5;
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.025em;
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0.001ms;
+    --duration-base: 0.001ms;
+    --duration-slow: 0.001ms;
+  }
+}
+
+/* Focus ring for all interactive */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--brand-primary) !important;
+  border-radius: var(--radius-sm);
+}

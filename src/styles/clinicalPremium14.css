@@ -146,25 +146,25 @@
     }
 
     body.modal-open .App[data-product-release='1.4'] :where(.navbar, .mobile-shell-nav, .bottom-shell-nav, .floating-scroll-top, .scroll-top-button, .app-section-switch, .clinical-os-strip) {
-      visibility: hidden !important;
-      pointer-events: none !important;
-      opacity: 0 !important;
+      visibility: hidden  !important;
+      pointer-events: none  !important;
+      opacity: 0  !important;
     }
 
     body.modal-open .App[data-product-release='1.4'] :where(.modal-overlay, .modal-content, .modal-body, .modal-tabpanel) {
-      max-width: 100vw !important;
-      overflow-x: clip !important;
+      max-width: 100vw  !important;
+      overflow-x: clip  !important;
     }
 
     body.modal-open .App[data-product-release='1.4'] .tabs-shell {
-      position: fixed !important;
-      top: var(--cp14-safe-top) !important;
-      left: 0 !important;
-      right: 0 !important;
-      width: 100vw !important;
-      max-width: 100vw !important;
-      margin: 0 !important;
-      z-index: 2147483600 !important;
+      position: fixed  !important;
+      top: var(--cp14-safe-top)  !important;
+      left: 0  !important;
+      right: 0  !important;
+      width: 100vw  !important;
+      max-width: 100vw  !important;
+      margin: 0  !important;
+      z-index: 2147483600  !important;
       border-bottom: 1px solid var(--cp14-border-dark);
       background:
         linear-gradient(180deg, rgba(7, 16, 28, 0.98), rgba(7, 16, 28, 0.91)),
@@ -190,11 +190,11 @@
     }
 
     body.modal-open .App[data-product-release='1.4'] .modal-mobile-quickbar {
-      position: fixed !important;
-      left: max(0.72rem, env(safe-area-inset-left, 0px)) !important;
-      right: max(0.72rem, env(safe-area-inset-right, 0px)) !important;
-      bottom: max(0.62rem, env(safe-area-inset-bottom, 0px)) !important;
-      z-index: 2147483647 !important;
+      position: fixed  !important;
+      left: max(0.72rem, env(safe-area-inset-left, 0px))  !important;
+      right: max(0.72rem, env(safe-area-inset-right, 0px))  !important;
+      bottom: max(0.62rem, env(safe-area-inset-bottom, 0px))  !important;
+      z-index: 2147483647  !important;
       min-height: 3.65rem;
       border: 1px solid color-mix(in oklab, var(--cp14-gold) 42%, var(--cp14-border-dark));
       border-radius: 24px;
@@ -202,7 +202,7 @@
         linear-gradient(180deg, rgba(24, 35, 52, 0.97), rgba(13, 21, 35, 0.99)),
         var(--cp14-surface-dark);
       box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
-      transform: translate3d(0, 0, 0) !important;
+      transform: translate3d(0, 0, 0)  !important;
     }
 
     body.light-mode.modal-open .App[data-product-release='1.4'] .modal-mobile-quickbar {
@@ -230,16 +230,16 @@
     }
 
     body.modal-open .App[data-product-release='1.4'] .tabs-shell {
-      padding-block: 0.18rem 0.22rem !important;
+      padding-block: 0.18rem 0.22rem  !important;
     }
 
     body.modal-open .App[data-product-release='1.4'] .modal-mobile-quickbar {
-      left: auto !important;
-      right: max(0.5rem, env(safe-area-inset-right, 0px)) !important;
-      bottom: max(0.42rem, env(safe-area-inset-bottom, 0px)) !important;
-      width: min(13.2rem, calc(100vw - 1.2rem)) !important;
-      min-height: 3.12rem !important;
-      max-height: 3.12rem !important;
+      left: auto  !important;
+      right: max(0.5rem, env(safe-area-inset-right, 0px))  !important;
+      bottom: max(0.42rem, env(safe-area-inset-bottom, 0px))  !important;
+      width: min(13.2rem, calc(100vw - 1.2rem))  !important;
+      min-height: 3.12rem  !important;
+      max-height: 3.12rem  !important;
     }
   }
 
@@ -247,10 +247,10 @@
     .App[data-product-release='1.4'] *,
     .App[data-product-release='1.4'] *::before,
     .App[data-product-release='1.4'] *::after {
-      animation-duration: 0.001ms !important;
-      animation-iteration-count: 1 !important;
-      scroll-behavior: auto !important;
-      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms  !important;
+      animation-iteration-count: 1  !important;
+      scroll-behavior: auto  !important;
+      transition-duration: 0.001ms  !important;
     }
   }
 }

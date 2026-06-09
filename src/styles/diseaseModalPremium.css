@@ -7,40 +7,40 @@
 /* v18 final cascade lock: keeps iPhone disease cards independent from page chrome. */
 @media (max-width: 940px) {
   body.modal-open .modal-body {
-    padding-top: 3.72rem !important;
+    padding-top: 3.72rem  !important;
   }
 
   body.modal-open .modal-overlay {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    height: 100dvh !important;
-    max-width: 100vw !important;
-    overflow: hidden !important;
-    z-index: 2147482000 !important;
-    transform: none !important;
-    contain: none !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    height: 100dvh  !important;
+    max-width: 100vw  !important;
+    overflow: hidden  !important;
+    z-index: 2147482000  !important;
+    transform: none  !important;
+    contain: none  !important;
   }
 
   body.modal-open .modal-content {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    height: 100dvh !important;
-    max-width: 100vw !important;
-    max-height: none !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    transform: none !important;
-    translate: none !important;
-    contain: none !important;
-    overflow-x: clip !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    -webkit-overflow-scrolling: touch !important;
-    scroll-padding-top: calc(var(--modal-header-offset, calc(var(--sat) + 6.25rem)) + 4.3rem) !important;
-    scroll-padding-bottom: calc(var(--sab) + 8.9rem) !important;
-    padding-bottom: calc(var(--sab) + 8.9rem) !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    height: 100dvh  !important;
+    max-width: 100vw  !important;
+    max-height: none  !important;
+    margin: 0  !important;
+    border-radius: 0  !important;
+    transform: none  !important;
+    translate: none  !important;
+    contain: none  !important;
+    overflow-x: clip  !important;
+    overflow-y: auto  !important;
+    overscroll-behavior: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    scroll-padding-top: calc(var(--modal-header-offset, calc(var(--sat) + 6.25rem)) + 4.3rem)  !important;
+    scroll-padding-bottom: calc(var(--sab) + 8.9rem)  !important;
+    padding-bottom: calc(var(--sab) + 8.9rem)  !important;
   }
 
   body.modal-open .navbar,
@@ -48,136 +48,136 @@
   body.modal-open .mobile-shell-nav,
   body.modal-open .bottom-nav,
   body.modal-open .scroll-top-btn {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .tabs-shell {
-    position: fixed !important;
+    position: fixed  !important;
     top: var(--modal-header-offset, calc(var(--sat) + 6.25rem)) !important;
-    z-index: 54 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin-inline: calc(50% - 50vw) !important;
-    padding: 0.42rem 0 !important;
+    z-index: 54  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    margin-inline: calc(50% - 50vw)  !important;
+    padding: 0.42rem 0  !important;
     background:
       linear-gradient(180deg, rgba(5, 11, 21, 0.99), rgba(7, 15, 27, 0.965)),
-      rgba(7, 15, 27, 0.98) !important;
-    border-block: 1px solid rgba(148, 163, 184, 0.13) !important;
-    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.38) !important;
-    backdrop-filter: blur(20px) saturate(1.22) !important;
-    -webkit-backdrop-filter: blur(20px) saturate(1.22) !important;
+      rgba(7, 15, 27, 0.98)  !important;
+    border-block: 1px solid rgba(148, 163, 184, 0.13)  !important;
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.38)  !important;
+    backdrop-filter: blur(20px) saturate(1.22)  !important;
+    -webkit-backdrop-filter: blur(20px) saturate(1.22)  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    gap: 0.42rem !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-    padding: 0.06rem max(3.7rem, var(--sar)) 0.1rem max(0.86rem, var(--sal)) !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    overscroll-behavior-x: contain !important;
-    touch-action: pan-x !important;
-    scrollbar-width: none !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    justify-content: flex-start  !important;
+    gap: 0.42rem  !important;
+    width: 100%  !important;
+    min-width: 100%  !important;
+    max-width: 100%  !important;
+    padding: 0.06rem max(3.7rem, var(--sar)) 0.1rem max(0.86rem, var(--sal))  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    overscroll-behavior-x: contain  !important;
+    touch-action: pan-x  !important;
+    scrollbar-width: none  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    max-width: min(72vw, 11.4rem) !important;
-    min-height: 44px !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    max-width: min(72vw, 11.4rem)  !important;
+    min-height: 44px  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 9rem) !important;
+    padding-bottom: calc(var(--sab) + 9rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    inset-block-start: auto !important;
-    inset-inline-start: max(0.78rem, var(--sal)) !important;
-    inset-inline-end: max(0.78rem, var(--sar)) !important;
+    position: fixed  !important;
+    inset-block-start: auto  !important;
+    inset-inline-start: max(0.78rem, var(--sal))  !important;
+    inset-inline-end: max(0.78rem, var(--sar))  !important;
     inset-block-end: max(0.72rem, calc(var(--sab) + 0.72rem)) !important;
-    z-index: 2147483000 !important;
-    width: auto !important;
+    z-index: 2147483000  !important;
+    width: auto  !important;
     max-width: min(24.75rem, calc(100vw - max(1.56rem, var(--sal) + var(--sar)))) !important;
-    min-height: 4.18rem !important;
-    max-height: 4.18rem !important;
-    margin-inline: auto !important;
-    translate: none !important;
-    transform: translate3d(0, 0, 0) !important;
+    min-height: 4.18rem  !important;
+    max-height: 4.18rem  !important;
+    margin-inline: auto  !important;
+    translate: none  !important;
+    transform: translate3d(0, 0, 0)  !important;
   }
 }
 
 /* v18.1 EOF lock: keep disease tabs at the viewport top after scroll. */
 @media (max-width: 940px) {
   body.modal-open .tabs-shell {
-    position: sticky !important;
-    top: env(safe-area-inset-top, 0px) !important;
-    z-index: 2147482500 !important;
+    position: sticky  !important;
+    top: env(safe-area-inset-top, 0px)  !important;
+    z-index: 2147482500  !important;
   }
 
   body.modal-open .modal-content {
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.82rem) !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.82rem)  !important;
   }
 }
 
 @media (max-width: 940px) and (orientation: landscape) {
   body.modal-open .tabs-shell {
-    top: env(safe-area-inset-top, 0px) !important;
+    top: env(safe-area-inset-top, 0px)  !important;
   }
 
   body.modal-open .modal-content {
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.24rem) !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.24rem)  !important;
   }
 }
 
 @media (max-width: 940px) and (orientation: landscape) {
   body.modal-open .modal-body {
-    padding-top: 3.18rem !important;
+    padding-top: 3.18rem  !important;
   }
 
   body.modal-open .modal-content {
-    scroll-padding-top: calc(var(--sat) + 7.1rem) !important;
-    scroll-padding-bottom: calc(var(--sab) + 6.7rem) !important;
-    padding-bottom: calc(var(--sab) + 6.7rem) !important;
+    scroll-padding-top: calc(var(--sat) + 7.1rem)  !important;
+    scroll-padding-bottom: calc(var(--sab) + 6.7rem)  !important;
+    padding-bottom: calc(var(--sab) + 6.7rem)  !important;
   }
 
   body.modal-open .tabs-shell {
     top: var(--modal-header-offset, calc(var(--sat) + 4.68rem)) !important;
-    padding-block: 0.22rem !important;
+    padding-block: 0.22rem  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 6.95rem) !important;
+    padding-bottom: calc(var(--sab) + 6.95rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    inset-inline-start: auto !important;
-    inset-inline-end: max(0.52rem, var(--sar)) !important;
+    inset-inline-start: auto  !important;
+    inset-inline-end: max(0.52rem, var(--sar))  !important;
     inset-block-end: max(0.42rem, calc(var(--sab) + 0.42rem)) !important;
     width: min(12.6rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
     max-width: min(12.6rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
-    min-height: 3.08rem !important;
-    max-height: 3.08rem !important;
-    padding: 0.22rem !important;
-    border-radius: 0.95rem !important;
+    min-height: 3.08rem  !important;
+    max-height: 3.08rem  !important;
+    padding: 0.22rem  !important;
+    border-radius: 0.95rem  !important;
   }
 }
 
@@ -186,50 +186,50 @@
    live here to win over older modal hard-lock blocks in the same bundle. */
 @media (max-width: 980px) {
   html body.modal-open .modal-content.modal-content.modal-content {
-    inset-block-start: 0 !important;
-    inset-inline-start: 0 !important;
-    inset-inline-end: 0 !important;
-    inset-block-end: calc(var(--cp13-bottom-action-height, 84px) + 12px) !important;
-    top: 0 !important;
-    right: 0 !important;
-    bottom: calc(var(--cp13-bottom-action-height, 84px) + 12px) !important;
-    left: 0 !important;
-    width: 100vw !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: calc(100dvh - var(--cp13-bottom-action-height, 84px) - 12px) !important;
-    overflow-y: auto !important;
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 4.8rem) !important;
-    scroll-padding-bottom: calc(var(--cp13-bottom-action-height, 84px) + 2rem) !important;
+    inset-block-start: 0  !important;
+    inset-inline-start: 0  !important;
+    inset-inline-end: 0  !important;
+    inset-block-end: calc(var(--cp13-bottom-action-height, 84px) + 12px)  !important;
+    top: 0  !important;
+    right: 0  !important;
+    bottom: calc(var(--cp13-bottom-action-height, 84px) + 12px)  !important;
+    left: 0  !important;
+    width: 100vw  !important;
+    height: auto  !important;
+    min-height: 0  !important;
+    max-height: calc(100dvh - var(--cp13-bottom-action-height, 84px) - 12px)  !important;
+    overflow-y: auto  !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 4.8rem)  !important;
+    scroll-padding-bottom: calc(var(--cp13-bottom-action-height, 84px) + 2rem)  !important;
   }
 
   html body.modal-open .tabs-shell.tabs-shell.tabs-shell {
-    position: sticky !important;
-    inset-block-start: env(safe-area-inset-top, 0px) !important;
-    top: env(safe-area-inset-top, 0px) !important;
-    z-index: 2147483600 !important;
-    max-width: 100vw !important;
-    overflow-x: auto !important;
-    transform: none !important;
+    position: sticky  !important;
+    inset-block-start: env(safe-area-inset-top, 0px)  !important;
+    top: env(safe-area-inset-top, 0px)  !important;
+    z-index: 2147483600  !important;
+    max-width: 100vw  !important;
+    overflow-x: auto  !important;
+    transform: none  !important;
   }
 
   html body.modal-open .modal-mobile-quickbar.modal-mobile-quickbar.modal-mobile-quickbar,
   html body.modal-open .modal-mobile-quickbar.is-fixed.modal-mobile-quickbar.is-fixed,
   html body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed.modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
+    position: fixed  !important;
     inset-inline-start: max(0.72rem, env(safe-area-inset-left, 0px)) !important;
     inset-inline-end: max(0.72rem, env(safe-area-inset-right, 0px)) !important;
     inset-block-end: max(0.62rem, env(safe-area-inset-bottom, 0px)) !important;
     bottom: max(0.62rem, env(safe-area-inset-bottom, 0px)) !important;
-    width: auto !important;
-    max-width: none !important;
-    min-height: 3.65rem !important;
-    z-index: 2147483647 !important;
-    transform: none !important;
+    width: auto  !important;
+    max-width: none  !important;
+    min-height: 3.65rem  !important;
+    z-index: 2147483647  !important;
+    transform: none  !important;
   }
 
   html body.modal-open :where(.modal-body, .modal-tabpanel, .modal-tabpanel > .content-block, .clinical-readability-rail) {
-    padding-bottom: calc(var(--cp13-bottom-action-height, 84px) + 2.4rem) !important;
+    padding-bottom: calc(var(--cp13-bottom-action-height, 84px) + 2.4rem)  !important;
   }
 }
 
@@ -238,33 +238,33 @@
     inset-block-end: calc(3.7rem + env(safe-area-inset-bottom, 0px)) !important;
     bottom: calc(3.7rem + env(safe-area-inset-bottom, 0px)) !important;
     max-height: calc(100dvh - 3.7rem - env(safe-area-inset-bottom, 0px)) !important;
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.6rem) !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.6rem)  !important;
     scroll-padding-bottom: calc(4.8rem + env(safe-area-inset-bottom, 0px)) !important;
   }
 
   html body.modal-open .tabs-shell.tabs-shell.tabs-shell {
-    padding-block: 0.18rem 0.22rem !important;
+    padding-block: 0.18rem 0.22rem  !important;
   }
 
   html body.modal-open .modal-mobile-quickbar.modal-mobile-quickbar.modal-mobile-quickbar,
   html body.modal-open .modal-mobile-quickbar.is-fixed.modal-mobile-quickbar.is-fixed,
   html body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed.modal-mobile-quickbar.is-fixed {
-    inset-inline-start: auto !important;
+    inset-inline-start: auto  !important;
     inset-inline-end: max(0.5rem, env(safe-area-inset-right, 0px)) !important;
     inset-block-end: max(0.42rem, env(safe-area-inset-bottom, 0px)) !important;
     bottom: max(0.42rem, env(safe-area-inset-bottom, 0px)) !important;
     width: min(13.2rem, calc(100vw - 1.2rem)) !important;
     max-width: min(13.2rem, calc(100vw - 1.2rem)) !important;
-    min-height: 3.12rem !important;
-    max-height: 3.12rem !important;
+    min-height: 3.12rem  !important;
+    max-height: 3.12rem  !important;
   }
 }
 
 /* UroMed 1.1 true EOF lock: this block must stay last. */
 @media (max-width: 980px) {
   body.modal-open {
-    overflow: hidden !important;
-    overscroll-behavior: none !important;
+    overflow: hidden  !important;
+    overscroll-behavior: none  !important;
   }
 
   body.modal-open .navbar,
@@ -273,160 +273,160 @@
   body.modal-open .bottom-nav,
   body.modal-open .floating-scroll-top,
   body.modal-open .scroll-top-btn {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    display: none  !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .modal-overlay,
   body.modal-open .modal-content {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100dvh !important;
-    max-height: 100dvh !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    transform: none !important;
-    overflow-x: clip !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    height: 100dvh  !important;
+    max-height: 100dvh  !important;
+    margin: 0  !important;
+    border-radius: 0  !important;
+    transform: none  !important;
+    overflow-x: clip  !important;
   }
 
   body.modal-open .modal-overlay {
-    overflow: hidden !important;
-    z-index: 2147482000 !important;
+    overflow: hidden  !important;
+    z-index: 2147482000  !important;
   }
 
   body.modal-open .modal-content {
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    -webkit-overflow-scrolling: touch !important;
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 4.25rem) !important;
-    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8.7rem) !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8.7rem) !important;
+    overflow-y: auto  !important;
+    overscroll-behavior: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 4.25rem)  !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8.7rem)  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8.7rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin: 0 !important;
-    margin-inline: 0 !important;
-    transform: none !important;
-    box-sizing: border-box !important;
-    z-index: 2147483600 !important;
+    position: fixed  !important;
+    top: 0  !important;
+    left: 0  !important;
+    right: 0  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    margin: 0  !important;
+    margin-inline: 0  !important;
+    transform: none  !important;
+    box-sizing: border-box  !important;
+    z-index: 2147483600  !important;
     padding:
       calc(env(safe-area-inset-top, 0px) + 0.42rem)
       max(0.62rem, env(safe-area-inset-right, 0px) + 0.62rem)
       0.42rem
-      max(0.62rem, env(safe-area-inset-left, 0px) + 0.62rem) !important;
-    border-bottom: 1px solid rgba(125, 232, 216, 0.18) !important;
+      max(0.62rem, env(safe-area-inset-left, 0px) + 0.62rem)  !important;
+    border-bottom: 1px solid rgba(125, 232, 216, 0.18)  !important;
     background:
       linear-gradient(180deg, rgba(5, 11, 21, 0.985), rgba(8, 17, 31, 0.94)) !important;
-    -webkit-backdrop-filter: blur(22px) saturate(1.16) !important;
-    backdrop-filter: blur(22px) saturate(1.16) !important;
+    -webkit-backdrop-filter: blur(22px) saturate(1.16)  !important;
+    backdrop-filter: blur(22px) saturate(1.16)  !important;
   }
 
   body.light-mode.modal-open .tabs-shell {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.985), rgba(242, 248, 251, 0.94)) !important;
-    border-bottom-color: rgba(0, 131, 120, 0.16) !important;
+    border-bottom-color: rgba(0, 131, 120, 0.16)  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 0.44rem !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    overscroll-behavior-x: contain !important;
-    -webkit-overflow-scrolling: touch !important;
-    scrollbar-width: none !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    align-items: center  !important;
+    justify-content: flex-start  !important;
+    gap: 0.44rem  !important;
+    width: 100%  !important;
+    min-width: 0  !important;
+    max-width: 100%  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    overscroll-behavior-x: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    scrollbar-width: none  !important;
   }
 
   body.modal-open .tabs-shell .tabs::-webkit-scrollbar,
   body.modal-open .tabs-shell .tabs[data-scrollable='x']::-webkit-scrollbar {
-    display: none !important;
+    display: none  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    max-width: min(74vw, 11.5rem) !important;
-    min-height: 44px !important;
-    touch-action: manipulation !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    max-width: min(74vw, 11.5rem)  !important;
+    min-height: 44px  !important;
+    touch-action: manipulation  !important;
   }
 
   body.modal-open .modal-header {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 4.25rem) !important;
-    min-height: auto !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 4.25rem)  !important;
+    min-height: auto  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    max-width: 100% !important;
-    min-width: 0 !important;
-    overflow-wrap: anywhere !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem) !important;
+    max-width: 100%  !important;
+    min-width: 0  !important;
+    overflow-wrap: anywhere  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    top: auto !important;
+    position: fixed  !important;
+    top: auto  !important;
     bottom: max(0.68rem, calc(env(safe-area-inset-bottom, 0px) + 0.68rem)) !important;
-    left: max(0.72rem, env(safe-area-inset-left, 0px) + 0.72rem) !important;
-    right: max(0.72rem, env(safe-area-inset-right, 0px) + 0.72rem) !important;
-    width: auto !important;
+    left: max(0.72rem, env(safe-area-inset-left, 0px) + 0.72rem)  !important;
+    right: max(0.72rem, env(safe-area-inset-right, 0px) + 0.72rem)  !important;
+    width: auto  !important;
     max-width: min(27rem, calc(100vw - 1.44rem)) !important;
-    z-index: 2147483700 !important;
-    transform: none !important;
-    translate: none !important;
+    z-index: 2147483700  !important;
+    transform: none  !important;
+    translate: none  !important;
   }
 }
 
 @media (max-width: 980px) and (orientation: landscape) {
   body.modal-open .modal-content {
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.42rem) !important;
-    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.5rem) !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.5rem) !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.42rem)  !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.5rem)  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.5rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 0.24rem) !important;
-    padding-bottom: 0.24rem !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 0.24rem)  !important;
+    padding-bottom: 0.24rem  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    min-height: 40px !important;
-    max-width: min(42vw, 10.2rem) !important;
-    padding-block: 0.38rem !important;
+    min-height: 40px  !important;
+    max-width: min(42vw, 10.2rem)  !important;
+    padding-block: 0.38rem  !important;
   }
 
   body.modal-open .modal-header {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 3.46rem) !important;
-    padding-bottom: 0.52rem !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 3.46rem)  !important;
+    padding-bottom: 0.52rem  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    left: auto !important;
-    right: max(0.52rem, env(safe-area-inset-right, 0px) + 0.52rem) !important;
+    left: auto  !important;
+    right: max(0.52rem, env(safe-area-inset-right, 0px) + 0.52rem)  !important;
     bottom: max(0.42rem, calc(env(safe-area-inset-bottom, 0px) + 0.42rem)) !important;
     width: min(12.4rem, calc(100vw - 1.2rem)) !important;
     max-width: min(12.4rem, calc(100vw - 1.2rem)) !important;
@@ -438,8 +438,8 @@
    under the app navbar again on modern iPhone portrait/landscape widths. */
 @media (max-width: 980px) {
   body.modal-open {
-    overflow: hidden !important;
-    overscroll-behavior: none !important;
+    overflow: hidden  !important;
+    overscroll-behavior: none  !important;
   }
 
   body.modal-open .navbar,
@@ -448,161 +448,161 @@
   body.modal-open .bottom-nav,
   body.modal-open .floating-scroll-top,
   body.modal-open .scroll-top-btn {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    display: none  !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .modal-overlay {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    height: 100dvh !important;
-    max-width: 100vw !important;
-    overflow: hidden !important;
-    z-index: 2147482000 !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    height: 100dvh  !important;
+    max-width: 100vw  !important;
+    overflow: hidden  !important;
+    z-index: 2147482000  !important;
   }
 
   body.modal-open .modal-content {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100dvh !important;
-    max-height: 100dvh !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    overflow-x: clip !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    -webkit-overflow-scrolling: touch !important;
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 4.25rem) !important;
-    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8.7rem) !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8.7rem) !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    height: 100dvh  !important;
+    max-height: 100dvh  !important;
+    margin: 0  !important;
+    border-radius: 0  !important;
+    overflow-x: clip  !important;
+    overflow-y: auto  !important;
+    overscroll-behavior: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 4.25rem)  !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8.7rem)  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8.7rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin: 0 !important;
-    margin-inline: 0 !important;
-    transform: none !important;
-    z-index: 2147483600 !important;
-    box-sizing: border-box !important;
+    position: fixed  !important;
+    top: 0  !important;
+    left: 0  !important;
+    right: 0  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    margin: 0  !important;
+    margin-inline: 0  !important;
+    transform: none  !important;
+    z-index: 2147483600  !important;
+    box-sizing: border-box  !important;
     padding:
       calc(env(safe-area-inset-top, 0px) + 0.42rem)
       max(0.62rem, env(safe-area-inset-right, 0px) + 0.62rem)
       0.42rem
-      max(0.62rem, env(safe-area-inset-left, 0px) + 0.62rem) !important;
-    border-bottom: 1px solid rgba(125, 232, 216, 0.18) !important;
+      max(0.62rem, env(safe-area-inset-left, 0px) + 0.62rem)  !important;
+    border-bottom: 1px solid rgba(125, 232, 216, 0.18)  !important;
     background:
       linear-gradient(180deg, rgba(5, 11, 21, 0.985), rgba(8, 17, 31, 0.94)) !important;
-    -webkit-backdrop-filter: blur(22px) saturate(1.16) !important;
-    backdrop-filter: blur(22px) saturate(1.16) !important;
+    -webkit-backdrop-filter: blur(22px) saturate(1.16)  !important;
+    backdrop-filter: blur(22px) saturate(1.16)  !important;
   }
 
   body.light-mode.modal-open .tabs-shell {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.985), rgba(242, 248, 251, 0.94)) !important;
-    border-bottom-color: rgba(0, 131, 120, 0.16) !important;
+    border-bottom-color: rgba(0, 131, 120, 0.16)  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    gap: 0.44rem !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    overscroll-behavior-x: contain !important;
-    scrollbar-width: none !important;
-    -webkit-overflow-scrolling: touch !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    justify-content: flex-start  !important;
+    align-items: center  !important;
+    gap: 0.44rem  !important;
+    width: 100%  !important;
+    min-width: 0  !important;
+    max-width: 100%  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    overscroll-behavior-x: contain  !important;
+    scrollbar-width: none  !important;
+    -webkit-overflow-scrolling: touch  !important;
     scroll-padding-inline: max(0.55rem, env(safe-area-inset-left, 0px)) max(1.6rem, env(safe-area-inset-right, 0px)) !important;
   }
 
   body.modal-open .tabs-shell .tabs::-webkit-scrollbar,
   body.modal-open .tabs-shell .tabs[data-scrollable='x']::-webkit-scrollbar {
-    display: none !important;
+    display: none  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    max-width: min(74vw, 11.5rem) !important;
-    min-height: 44px !important;
-    touch-action: manipulation !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    max-width: min(74vw, 11.5rem)  !important;
+    min-height: 44px  !important;
+    touch-action: manipulation  !important;
   }
 
   body.modal-open .modal-header {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 4.25rem) !important;
-    min-height: auto !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 4.25rem)  !important;
+    min-height: auto  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    max-width: 100% !important;
-    min-width: 0 !important;
-    overflow-wrap: anywhere !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem) !important;
+    max-width: 100%  !important;
+    min-width: 0  !important;
+    overflow-wrap: anywhere  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    top: auto !important;
+    position: fixed  !important;
+    top: auto  !important;
     bottom: max(0.68rem, calc(env(safe-area-inset-bottom, 0px) + 0.68rem)) !important;
-    left: max(0.72rem, env(safe-area-inset-left, 0px) + 0.72rem) !important;
-    right: max(0.72rem, env(safe-area-inset-right, 0px) + 0.72rem) !important;
-    width: auto !important;
+    left: max(0.72rem, env(safe-area-inset-left, 0px) + 0.72rem)  !important;
+    right: max(0.72rem, env(safe-area-inset-right, 0px) + 0.72rem)  !important;
+    width: auto  !important;
     max-width: min(27rem, calc(100vw - 1.44rem)) !important;
-    z-index: 2147483700 !important;
-    transform: none !important;
-    translate: none !important;
+    z-index: 2147483700  !important;
+    transform: none  !important;
+    translate: none  !important;
   }
 }
 
 @media (max-width: 980px) and (orientation: landscape) {
   body.modal-open .modal-content {
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.42rem) !important;
-    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.5rem) !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.5rem) !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.42rem)  !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.5rem)  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.5rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 0.24rem) !important;
-    padding-bottom: 0.24rem !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 0.24rem)  !important;
+    padding-bottom: 0.24rem  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    min-height: 40px !important;
-    max-width: min(42vw, 10.2rem) !important;
-    padding-block: 0.38rem !important;
+    min-height: 40px  !important;
+    max-width: min(42vw, 10.2rem)  !important;
+    padding-block: 0.38rem  !important;
   }
 
   body.modal-open .modal-header {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 3.46rem) !important;
-    padding-bottom: 0.52rem !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 3.46rem)  !important;
+    padding-bottom: 0.52rem  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    left: auto !important;
-    right: max(0.52rem, env(safe-area-inset-right, 0px) + 0.52rem) !important;
+    left: auto  !important;
+    right: max(0.52rem, env(safe-area-inset-right, 0px) + 0.52rem)  !important;
     bottom: max(0.42rem, calc(env(safe-area-inset-bottom, 0px) + 0.42rem)) !important;
     width: min(12.4rem, calc(100vw - 1.2rem)) !important;
     max-width: min(12.4rem, calc(100vw - 1.2rem)) !important;
@@ -612,8 +612,8 @@
 /* v18.1 sticky-top disease tabs: clinical navigation remains visible while reading. */
 @media (max-width: 940px) {
   body.modal-open {
-    overflow: hidden !important;
-    overscroll-behavior: none !important;
+    overflow: hidden  !important;
+    overscroll-behavior: none  !important;
   }
 
   body.modal-open .navbar,
@@ -621,154 +621,154 @@
   body.modal-open .mobile-shell-nav,
   body.modal-open .bottom-nav,
   body.modal-open .scroll-top-btn {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    display: none  !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .modal-content {
-    scroll-padding-top: calc(var(--sat) + 3.82rem) !important;
-    padding-bottom: calc(var(--sab) + 9.25rem) !important;
+    scroll-padding-top: calc(var(--sat) + 3.82rem)  !important;
+    padding-bottom: calc(var(--sab) + 9.25rem)  !important;
   }
 
   body.modal-open .modal-header {
-    position: relative !important;
-    z-index: 36 !important;
+    position: relative  !important;
+    z-index: 36  !important;
   }
 
   body.modal-open .modal-body {
-    padding-top: 0 !important;
+    padding-top: 0  !important;
   }
 
   body.modal-open .tabs-shell {
-    position: sticky !important;
-    top: 0 !important;
-    top: env(safe-area-inset-top, 0px) !important;
-    z-index: 2147482500 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin-inline: calc(50% - 50vw) !important;
-    padding: 0.44rem 0 0.48rem !important;
+    position: sticky  !important;
+    top: 0  !important;
+    top: env(safe-area-inset-top, 0px)  !important;
+    z-index: 2147482500  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    margin-inline: calc(50% - 50vw)  !important;
+    padding: 0.44rem 0 0.48rem  !important;
     background:
       linear-gradient(180deg, rgba(4, 10, 19, 0.995), rgba(7, 15, 27, 0.982)),
-      rgba(7, 15, 27, 0.985) !important;
-    border-block: 1px solid rgba(148, 163, 184, 0.14) !important;
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.42), 0 1px 0 rgba(255, 255, 255, 0.04) inset !important;
-    backdrop-filter: blur(22px) saturate(1.2) !important;
-    -webkit-backdrop-filter: blur(22px) saturate(1.2) !important;
-    transform: translateZ(0) !important;
+      rgba(7, 15, 27, 0.985)  !important;
+    border-block: 1px solid rgba(148, 163, 184, 0.14)  !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.42), 0 1px 0 rgba(255, 255, 255, 0.04) inset  !important;
+    backdrop-filter: blur(22px) saturate(1.2)  !important;
+    -webkit-backdrop-filter: blur(22px) saturate(1.2)  !important;
+    transform: translateZ(0)  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    gap: 0.44rem !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-    padding: 0.02rem max(3.25rem, var(--sar)) 0.04rem max(0.78rem, var(--sal)) !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    overscroll-behavior-x: contain !important;
-    touch-action: pan-x !important;
-    scrollbar-width: none !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    justify-content: flex-start  !important;
+    align-items: center  !important;
+    gap: 0.44rem  !important;
+    width: 100%  !important;
+    min-width: 100%  !important;
+    max-width: 100%  !important;
+    padding: 0.02rem max(3.25rem, var(--sar)) 0.04rem max(0.78rem, var(--sal))  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    overscroll-behavior-x: contain  !important;
+    touch-action: pan-x  !important;
+    scrollbar-width: none  !important;
     scroll-padding-inline: max(0.78rem, var(--sal)) max(3.25rem, var(--sar)) !important;
   }
 
   body.modal-open .tabs-shell .tabs::-webkit-scrollbar,
   body.modal-open .tabs-shell .tabs[data-scrollable='x']::-webkit-scrollbar {
-    display: none !important;
+    display: none  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    max-width: min(74vw, 11.5rem) !important;
-    min-height: 44px !important;
-    touch-action: manipulation !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    max-width: min(74vw, 11.5rem)  !important;
+    min-height: 44px  !important;
+    touch-action: manipulation  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 9.35rem) !important;
+    padding-bottom: calc(var(--sab) + 9.35rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    inset-block-start: auto !important;
-    inset-inline-start: max(0.78rem, var(--sal)) !important;
-    inset-inline-end: max(0.78rem, var(--sar)) !important;
+    position: fixed  !important;
+    inset-block-start: auto  !important;
+    inset-inline-start: max(0.78rem, var(--sal))  !important;
+    inset-inline-end: max(0.78rem, var(--sar))  !important;
     inset-block-end: max(0.72rem, calc(var(--sab) + 0.72rem)) !important;
-    z-index: 2147483000 !important;
-    width: auto !important;
+    z-index: 2147483000  !important;
+    width: auto  !important;
     max-width: min(24.75rem, calc(100vw - max(1.56rem, var(--sal) + var(--sar)))) !important;
-    min-height: 4.18rem !important;
-    max-height: 4.18rem !important;
-    margin-inline: auto !important;
-    transform: translate3d(0, 0, 0) !important;
+    min-height: 4.18rem  !important;
+    max-height: 4.18rem  !important;
+    margin-inline: auto  !important;
+    transform: translate3d(0, 0, 0)  !important;
   }
 }
 
 @media (max-width: 940px) and (orientation: landscape) {
   body.modal-open .modal-content {
-    scroll-padding-top: calc(var(--sat) + 3.24rem) !important;
-    padding-bottom: calc(var(--sab) + 6.7rem) !important;
+    scroll-padding-top: calc(var(--sat) + 3.24rem)  !important;
+    padding-bottom: calc(var(--sab) + 6.7rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    top: 0 !important;
-    top: env(safe-area-inset-top, 0px) !important;
-    padding-block: 0.24rem !important;
+    top: 0  !important;
+    top: env(safe-area-inset-top, 0px)  !important;
+    padding-block: 0.24rem  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    gap: 0.34rem !important;
+    gap: 0.34rem  !important;
     padding-inline: max(0.56rem, var(--sal)) max(2.5rem, var(--sar)) !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    min-height: 40px !important;
-    max-width: min(42vw, 10.2rem) !important;
-    padding-block: 0.38rem !important;
+    min-height: 40px  !important;
+    max-width: min(42vw, 10.2rem)  !important;
+    padding-block: 0.38rem  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 6.95rem) !important;
+    padding-bottom: calc(var(--sab) + 6.95rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    inset-inline-start: auto !important;
-    inset-inline-end: max(0.52rem, var(--sar)) !important;
+    inset-inline-start: auto  !important;
+    inset-inline-end: max(0.52rem, var(--sar))  !important;
     inset-block-end: max(0.42rem, calc(var(--sab) + 0.42rem)) !important;
     width: min(12.6rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
     max-width: min(12.6rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
-    min-height: 3.08rem !important;
-    max-height: 3.08rem !important;
-    padding: 0.22rem !important;
-    border-radius: 0.95rem !important;
+    min-height: 3.08rem  !important;
+    max-height: 3.08rem  !important;
+    padding: 0.22rem  !important;
+    border-radius: 0.95rem  !important;
   }
 }
 
 /* v18 clinician-first modal shell: portal-safe, iPhone-safe, no floating actions. */
 @media (max-width: 940px) {
   body.modal-open {
-    overflow: hidden !important;
-    overscroll-behavior: none !important;
+    overflow: hidden  !important;
+    overscroll-behavior: none  !important;
     touch-action: manipulation;
   }
 
@@ -777,169 +777,169 @@
   body.modal-open .mobile-shell-nav,
   body.modal-open .bottom-nav,
   body.modal-open .scroll-top-btn {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .modal-overlay {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    height: 100svh !important;
-    height: 100dvh !important;
-    max-width: 100vw !important;
-    overflow: hidden !important;
-    z-index: 2147482000 !important;
-    transform: none !important;
-    contain: none !important;
-    isolation: isolate !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    height: 100vh  !important;
+    height: 100svh  !important;
+    height: 100dvh  !important;
+    max-width: 100vw  !important;
+    overflow: hidden  !important;
+    z-index: 2147482000  !important;
+    transform: none  !important;
+    contain: none  !important;
+    isolation: isolate  !important;
   }
 
   body.modal-open .modal-content {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    height: 100svh !important;
-    height: 100dvh !important;
-    max-width: 100vw !important;
-    max-height: none !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    overflow-x: clip !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    -webkit-overflow-scrolling: touch !important;
-    scroll-padding-top: calc(var(--modal-header-offset, calc(var(--sat) + 6.25rem)) + 4.3rem) !important;
-    scroll-padding-bottom: calc(var(--sab) + 8.9rem) !important;
-    padding-bottom: calc(var(--sab) + 8.9rem) !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    height: 100vh  !important;
+    height: 100svh  !important;
+    height: 100dvh  !important;
+    max-width: 100vw  !important;
+    max-height: none  !important;
+    margin: 0  !important;
+    border-radius: 0  !important;
+    overflow-x: clip  !important;
+    overflow-y: auto  !important;
+    overscroll-behavior: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    scroll-padding-top: calc(var(--modal-header-offset, calc(var(--sat) + 6.25rem)) + 4.3rem)  !important;
+    scroll-padding-bottom: calc(var(--sab) + 8.9rem)  !important;
+    padding-bottom: calc(var(--sab) + 8.9rem)  !important;
   }
 
   body.modal-open .modal-header {
-    position: relative !important;
-    z-index: 36 !important;
-    min-height: calc(var(--sat) + 5.72rem) !important;
-    padding-top: calc(var(--sat) + 0.86rem) !important;
-    padding-bottom: 0.86rem !important;
-    transform: none !important;
+    position: relative  !important;
+    z-index: 36  !important;
+    min-height: calc(var(--sat) + 5.72rem)  !important;
+    padding-top: calc(var(--sat) + 0.86rem)  !important;
+    padding-bottom: 0.86rem  !important;
+    transform: none  !important;
   }
 
   body.modal-open .tabs-shell {
-    position: sticky !important;
+    position: sticky  !important;
     top: var(--modal-header-offset, calc(var(--sat) + 6.25rem)) !important;
-    z-index: 54 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin-inline: calc(50% - 50vw) !important;
-    padding: 0.42rem 0 !important;
+    z-index: 54  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    margin-inline: calc(50% - 50vw)  !important;
+    padding: 0.42rem 0  !important;
     background:
       linear-gradient(180deg, rgba(5, 11, 21, 0.99), rgba(7, 15, 27, 0.965)),
-      rgba(7, 15, 27, 0.98) !important;
-    border-block: 1px solid rgba(148, 163, 184, 0.13) !important;
-    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.38) !important;
-    backdrop-filter: blur(20px) saturate(1.22) !important;
-    -webkit-backdrop-filter: blur(20px) saturate(1.22) !important;
+      rgba(7, 15, 27, 0.98)  !important;
+    border-block: 1px solid rgba(148, 163, 184, 0.13)  !important;
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.38)  !important;
+    backdrop-filter: blur(20px) saturate(1.22)  !important;
+    -webkit-backdrop-filter: blur(20px) saturate(1.22)  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    gap: 0.42rem !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-    padding: 0.06rem max(3.7rem, var(--sar)) 0.1rem max(0.86rem, var(--sal)) !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    overscroll-behavior-x: contain !important;
-    touch-action: pan-x !important;
-    scrollbar-width: none !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    justify-content: flex-start  !important;
+    gap: 0.42rem  !important;
+    width: 100%  !important;
+    min-width: 100%  !important;
+    max-width: 100%  !important;
+    padding: 0.06rem max(3.7rem, var(--sar)) 0.1rem max(0.86rem, var(--sal))  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    overscroll-behavior-x: contain  !important;
+    touch-action: pan-x  !important;
+    scrollbar-width: none  !important;
     scroll-padding-inline: max(0.86rem, var(--sal)) max(3.7rem, var(--sar));
   }
 
   body.modal-open .tabs-shell .tabs::-webkit-scrollbar,
   body.modal-open .tabs-shell .tabs[data-scrollable='x']::-webkit-scrollbar {
-    display: none !important;
+    display: none  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    max-width: min(72vw, 11.4rem) !important;
-    min-height: 44px !important;
-    touch-action: manipulation !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    max-width: min(72vw, 11.4rem)  !important;
+    min-height: 44px  !important;
+    touch-action: manipulation  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 9rem) !important;
+    padding-bottom: calc(var(--sab) + 9rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    inset-block-start: auto !important;
-    inset-inline-start: max(0.78rem, var(--sal)) !important;
-    inset-inline-end: max(0.78rem, var(--sar)) !important;
+    position: fixed  !important;
+    inset-block-start: auto  !important;
+    inset-inline-start: max(0.78rem, var(--sal))  !important;
+    inset-inline-end: max(0.78rem, var(--sar))  !important;
     inset-block-end: max(0.72rem, calc(var(--sab) + 0.72rem)) !important;
-    z-index: 2147483000 !important;
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-    width: auto !important;
+    z-index: 2147483000  !important;
+    display: grid  !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)  !important;
+    width: auto  !important;
     max-width: min(24.75rem, calc(100vw - max(1.56rem, var(--sal) + var(--sar)))) !important;
-    min-height: 4.18rem !important;
-    max-height: 4.18rem !important;
-    margin-inline: auto !important;
-    translate: none !important;
-    transform: translate3d(0, 0, 0) !important;
-    pointer-events: auto !important;
+    min-height: 4.18rem  !important;
+    max-height: 4.18rem  !important;
+    margin-inline: auto  !important;
+    translate: none  !important;
+    transform: translate3d(0, 0, 0)  !important;
+    pointer-events: auto  !important;
   }
 }
 
 @media (max-width: 940px) and (orientation: landscape) {
   body.modal-open .modal-content {
-    scroll-padding-top: calc(var(--sat) + 7.1rem) !important;
-    scroll-padding-bottom: calc(var(--sab) + 6.7rem) !important;
-    padding-bottom: calc(var(--sab) + 6.7rem) !important;
+    scroll-padding-top: calc(var(--sat) + 7.1rem)  !important;
+    scroll-padding-bottom: calc(var(--sab) + 6.7rem)  !important;
+    padding-bottom: calc(var(--sab) + 6.7rem)  !important;
   }
 
   body.modal-open .modal-header {
-    min-height: calc(var(--sat) + 4.05rem) !important;
-    padding-top: calc(var(--sat) + 0.42rem) !important;
-    padding-bottom: 0.48rem !important;
+    min-height: calc(var(--sat) + 4.05rem)  !important;
+    padding-top: calc(var(--sat) + 0.42rem)  !important;
+    padding-bottom: 0.48rem  !important;
   }
 
   body.modal-open .tabs-shell {
     top: var(--modal-header-offset, calc(var(--sat) + 4.68rem)) !important;
-    padding-block: 0.22rem !important;
+    padding-block: 0.22rem  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 6.95rem) !important;
+    padding-bottom: calc(var(--sab) + 6.95rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    inset-inline-start: auto !important;
-    inset-inline-end: max(0.52rem, var(--sar)) !important;
+    inset-inline-start: auto  !important;
+    inset-inline-end: max(0.52rem, var(--sar))  !important;
     inset-block-end: max(0.42rem, calc(var(--sab) + 0.42rem)) !important;
     width: min(12.6rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
     max-width: min(12.6rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
-    min-height: 3.08rem !important;
-    max-height: 3.08rem !important;
-    padding: 0.22rem !important;
-    border-radius: 0.95rem !important;
+    min-height: 3.08rem  !important;
+    max-height: 3.08rem  !important;
+    padding: 0.22rem  !important;
+    border-radius: 0.95rem  !important;
   }
 }
 
@@ -2124,10 +2124,10 @@ body.light-mode .tab-index {
 }
 
 .quick-summary-title {
-  margin: 0 0 0.85rem !important;
-  padding-left: 0 !important;
+  margin: 0 0 0.85rem  !important;
+  padding-left: 0  !important;
   color: var(--gold-light);
-  font-size: clamp(1.18rem, 2.2vw, 1.55rem) !important;
+  font-size: clamp(1.18rem, 2.2vw, 1.55rem)  !important;
 }
 
 .quick-summary-title::before {
@@ -3228,7 +3228,7 @@ body.light-mode .clinical-pathway-table td:nth-child(2) {
   }
 
   .clinical-pathway-card > h3 {
-    font-size: 1rem !important;
+    font-size: 1rem  !important;
     line-height: 1.18;
     padding: 0.9rem 0.86rem 0.18rem;
   }
@@ -3362,7 +3362,7 @@ body.light-mode .clinical-pathway-table td:nth-child(2) {
 }
 
 .guidelines-premium-panel > h3 {
-  margin-bottom: 0 !important;
+  margin-bottom: 0  !important;
 }
 
 .guidelines-consensus {
@@ -3722,10 +3722,10 @@ body.light-mode .guidelines-freshness-item {
 }
 
 .referral-card-title {
-  margin: 0 !important;
-  color: var(--gold-light) !important;
-  font-size: 0.86rem !important;
-  letter-spacing: 0.045em !important;
+  margin: 0  !important;
+  color: var(--gold-light)  !important;
+  font-size: 0.86rem  !important;
+  letter-spacing: 0.045em  !important;
   text-transform: uppercase;
 }
 
@@ -4533,11 +4533,11 @@ body.light-mode .drug-doses-table code {
   }
 
   .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    top: auto !important;
-    left: max(0.78rem, var(--sal)) !important;
-    right: max(0.78rem, var(--sar)) !important;
-    bottom: calc(var(--sab) + 0.74rem) !important;
+    position: fixed  !important;
+    top: auto  !important;
+    left: max(0.78rem, var(--sal))  !important;
+    right: max(0.78rem, var(--sar))  !important;
+    bottom: calc(var(--sab) + 0.74rem)  !important;
     z-index: calc(var(--z-modal) + 40);
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -4576,32 +4576,32 @@ body.light-mode .drug-doses-table code {
 /* v10 mobile QA: make disease tabs reliably draggable across iPhone widths. */
 @media (max-width: 900px) {
   .tabs-shell {
-    overflow-x: hidden !important;
+    overflow-x: hidden  !important;
     overscroll-behavior: contain;
-    pointer-events: auto !important;
+    pointer-events: auto  !important;
   }
 
   .tabs-shell .tabs {
-    display: flex !important;
-    justify-content: flex-start !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 100% !important;
-    padding-left: max(0.9rem, var(--sal)) !important;
-    padding-right: max(2rem, var(--sar)) !important;
-    overflow-x: scroll !important;
-    overflow-y: hidden !important;
+    display: flex  !important;
+    justify-content: flex-start  !important;
+    width: 100%  !important;
+    max-width: 100%  !important;
+    min-width: 100%  !important;
+    padding-left: max(0.9rem, var(--sal))  !important;
+    padding-right: max(2rem, var(--sar))  !important;
+    overflow-x: scroll  !important;
+    overflow-y: hidden  !important;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
     scroll-padding-inline: max(0.9rem, var(--sal));
-    touch-action: pan-x !important;
+    touch-action: pan-x  !important;
     cursor: grab;
   }
 
   .tabs-shell .tab {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    touch-action: pan-x !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    touch-action: pan-x  !important;
     user-select: none;
     -webkit-user-select: none;
   }
@@ -4609,28 +4609,28 @@ body.light-mode .drug-doses-table code {
   .modal-mobile-quickbar,
   .modal-mobile-quickbar.is-fixed,
   .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    top: auto !important;
-    left: max(0.72rem, var(--sal)) !important;
-    right: max(0.72rem, var(--sar)) !important;
-    bottom: calc(var(--sab) + 0.72rem) !important;
-    z-index: 2147483000 !important;
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-    width: auto !important;
+    position: fixed  !important;
+    top: auto  !important;
+    left: max(0.72rem, var(--sal))  !important;
+    right: max(0.72rem, var(--sar))  !important;
+    bottom: calc(var(--sab) + 0.72rem)  !important;
+    z-index: 2147483000  !important;
+    display: grid  !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)  !important;
+    width: auto  !important;
     max-width: min(24rem, calc(100vw - 1.44rem)) !important;
-    margin-inline: auto !important;
-    pointer-events: auto !important;
-    transform: translate3d(0, 0, 0) !important;
+    margin-inline: auto  !important;
+    pointer-events: auto  !important;
+    transform: translate3d(0, 0, 0)  !important;
     will-change: transform;
   }
 
   .modal-content {
-    padding-bottom: calc(var(--sab) + 6.9rem) !important;
+    padding-bottom: calc(var(--sab) + 6.9rem)  !important;
   }
 
   .modal-body {
-    padding-bottom: calc(var(--sab) + 7.2rem) !important;
+    padding-bottom: calc(var(--sab) + 7.2rem)  !important;
   }
 }
 
@@ -4641,98 +4641,98 @@ body.modal-open {
 
 body.modal-open .mobile-shell-nav,
 body.modal-open .scroll-top-btn {
-  opacity: 0 !important;
-  pointer-events: none !important;
+  opacity: 0  !important;
+  pointer-events: none  !important;
 }
 
 @media (max-width: 900px) {
   .modal-overlay {
     isolation: isolate;
-    overflow: hidden !important;
+    overflow: hidden  !important;
   }
 
   .modal-content {
-    height: 100dvh !important;
-    max-height: 100dvh !important;
-    overflow-x: clip !important;
-    overflow-y: auto !important;
+    height: 100dvh  !important;
+    max-height: 100dvh  !important;
+    overflow-x: clip  !important;
+    overflow-y: auto  !important;
     overscroll-behavior-y: contain;
     scrollbar-gutter: stable;
-    padding-bottom: calc(var(--sab) + 7.6rem) !important;
+    padding-bottom: calc(var(--sab) + 7.6rem)  !important;
   }
 
   .modal-header {
-    top: 0 !important;
-    z-index: 90 !important;
-    padding-top: calc(var(--sat) + 2rem) !important;
-    padding-bottom: 1rem !important;
+    top: 0  !important;
+    z-index: 90  !important;
+    padding-top: calc(var(--sat) + 2rem)  !important;
+    padding-bottom: 1rem  !important;
     transform: translateZ(0);
   }
 
   .tabs-shell {
-    top: calc(var(--modal-header-offset, calc(var(--sat) + 6rem)) + 0.8rem) !important;
-    z-index: 88 !important;
-    padding-block: 0.42rem !important;
-    overflow: hidden !important;
+    top: calc(var(--modal-header-offset, calc(var(--sat) + 6rem)) + 0.8rem)  !important;
+    z-index: 88  !important;
+    padding-block: 0.42rem  !important;
+    overflow: hidden  !important;
     transform: translateZ(0);
   }
 
   .tabs-shell .tabs[data-scrollable='x'] {
     position: relative;
     z-index: 3;
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    gap: 0.42rem !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-    padding: 0.08rem max(3.25rem, var(--sal)) 0.18rem max(0.9rem, var(--sal)) !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    justify-content: flex-start  !important;
+    gap: 0.42rem  !important;
+    width: 100%  !important;
+    min-width: 100%  !important;
+    max-width: 100%  !important;
+    padding: 0.08rem max(3.25rem, var(--sal)) 0.18rem max(0.9rem, var(--sal))  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    -webkit-overflow-scrolling: touch  !important;
     overscroll-behavior-inline: contain;
-    scroll-snap-type: none !important;
+    scroll-snap-type: none  !important;
     scroll-padding-inline: max(0.9rem, var(--sal));
-    touch-action: pan-x !important;
+    touch-action: pan-x  !important;
   }
 
   .tabs-shell .tab {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    max-width: min(10.5rem, 70vw) !important;
-    min-height: 42px !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    max-width: min(10.5rem, 70vw)  !important;
+    min-height: 42px  !important;
     -webkit-tap-highlight-color: transparent;
   }
 
   .tab-label {
-    max-width: 7.8rem !important;
+    max-width: 7.8rem  !important;
   }
 
   .modal-tabpanel {
-    padding-top: 1rem !important;
-    padding-bottom: 0 !important;
+    padding-top: 1rem  !important;
+    padding-bottom: 0  !important;
   }
 
   .modal-tabpanel > .content-block {
-    max-width: 35rem !important;
-    padding-bottom: 1.8rem !important;
+    max-width: 35rem  !important;
+    padding-bottom: 1.8rem  !important;
   }
 
   .modal-tabpanel .content-block > h3 {
-    margin-top: 1.15rem !important;
+    margin-top: 1.15rem  !important;
   }
 
   .modal-tabpanel p,
   .modal-tabpanel .ultrasound-overview,
   .modal-tabpanel .faq-answer {
-    max-width: min(34rem, 100%) !important;
-    padding: 0.95rem 1rem !important;
-    line-height: 1.74 !important;
-    text-align: left !important;
+    max-width: min(34rem, 100%)  !important;
+    padding: 0.95rem 1rem  !important;
+    line-height: 1.74  !important;
+    text-align: left  !important;
     text-align-last: left;
-    overflow-wrap: anywhere !important;
-    word-break: normal !important;
+    overflow-wrap: anywhere  !important;
+    word-break: normal  !important;
     hyphens: auto;
   }
 
@@ -4741,74 +4741,74 @@ body.modal-open .scroll-top-btn {
   .drug-doses-table code,
   .related-disease-title,
   .related-disease-meta {
-    overflow-wrap: anywhere !important;
-    word-break: normal !important;
+    overflow-wrap: anywhere  !important;
+    word-break: normal  !important;
   }
 
   .modal-mobile-quickbar,
   .modal-mobile-quickbar.is-fixed,
   .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    inset: auto max(0.78rem, var(--sar)) calc(var(--sab) + 0.78rem) max(0.78rem, var(--sal)) !important;
-    z-index: 2147483000 !important;
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-    gap: 0.38rem !important;
-    width: auto !important;
+    position: fixed  !important;
+    inset: auto max(0.78rem, var(--sar)) calc(var(--sab) + 0.78rem) max(0.78rem, var(--sal))  !important;
+    z-index: 2147483000  !important;
+    display: grid  !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)  !important;
+    gap: 0.38rem  !important;
+    width: auto  !important;
     max-width: min(24.5rem, calc(100vw - 1.56rem)) !important;
-    margin: 0 auto !important;
-    padding: 0.36rem !important;
-    border: 1px solid rgba(241, 204, 122, 0.22) !important;
-    border-radius: 1.2rem !important;
+    margin: 0 auto  !important;
+    padding: 0.36rem  !important;
+    border: 1px solid rgba(241, 204, 122, 0.22)  !important;
+    border-radius: 1.2rem  !important;
     background:
       linear-gradient(180deg, rgba(22, 35, 53, 0.9), rgba(8, 15, 27, 0.86)),
-      rgba(7, 14, 25, 0.82) !important;
+      rgba(7, 14, 25, 0.82)  !important;
     box-shadow:
       0 18px 54px rgba(0, 0, 0, 0.52),
-      inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+      inset 0 1px 0 rgba(255, 255, 255, 0.12)  !important;
     backdrop-filter: blur(22px) saturate(1.18);
     -webkit-backdrop-filter: blur(22px) saturate(1.18);
-    transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0)  !important;
   }
 
   .modal-mobile-quickbtn {
-    min-width: 0 !important;
-    min-height: 3rem !important;
-    border-radius: 0.92rem !important;
-    font-size: 0.78rem !important;
-    font-weight: 900 !important;
-    letter-spacing: 0.045em !important;
-    text-transform: none !important;
+    min-width: 0  !important;
+    min-height: 3rem  !important;
+    border-radius: 0.92rem  !important;
+    font-size: 0.78rem  !important;
+    font-weight: 900  !important;
+    letter-spacing: 0.045em  !important;
+    text-transform: none  !important;
   }
 
   .modal-mobile-quickbtn.primary {
     background: linear-gradient(135deg, var(--gold-light), var(--gold)) !important;
-    color: #07111f !important;
-    border-color: rgba(241, 204, 122, 0.42) !important;
+    color: #07111f  !important;
+    border-color: rgba(241, 204, 122, 0.42)  !important;
   }
 
   body.light-mode .modal-mobile-quickbar {
     background:
       linear-gradient(180deg, rgba(255, 252, 246, 0.92), rgba(255, 248, 237, 0.86)),
-      rgba(255, 251, 245, 0.82) !important;
+      rgba(255, 251, 245, 0.82)  !important;
     box-shadow:
       0 18px 42px rgba(62, 42, 18, 0.16),
-      inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
+      inset 0 1px 0 rgba(255, 255, 255, 0.72)  !important;
   }
 }
 
 @media (max-width: 390px) {
   .tabs-shell .tabs[data-scrollable='x'] {
-    padding-left: max(0.72rem, var(--sal)) !important;
+    padding-left: max(0.72rem, var(--sal))  !important;
     padding-right: max(3rem, var(--sar)) !important;
   }
 
   .tabs-shell .tab {
-    max-width: min(9.5rem, 68vw) !important;
+    max-width: min(9.5rem, 68vw)  !important;
   }
 
   .tab-label {
-    max-width: 6.7rem !important;
+    max-width: 6.7rem  !important;
   }
 }
 
@@ -4821,8 +4821,8 @@ body.modal-open .scroll-top-btn {
     width: 100%;
     max-width: min(34rem, 100%);
     min-width: 0;
-    margin: 0 auto 0.8rem !important;
-    padding: 0 !important;
+    margin: 0 auto 0.8rem  !important;
+    padding: 0  !important;
     list-style: none;
   }
 
@@ -4831,7 +4831,7 @@ body.modal-open .scroll-top-btn {
     box-sizing: border-box;
     width: 100%;
     min-width: 0;
-    padding: 0.88rem 0.95rem 0.88rem 2.05rem !important;
+    padding: 0.88rem 0.95rem 0.88rem 2.05rem  !important;
     border: 1px solid rgba(148, 163, 184, 0.14);
     border-radius: 1rem;
     background:
@@ -4878,7 +4878,7 @@ body.modal-open .scroll-top-btn {
   display: flex;
   align-items: center;
   gap: 0.55rem;
-  margin-bottom: 0.82rem !important;
+  margin-bottom: 0.82rem  !important;
 }
 
 .classification-table-card > h3::before {
@@ -4928,8 +4928,8 @@ body.modal-open .scroll-top-btn {
   }
 
   .classification-table-card > h3 {
-    font-size: clamp(1rem, 4.6vw, 1.28rem) !important;
-    line-height: 1.08 !important;
+    font-size: clamp(1rem, 4.6vw, 1.28rem)  !important;
+    line-height: 1.08  !important;
   }
 
   .classification-table,
@@ -4969,9 +4969,9 @@ body.modal-open .scroll-top-btn {
   }
 
   .classification-table td {
-    padding: 0 !important;
-    border: 0 !important;
-    background: transparent !important;
+    padding: 0  !important;
+    border: 0  !important;
+    background: transparent  !important;
   }
 
   .classification-table td:first-child {
@@ -5014,12 +5014,12 @@ body.modal-open .scroll-top-btn {
 
 @media (max-width: 480px) {
   .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    top: auto !important;
-    right: max(0.72rem, var(--sar)) !important;
-    bottom: calc(var(--sab) + 0.72rem) !important;
-    left: max(0.72rem, var(--sal)) !important;
-    transform: translate3d(0, 0, 0) !important;
+    position: fixed  !important;
+    top: auto  !important;
+    right: max(0.72rem, var(--sar))  !important;
+    bottom: calc(var(--sab) + 0.72rem)  !important;
+    left: max(0.72rem, var(--sal))  !important;
+    transform: translate3d(0, 0, 0)  !important;
   }
 
   .modal-tabpanel {
@@ -5036,109 +5036,109 @@ body.modal-open .scroll-top-btn {
 
   .modal-content {
     contain: layout paint;
-    scroll-padding-top: calc(var(--modal-header-offset, calc(var(--sat) + 6rem)) + var(--modal-tabs-height) + 0.6rem) !important;
-    scroll-padding-bottom: calc(var(--sab) + var(--modal-action-height) + 1.65rem) !important;
-    padding-bottom: calc(var(--sab) + var(--modal-action-height) + 2rem) !important;
+    scroll-padding-top: calc(var(--modal-header-offset, calc(var(--sat) + 6rem)) + var(--modal-tabs-height) + 0.6rem)  !important;
+    scroll-padding-bottom: calc(var(--sab) + var(--modal-action-height) + 1.65rem)  !important;
+    padding-bottom: calc(var(--sab) + var(--modal-action-height) + 2rem)  !important;
   }
 
   .modal-body {
-    display: block !important;
-    min-width: 0 !important;
-    padding-bottom: calc(var(--sab) + var(--modal-action-height) + 1.35rem) !important;
+    display: block  !important;
+    min-width: 0  !important;
+    padding-bottom: calc(var(--sab) + var(--modal-action-height) + 1.35rem)  !important;
   }
 
   .tabs-shell {
-    box-sizing: border-box !important;
-    top: calc(var(--modal-header-offset, calc(var(--sat) + 6rem)) + 0.38rem) !important;
-    min-height: var(--modal-tabs-height) !important;
-    margin: 0 !important;
-    padding: 0.36rem 0 0.38rem !important;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.1) !important;
+    box-sizing: border-box  !important;
+    top: calc(var(--modal-header-offset, calc(var(--sat) + 6rem)) + 0.38rem)  !important;
+    min-height: var(--modal-tabs-height)  !important;
+    margin: 0  !important;
+    padding: 0.36rem 0 0.38rem  !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1)  !important;
     background:
       linear-gradient(180deg, rgba(8, 15, 27, 0.98), rgba(8, 15, 27, 0.9)),
-      rgba(8, 15, 27, 0.96) !important;
+      rgba(8, 15, 27, 0.96)  !important;
     box-shadow:
       0 14px 34px rgba(0, 0, 0, 0.24),
-      inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+      inset 0 1px 0 rgba(255, 255, 255, 0.04)  !important;
   }
 
   .tabs-shell .tabs[data-scrollable='x'] {
-    align-items: center !important;
-    min-height: 2.55rem !important;
-    padding: 0 max(4.1rem, var(--sar)) 0 max(0.82rem, var(--sal)) !important;
-    scrollbar-width: none !important;
+    align-items: center  !important;
+    min-height: 2.55rem  !important;
+    padding: 0 max(4.1rem, var(--sar)) 0 max(0.82rem, var(--sal))  !important;
+    scrollbar-width: none  !important;
     scroll-behavior: smooth;
-    touch-action: pan-x pan-y !important;
+    touch-action: pan-x pan-y  !important;
   }
 
   .tabs-shell .tabs[data-scrollable='x']::-webkit-scrollbar {
-    display: none !important;
+    display: none  !important;
   }
 
   .tabs-shell .tab {
-    min-height: 2.44rem !important;
-    padding: 0.48rem 0.78rem !important;
-    border-radius: 999px !important;
+    min-height: 2.44rem  !important;
+    padding: 0.48rem 0.78rem  !important;
+    border-radius: 999px  !important;
   }
 
   .tabs-shell .tab-index {
-    width: 1.62rem !important;
-    height: 1.62rem !important;
-    min-width: 1.62rem !important;
+    width: 1.62rem  !important;
+    height: 1.62rem  !important;
+    min-width: 1.62rem  !important;
   }
 
   .tab-label {
-    max-width: 7.25rem !important;
-    font-size: 0.78rem !important;
+    max-width: 7.25rem  !important;
+    font-size: 0.78rem  !important;
   }
 
   .modal-tabpanel {
-    max-width: 100% !important;
-    min-width: 0 !important;
-    padding-top: 1.18rem !important;
-    padding-bottom: calc(var(--sab) + var(--modal-action-height) + 1.65rem) !important;
+    max-width: 100%  !important;
+    min-width: 0  !important;
+    padding-top: 1.18rem  !important;
+    padding-bottom: calc(var(--sab) + var(--modal-action-height) + 1.65rem)  !important;
   }
 
   .modal-tabpanel > .content-block,
   .modal-tabpanel .content-block {
-    min-width: 0 !important;
-    overflow: visible !important;
+    min-width: 0  !important;
+    overflow: visible  !important;
   }
 
   .modal-mobile-quickbar,
   .modal-mobile-quickbar.is-fixed,
   .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    top: auto !important;
-    bottom: calc(var(--sab) + 0.62rem) !important;
-    min-height: var(--modal-action-height) !important;
-    max-height: var(--modal-action-height) !important;
-    align-items: center !important;
-    pointer-events: auto !important;
+    top: auto  !important;
+    bottom: calc(var(--sab) + 0.62rem)  !important;
+    min-height: var(--modal-action-height)  !important;
+    max-height: var(--modal-action-height)  !important;
+    align-items: center  !important;
+    pointer-events: auto  !important;
   }
 
   .modal-mobile-quickbtn {
-    min-height: 3.36rem !important;
-    line-height: 1 !important;
+    min-height: 3.36rem  !important;
+    line-height: 1  !important;
   }
 
   body.light-mode .tabs-shell {
     background:
       linear-gradient(180deg, rgba(255, 252, 246, 0.98), rgba(255, 249, 239, 0.91)),
-      rgba(255, 252, 246, 0.96) !important;
-    border-bottom-color: rgba(42, 63, 86, 0.11) !important;
+      rgba(255, 252, 246, 0.96)  !important;
+    border-bottom-color: rgba(42, 63, 86, 0.11)  !important;
     box-shadow:
       0 14px 30px rgba(62, 42, 18, 0.1),
-      inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
+      inset 0 1px 0 rgba(255, 255, 255, 0.7)  !important;
   }
 }
 
 @media (max-width: 390px) {
   .tabs-shell .tabs[data-scrollable='x'] {
-    padding-right: max(3.45rem, var(--sar)) !important;
+    padding-right: max(3.45rem, var(--sar))  !important;
   }
 
   .tab-label {
-    max-width: 6.45rem !important;
+    max-width: 6.45rem  !important;
   }
 }
 
@@ -5162,7 +5162,7 @@ body.modal-open .scroll-top-btn {
   align-items: center;
   gap: 0.52rem;
   min-width: 0;
-  line-height: 1.12 !important;
+  line-height: 1.12  !important;
 }
 
 .clinical-table-card > h3::before {
@@ -5205,51 +5205,51 @@ body.modal-open .scroll-top-btn {
 @media (max-width: 900px) {
   .clinical-table-card {
     width: 100%;
-    max-width: min(35rem, 100%) !important;
-    margin: 0.72rem auto 1rem !important;
-    border-radius: 1rem !important;
+    max-width: min(35rem, 100%)  !important;
+    margin: 0.72rem auto 1rem  !important;
+    border-radius: 1rem  !important;
   }
 
   .clinical-table-card > h3 {
-    padding: 0.86rem 0.86rem 0.2rem !important;
-    font-size: 1rem !important;
+    padding: 0.86rem 0.86rem 0.2rem  !important;
+    font-size: 1rem  !important;
   }
 
   .premium-clinical-table {
-    display: grid !important;
-    gap: 0.52rem !important;
-    padding: 0.52rem !important;
+    display: grid  !important;
+    gap: 0.52rem  !important;
+    padding: 0.52rem  !important;
   }
 
   .premium-clinical-table tbody {
-    display: grid !important;
-    gap: 0.52rem !important;
+    display: grid  !important;
+    gap: 0.52rem  !important;
   }
 
   .premium-clinical-table tr {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) !important;
-    gap: 0.5rem !important;
-    margin: 0 !important;
-    padding: 0.78rem !important;
-    border: 1px solid rgba(148, 163, 184, 0.12) !important;
-    border-radius: 0.9rem !important;
+    display: grid  !important;
+    grid-template-columns: minmax(0, 1fr)  !important;
+    gap: 0.5rem  !important;
+    margin: 0  !important;
+    padding: 0.78rem  !important;
+    border: 1px solid rgba(148, 163, 184, 0.12)  !important;
+    border-radius: 0.9rem  !important;
     background:
       linear-gradient(180deg, rgba(17, 29, 45, 0.92), rgba(10, 19, 32, 0.9)),
-      rgba(15, 23, 42, 0.72) !important;
+      rgba(15, 23, 42, 0.72)  !important;
   }
 
   .premium-clinical-table td {
-    display: grid !important;
-    grid-template-columns: minmax(4.9rem, 31%) minmax(0, 1fr) !important;
-    gap: 0.52rem !important;
-    align-items: start !important;
-    min-width: 0 !important;
-    width: 100% !important;
-    padding: 0 !important;
-    border: 0 !important;
-    line-height: 1.56 !important;
-    overflow-wrap: anywhere !important;
+    display: grid  !important;
+    grid-template-columns: minmax(4.9rem, 31%) minmax(0, 1fr)  !important;
+    gap: 0.52rem  !important;
+    align-items: start  !important;
+    min-width: 0  !important;
+    width: 100%  !important;
+    padding: 0  !important;
+    border: 0  !important;
+    line-height: 1.56  !important;
+    overflow-wrap: anywhere  !important;
     hyphens: auto;
   }
 
@@ -5273,42 +5273,42 @@ body.modal-open .scroll-top-btn {
   .clinical-pathway-table td[data-label="Шаг"],
   .differential-list-table td[data-label="№"],
   .classification-table td[data-label="№"] {
-    grid-template-columns: minmax(0, auto) minmax(0, 1fr) !important;
-    align-items: center !important;
+    grid-template-columns: minmax(0, auto) minmax(0, 1fr)  !important;
+    align-items: center  !important;
   }
 
   .diagnostic-flow-table td[data-label="Маршрут"],
   .clinical-pathway-table td[data-label="Дальше"] {
-    grid-template-columns: minmax(4.9rem, 31%) minmax(0, auto) !important;
+    grid-template-columns: minmax(4.9rem, 31%) minmax(0, auto)  !important;
   }
 
   .table-flow-arrow {
-    width: 1.82rem !important;
-    height: 1.82rem !important;
-    font-size: 1rem !important;
+    width: 1.82rem  !important;
+    height: 1.82rem  !important;
+    font-size: 1rem  !important;
   }
 
   .table-flow-done {
-    min-height: 1.75rem !important;
-    padding-inline: 0.58rem !important;
+    min-height: 1.75rem  !important;
+    padding-inline: 0.58rem  !important;
   }
 
   .table-step-badge {
-    min-width: 1.6rem !important;
-    height: 1.6rem !important;
+    min-width: 1.6rem  !important;
+    height: 1.6rem  !important;
   }
 
   body.light-mode .premium-clinical-table tr {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 250, 242, 0.9)),
-      rgba(255, 255, 255, 0.86) !important;
-    border-color: rgba(42, 63, 86, 0.11) !important;
+      rgba(255, 255, 255, 0.86)  !important;
+    border-color: rgba(42, 63, 86, 0.11)  !important;
   }
 }
 
 @media (max-width: 360px) {
   .premium-clinical-table td {
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr)  !important;
   }
 
   .premium-clinical-table td::before {
@@ -5317,22 +5317,22 @@ body.modal-open .scroll-top-btn {
 
   .diagnostic-flow-table td[data-label="Маршрут"],
   .clinical-pathway-table td[data-label="Дальше"] {
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr)  !important;
   }
 }
 
 /* v16 touch target lock: disease tabs must never shrink below iPhone tap minimum. */
 .tabs-shell .tab,
 .tabs-shell .tabs button {
-  min-height: 44px !important;
+  min-height: 44px  !important;
 }
 
 @media (max-width: 700px) {
   .tabs-shell .tab,
   .tabs-shell .tabs button {
-    min-height: 44px !important;
-    padding-top: 0.58rem !important;
-    padding-bottom: 0.58rem !important;
+    min-height: 44px  !important;
+    padding-top: 0.58rem  !important;
+    padding-bottom: 0.58rem  !important;
   }
 }
 
@@ -5343,130 +5343,130 @@ body.modal-open .scroll-top-btn {
   body.modal-open .mobile-shell-nav,
   body.modal-open .bottom-nav,
   body.modal-open .scroll-top-btn {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .modal-overlay {
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 2147482000 !important;
-    display: block !important;
-    overflow: hidden !important;
-    background: rgba(3, 7, 16, 0.96) !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    z-index: 2147482000  !important;
+    display: block  !important;
+    overflow: hidden  !important;
+    background: rgba(3, 7, 16, 0.96)  !important;
   }
 
   body.modal-open .modal-content {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    max-width: none !important;
-    height: 100vh !important;
-    height: 100svh !important;
-    height: 100dvh !important;
-    max-height: none !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    overflow-x: clip !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    -webkit-overflow-scrolling: touch !important;
-    scroll-padding-top: calc(var(--modal-header-offset, calc(var(--sat) + 6.25rem)) + 3.95rem) !important;
-    scroll-padding-bottom: calc(var(--sab) + 7.8rem) !important;
-    padding-bottom: calc(var(--sab) + 7.8rem) !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    max-width: none  !important;
+    height: 100vh  !important;
+    height: 100svh  !important;
+    height: 100dvh  !important;
+    max-height: none  !important;
+    margin: 0  !important;
+    border-radius: 0  !important;
+    overflow-x: clip  !important;
+    overflow-y: auto  !important;
+    overscroll-behavior: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    scroll-padding-top: calc(var(--modal-header-offset, calc(var(--sat) + 6.25rem)) + 3.95rem)  !important;
+    scroll-padding-bottom: calc(var(--sab) + 7.8rem)  !important;
+    padding-bottom: calc(var(--sab) + 7.8rem)  !important;
   }
 
   body.modal-open .modal-header {
-    position: relative !important;
-    z-index: 30 !important;
-    padding-top: calc(var(--sat) + 0.95rem) !important;
+    position: relative  !important;
+    z-index: 30  !important;
+    padding-top: calc(var(--sat) + 0.95rem)  !important;
   }
 
   body.modal-open .modal-body {
-    padding-bottom: calc(var(--sab) + 8.1rem) !important;
+    padding-bottom: calc(var(--sab) + 8.1rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    position: sticky !important;
+    position: sticky  !important;
     top: var(--modal-header-offset, calc(var(--sat) + 6.4rem)) !important;
-    z-index: 40 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin-inline: calc(50% - 50vw) !important;
-    padding-top: 0.44rem !important;
-    padding-bottom: 0.44rem !important;
+    z-index: 40  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    margin-inline: calc(50% - 50vw)  !important;
+    padding-top: 0.44rem  !important;
+    padding-bottom: 0.44rem  !important;
     background:
       linear-gradient(180deg, rgba(6, 12, 23, 0.99), rgba(7, 15, 27, 0.96)),
-      rgba(7, 15, 27, 0.98) !important;
-    border-top: 1px solid rgba(148, 163, 184, 0.08) !important;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.14) !important;
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.34) !important;
-    backdrop-filter: blur(18px) saturate(1.25) !important;
-    -webkit-backdrop-filter: blur(18px) saturate(1.25) !important;
+      rgba(7, 15, 27, 0.98)  !important;
+    border-top: 1px solid rgba(148, 163, 184, 0.08)  !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.14)  !important;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.34)  !important;
+    backdrop-filter: blur(18px) saturate(1.25)  !important;
+    -webkit-backdrop-filter: blur(18px) saturate(1.25)  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    justify-content: flex-start  !important;
+    width: 100%  !important;
+    min-width: 100%  !important;
+    max-width: 100%  !important;
     padding-left: max(0.86rem, var(--sal)) !important;
     padding-right: max(3.5rem, var(--sar)) !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    overscroll-behavior-x: contain !important;
-    touch-action: pan-x !important;
-    scrollbar-width: none !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    overscroll-behavior-x: contain  !important;
+    touch-action: pan-x  !important;
+    scrollbar-width: none  !important;
   }
 
   body.modal-open .tabs-shell .tabs::-webkit-scrollbar,
   body.modal-open .tabs-shell .tabs[data-scrollable='x']::-webkit-scrollbar {
-    display: none !important;
+    display: none  !important;
   }
 
   body.modal-open .modal-tabpanel {
-    padding-bottom: calc(var(--sab) + 8rem) !important;
+    padding-bottom: calc(var(--sab) + 8rem)  !important;
   }
 
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 8rem) !important;
+    padding-bottom: calc(var(--sab) + 8rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    top: auto !important;
-    left: max(0.78rem, var(--sal)) !important;
-    right: max(0.78rem, var(--sar)) !important;
-    bottom: calc(var(--sab) + 0.78rem) !important;
-    z-index: 2147483000 !important;
-    width: auto !important;
+    position: fixed  !important;
+    top: auto  !important;
+    left: max(0.78rem, var(--sal))  !important;
+    right: max(0.78rem, var(--sar))  !important;
+    bottom: calc(var(--sab) + 0.78rem)  !important;
+    z-index: 2147483000  !important;
+    width: auto  !important;
     max-width: min(24.5rem, calc(100vw - 1.56rem)) !important;
-    min-height: 4.32rem !important;
-    max-height: 4.32rem !important;
-    margin-inline: auto !important;
-    transform: none !important;
-    translate: none !important;
-    will-change: auto !important;
+    min-height: 4.32rem  !important;
+    max-height: 4.32rem  !important;
+    margin-inline: auto  !important;
+    transform: none  !important;
+    translate: none  !important;
+    will-change: auto  !important;
   }
 }
 
 @media (max-width: 480px) {
   body.modal-open .modal-content {
-    scroll-padding-bottom: calc(var(--sab) + 8.4rem) !important;
-    padding-bottom: calc(var(--sab) + 8.4rem) !important;
+    scroll-padding-bottom: calc(var(--sab) + 8.4rem)  !important;
+    padding-bottom: calc(var(--sab) + 8.4rem)  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 8.4rem) !important;
+    padding-bottom: calc(var(--sab) + 8.4rem)  !important;
   }
 }
 
@@ -5477,17 +5477,17 @@ body.modal-open .scroll-top-btn {
   body.modal-open .mobile-shell-nav,
   body.modal-open .bottom-nav,
   body.modal-open .scroll-top-btn {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .modal-overlay {
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 2147482000 !important;
-    display: block !important;
-    overflow: hidden !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    z-index: 2147482000  !important;
+    display: block  !important;
+    overflow: hidden  !important;
   }
 
   body.modal-open .modal-overlay,
@@ -5495,75 +5495,75 @@ body.modal-open .scroll-top-btn {
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    max-width: 100vw !important;
-    min-width: 0 !important;
+    max-width: 100vw  !important;
+    min-width: 0  !important;
   }
 
   body.modal-open .modal-content {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    max-height: none !important;
-    height: 100vh !important;
-    height: 100svh !important;
-    height: 100dvh !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    overflow-x: clip !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    -webkit-overflow-scrolling: touch !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    max-height: none  !important;
+    height: 100vh  !important;
+    height: 100svh  !important;
+    height: 100dvh  !important;
+    margin: 0  !important;
+    border-radius: 0  !important;
+    overflow-x: clip  !important;
+    overflow-y: auto  !important;
+    overscroll-behavior: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
     contain: layout paint;
     --modal-header-offset: calc(var(--sat) + 6.35rem);
   }
 
   body.modal-open .modal-header {
-    display: block !important;
-    height: auto !important;
-    min-height: calc(var(--sat) + 5.82rem) !important;
-    overflow: visible !important;
+    display: block  !important;
+    height: auto  !important;
+    min-height: calc(var(--sat) + 5.82rem)  !important;
+    overflow: visible  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    inset-block-start: auto !important;
-    inset-inline-start: max(0.78rem, var(--sal)) !important;
-    inset-inline-end: max(0.78rem, var(--sar)) !important;
-    inset-block-end: calc(var(--sab) + 0.78rem) !important;
-    translate: none !important;
+    position: fixed  !important;
+    inset-block-start: auto  !important;
+    inset-inline-start: max(0.78rem, var(--sal))  !important;
+    inset-inline-end: max(0.78rem, var(--sar))  !important;
+    inset-block-end: calc(var(--sab) + 0.78rem)  !important;
+    translate: none  !important;
   }
 }
 
 @media (max-width: 940px) and (orientation: landscape) {
   body.modal-open .modal-content {
     --modal-header-offset: calc(var(--sat) + 4.72rem);
-    scroll-padding-top: calc(var(--sat) + 7.35rem) !important;
-    scroll-padding-bottom: calc(var(--sab) + 6.55rem) !important;
-    padding-bottom: calc(var(--sab) + 6.55rem) !important;
+    scroll-padding-top: calc(var(--sat) + 7.35rem)  !important;
+    scroll-padding-bottom: calc(var(--sab) + 6.55rem)  !important;
+    padding-bottom: calc(var(--sab) + 6.55rem)  !important;
   }
 
   body.modal-open .modal-header {
-    display: block !important;
-    height: auto !important;
-    min-height: calc(var(--sat) + 4.08rem) !important;
-    overflow: visible !important;
-    padding-top: calc(var(--sat) + 0.48rem) !important;
-    padding-bottom: 0.52rem !important;
+    display: block  !important;
+    height: auto  !important;
+    min-height: calc(var(--sat) + 4.08rem)  !important;
+    overflow: visible  !important;
+    padding-top: calc(var(--sat) + 0.48rem)  !important;
+    padding-bottom: 0.52rem  !important;
   }
 
   body.modal-open .modal-header-main {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) auto !important;
-    gap: 0.44rem !important;
-    align-items: center !important;
+    display: grid  !important;
+    grid-template-columns: minmax(0, 1fr) auto  !important;
+    gap: 0.44rem  !important;
+    align-items: center  !important;
   }
 
   body.modal-open .modal-header-identity,
   body.modal-open .modal-header-copy {
-    min-width: 0 !important;
-    gap: 0.18rem !important;
+    min-width: 0  !important;
+    gap: 0.18rem  !important;
   }
 
   body.modal-open .modal-header-icon,
@@ -5574,126 +5574,126 @@ body.modal-open .scroll-top-btn {
   body.modal-open .modal-header-signal-row,
   body.modal-open .modal-header-lead,
   body.modal-open .modal-summary-grid {
-    display: none !important;
+    display: none  !important;
   }
 
   body.modal-open .modal-title {
-    max-width: calc(100vw - 7rem) !important;
-    font-size: clamp(1.18rem, 4.8vw, 1.72rem) !important;
-    line-height: 0.98 !important;
+    max-width: calc(100vw - 7rem)  !important;
+    font-size: clamp(1.18rem, 4.8vw, 1.72rem)  !important;
+    line-height: 0.98  !important;
   }
 
   body.modal-open .modal-header-meta,
   body.modal-open .modal-badges,
   body.modal-open .modal-meta-row {
-    max-height: 1.85rem !important;
-    overflow: hidden !important;
-    gap: 0.32rem !important;
+    max-height: 1.85rem  !important;
+    overflow: hidden  !important;
+    gap: 0.32rem  !important;
   }
 
   body.modal-open .modal-header-actions {
-    position: absolute !important;
-    top: calc(var(--sat) + 0.42rem) !important;
-    right: max(0.46rem, var(--sar)) !important;
-    z-index: 55 !important;
+    position: absolute  !important;
+    top: calc(var(--sat) + 0.42rem)  !important;
+    right: max(0.46rem, var(--sar))  !important;
+    z-index: 55  !important;
   }
 
   body.modal-open .modal-back-btn,
   body.modal-open .modal-close {
-    width: 44px !important;
-    height: 44px !important;
-    min-width: 44px !important;
-    min-height: 44px !important;
+    width: 44px  !important;
+    height: 44px  !important;
+    min-width: 44px  !important;
+    min-height: 44px  !important;
   }
 
   body.modal-open .tabs-shell {
     top: var(--modal-header-offset, calc(var(--sat) + 4.72rem)) !important;
-    padding-top: 0.22rem !important;
-    padding-bottom: 0.24rem !important;
+    padding-top: 0.22rem  !important;
+    padding-bottom: 0.24rem  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    padding-left: max(0.72rem, var(--sal)) !important;
+    padding-left: max(0.72rem, var(--sal))  !important;
     padding-right: max(3rem, var(--sar)) !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    min-height: 44px !important;
-    padding-top: 0.44rem !important;
-    padding-bottom: 0.44rem !important;
+    min-height: 44px  !important;
+    padding-top: 0.44rem  !important;
+    padding-bottom: 0.44rem  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 6.7rem) !important;
+    padding-bottom: calc(var(--sab) + 6.7rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    bottom: calc(var(--sab) + 0.45rem) !important;
-    left: auto !important;
-    right: max(0.52rem, var(--sar)) !important;
-    min-height: 3.02rem !important;
-    max-height: 3.02rem !important;
+    bottom: calc(var(--sab) + 0.45rem)  !important;
+    left: auto  !important;
+    right: max(0.52rem, var(--sar))  !important;
+    min-height: 3.02rem  !important;
+    max-height: 3.02rem  !important;
     width: min(12.25rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
     max-width: min(12.25rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
-    padding: 0.22rem !important;
-    gap: 0.28rem !important;
-    border-radius: 0.95rem !important;
+    padding: 0.22rem  !important;
+    gap: 0.28rem  !important;
+    border-radius: 0.95rem  !important;
   }
 
   body.modal-open .modal-mobile-quickbtn {
-    min-height: 2.48rem !important;
-    padding: 0.42rem 0.34rem !important;
-    border-radius: 0.78rem !important;
-    font-size: 0.68rem !important;
+    min-height: 2.48rem  !important;
+    padding: 0.42rem 0.34rem  !important;
+    border-radius: 0.78rem  !important;
+    font-size: 0.68rem  !important;
   }
 
   body.modal-open .modal-mobile-quickbtn::before {
-    width: 1.08rem !important;
-    height: 1.08rem !important;
-    font-size: 0.72rem !important;
+    width: 1.08rem  !important;
+    height: 1.08rem  !important;
+    font-size: 0.72rem  !important;
   }
 }
 
 /* v18.1 end-of-file cascade lock: keeps disease tabs visible at viewport top. */
 @media (max-width: 940px) {
   body.modal-open .modal-body {
-    padding-top: 3.72rem !important;
+    padding-top: 3.72rem  !important;
   }
 
   body.modal-open .modal-overlay {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    height: 100dvh !important;
-    max-width: 100vw !important;
-    overflow: hidden !important;
-    z-index: 2147482000 !important;
-    transform: none !important;
-    contain: none !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    height: 100dvh  !important;
+    max-width: 100vw  !important;
+    overflow: hidden  !important;
+    z-index: 2147482000  !important;
+    transform: none  !important;
+    contain: none  !important;
   }
 
   body.modal-open .modal-content {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    height: 100dvh !important;
-    max-width: 100vw !important;
-    max-height: none !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    overflow-x: clip !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    -webkit-overflow-scrolling: touch !important;
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.82rem) !important;
-    scroll-padding-bottom: calc(var(--sab) + 8.9rem) !important;
-    padding-bottom: calc(var(--sab) + 8.9rem) !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    width: 100vw  !important;
+    height: 100dvh  !important;
+    max-width: 100vw  !important;
+    max-height: none  !important;
+    margin: 0  !important;
+    border-radius: 0  !important;
+    overflow-x: clip  !important;
+    overflow-y: auto  !important;
+    overscroll-behavior: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.82rem)  !important;
+    scroll-padding-bottom: calc(var(--sab) + 8.9rem)  !important;
+    padding-bottom: calc(var(--sab) + 8.9rem)  !important;
   }
 
   body.modal-open .navbar,
@@ -5701,120 +5701,120 @@ body.modal-open .scroll-top-btn {
   body.modal-open .mobile-shell-nav,
   body.modal-open .bottom-nav,
   body.modal-open .scroll-top-btn {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .tabs-shell {
-    position: fixed !important;
-    top: env(safe-area-inset-top, 0px) !important;
-    z-index: 2147482500 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin-inline: calc(50% - 50vw) !important;
-    padding: 0.42rem 0 !important;
+    position: fixed  !important;
+    top: env(safe-area-inset-top, 0px)  !important;
+    z-index: 2147482500  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    margin-inline: calc(50% - 50vw)  !important;
+    padding: 0.42rem 0  !important;
     background:
       linear-gradient(180deg, rgba(5, 11, 21, 0.99), rgba(7, 15, 27, 0.965)),
-      rgba(7, 15, 27, 0.98) !important;
-    border-block: 1px solid rgba(148, 163, 184, 0.13) !important;
-    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.38) !important;
-    backdrop-filter: blur(20px) saturate(1.22) !important;
-    -webkit-backdrop-filter: blur(20px) saturate(1.22) !important;
+      rgba(7, 15, 27, 0.98)  !important;
+    border-block: 1px solid rgba(148, 163, 184, 0.13)  !important;
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.38)  !important;
+    backdrop-filter: blur(20px) saturate(1.22)  !important;
+    -webkit-backdrop-filter: blur(20px) saturate(1.22)  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    gap: 0.42rem !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-    padding: 0.06rem max(3.7rem, var(--sar)) 0.1rem max(0.86rem, var(--sal)) !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    overscroll-behavior-x: contain !important;
-    touch-action: pan-x !important;
-    scrollbar-width: none !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    justify-content: flex-start  !important;
+    gap: 0.42rem  !important;
+    width: 100%  !important;
+    min-width: 100%  !important;
+    max-width: 100%  !important;
+    padding: 0.06rem max(3.7rem, var(--sar)) 0.1rem max(0.86rem, var(--sal))  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    overscroll-behavior-x: contain  !important;
+    touch-action: pan-x  !important;
+    scrollbar-width: none  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    max-width: min(72vw, 11.4rem) !important;
-    min-height: 44px !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    max-width: min(72vw, 11.4rem)  !important;
+    min-height: 44px  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 9rem) !important;
+    padding-bottom: calc(var(--sab) + 9rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    inset-block-start: auto !important;
-    inset-inline-start: max(0.78rem, var(--sal)) !important;
-    inset-inline-end: max(0.78rem, var(--sar)) !important;
+    position: fixed  !important;
+    inset-block-start: auto  !important;
+    inset-inline-start: max(0.78rem, var(--sal))  !important;
+    inset-inline-end: max(0.78rem, var(--sar))  !important;
     inset-block-end: max(0.72rem, calc(var(--sab) + 0.72rem)) !important;
-    z-index: 2147483000 !important;
-    width: auto !important;
+    z-index: 2147483000  !important;
+    width: auto  !important;
     max-width: min(24.75rem, calc(100vw - max(1.56rem, var(--sal) + var(--sar)))) !important;
-    min-height: 4.18rem !important;
-    max-height: 4.18rem !important;
-    margin-inline: auto !important;
-    translate: none !important;
-    transform: translate3d(0, 0, 0) !important;
+    min-height: 4.18rem  !important;
+    max-height: 4.18rem  !important;
+    margin-inline: auto  !important;
+    translate: none  !important;
+    transform: translate3d(0, 0, 0)  !important;
   }
 }
 
 @media (max-width: 940px) and (orientation: landscape) {
   body.modal-open .modal-body {
-    padding-top: 3.18rem !important;
+    padding-top: 3.18rem  !important;
   }
 
   body.modal-open .modal-content {
-    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.24rem) !important;
-    scroll-padding-bottom: calc(var(--sab) + 6.7rem) !important;
-    padding-bottom: calc(var(--sab) + 6.7rem) !important;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 3.24rem)  !important;
+    scroll-padding-bottom: calc(var(--sab) + 6.7rem)  !important;
+    padding-bottom: calc(var(--sab) + 6.7rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    top: env(safe-area-inset-top, 0px) !important;
-    padding-block: 0.22rem !important;
+    top: env(safe-area-inset-top, 0px)  !important;
+    padding-block: 0.22rem  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block {
-    padding-bottom: calc(var(--sab) + 6.95rem) !important;
+    padding-bottom: calc(var(--sab) + 6.95rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    inset-inline-start: auto !important;
-    inset-inline-end: max(0.52rem, var(--sar)) !important;
+    inset-inline-start: auto  !important;
+    inset-inline-end: max(0.52rem, var(--sar))  !important;
     inset-block-end: max(0.42rem, calc(var(--sab) + 0.42rem)) !important;
     width: min(12.6rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
     max-width: min(12.6rem, calc(100vw - max(1.2rem, var(--sal) + var(--sar)))) !important;
-    min-height: 3.08rem !important;
-    max-height: 3.08rem !important;
-    padding: 0.22rem !important;
-    border-radius: 0.95rem !important;
+    min-height: 3.08rem  !important;
+    max-height: 3.08rem  !important;
+    padding: 0.22rem  !important;
+    border-radius: 0.95rem  !important;
   }
 }
 /* UroMed 1.1 final cascade lock. Keep this block at EOF. */
 @media (max-width: 980px) {
   body.modal-open {
-    overflow: hidden !important;
-    overscroll-behavior: none !important;
+    overflow: hidden  !important;
+    overscroll-behavior: none  !important;
   }
 
   body.modal-open .navbar,
@@ -5824,242 +5824,242 @@ body.modal-open .scroll-top-btn {
   body.modal-open .app-bottom-nav,
   body.modal-open .floating-scroll-button,
   body.modal-open .scroll-to-top {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    display: none  !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .modal-overlay {
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 2147482000 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100dvh !important;
-    max-height: 100dvh !important;
-    margin: 0 !important;
-    overflow: hidden !important;
-    overscroll-behavior: none !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    z-index: 2147482000  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    height: 100dvh  !important;
+    max-height: 100dvh  !important;
+    margin: 0  !important;
+    overflow: hidden  !important;
+    overscroll-behavior: none  !important;
     background:
       radial-gradient(circle at 50% -8%, rgba(76, 209, 199, 0.16), transparent 32%),
-      var(--color-bg, #050b14) !important;
+      var(--color-bg, #050b14)  !important;
   }
 
   body.modal-open .modal-content {
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 2147482100 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100dvh !important;
-    max-height: 100dvh !important;
-    min-height: 100dvh !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    border: 0 !important;
-    transform: none !important;
-    overflow-x: clip !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    -webkit-overflow-scrolling: touch !important;
-    scroll-padding-top: 4.65rem !important;
-    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem) !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem) !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    z-index: 2147482100  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    height: 100dvh  !important;
+    max-height: 100dvh  !important;
+    min-height: 100dvh  !important;
+    margin: 0  !important;
+    border-radius: 0  !important;
+    border: 0  !important;
+    transform: none  !important;
+    overflow-x: clip  !important;
+    overflow-y: auto  !important;
+    overscroll-behavior: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    scroll-padding-top: 4.65rem  !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem)  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem)  !important;
     background:
       linear-gradient(180deg, rgba(11, 23, 39, 0.98), rgba(6, 13, 24, 0.99)),
-      var(--color-surface, #0b1422) !important;
+      var(--color-surface, #0b1422)  !important;
   }
 
   body.light-mode.modal-open .modal-content {
     background:
       linear-gradient(180deg, rgba(248, 252, 255, 0.99), rgba(234, 242, 249, 0.99)),
-      #f6fbff !important;
+      #f6fbff  !important;
   }
 
   body.modal-open .tabs-shell {
-    position: fixed !important;
-    inset-block-start: 0 !important;
-    inset-inline-start: 0 !important;
-    inset-inline-end: 0 !important;
-    z-index: 2147483600 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    margin-inline: 0 !important;
-    transform: none !important;
-    border-radius: 0 0 1.05rem 1.05rem !important;
-    border: 0 !important;
-    border-bottom: 1px solid rgba(125, 211, 252, 0.22) !important;
+    position: fixed  !important;
+    inset-block-start: 0  !important;
+    inset-inline-start: 0  !important;
+    inset-inline-end: 0  !important;
+    z-index: 2147483600  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    min-width: 0  !important;
+    box-sizing: border-box  !important;
+    margin: 0  !important;
+    margin-inline: 0  !important;
+    transform: none  !important;
+    border-radius: 0 0 1.05rem 1.05rem  !important;
+    border: 0  !important;
+    border-bottom: 1px solid rgba(125, 211, 252, 0.22)  !important;
     padding:
       calc(env(safe-area-inset-top, 0px) + 0.34rem)
       max(0.58rem, calc(env(safe-area-inset-right, 0px) + 0.58rem))
       0.38rem
       max(0.58rem, calc(env(safe-area-inset-left, 0px) + 0.58rem)) !important;
-    overflow: hidden !important;
+    overflow: hidden  !important;
     background:
       linear-gradient(180deg, rgba(10, 21, 35, 0.99), rgba(12, 25, 42, 0.96)),
-      rgba(10, 21, 35, 0.98) !important;
-    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28) !important;
-    backdrop-filter: blur(22px) saturate(1.25) !important;
-    -webkit-backdrop-filter: blur(22px) saturate(1.25) !important;
-    contain: layout paint !important;
+      rgba(10, 21, 35, 0.98)  !important;
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28)  !important;
+    backdrop-filter: blur(22px) saturate(1.25)  !important;
+    -webkit-backdrop-filter: blur(22px) saturate(1.25)  !important;
+    contain: layout paint  !important;
   }
 
   body.light-mode.modal-open .tabs-shell {
-    border-bottom-color: rgba(14, 116, 144, 0.18) !important;
+    border-bottom-color: rgba(14, 116, 144, 0.18)  !important;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(238, 248, 251, 0.97)),
-      rgba(255, 255, 255, 0.98) !important;
-    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.13) !important;
+      rgba(255, 255, 255, 0.98)  !important;
+    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.13)  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    align-items: stretch !important;
-    gap: 0.44rem !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 0.04rem 0.08rem 0.1rem !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    overscroll-behavior-x: contain !important;
-    touch-action: pan-x !important;
-    scrollbar-width: none !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    align-items: stretch  !important;
+    gap: 0.44rem  !important;
+    width: 100%  !important;
+    max-width: 100%  !important;
+    min-width: 0  !important;
+    margin: 0  !important;
+    padding: 0.04rem 0.08rem 0.1rem  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    overscroll-behavior-x: contain  !important;
+    touch-action: pan-x  !important;
+    scrollbar-width: none  !important;
   }
 
   body.modal-open .tabs-shell .tabs::-webkit-scrollbar,
   body.modal-open .tabs-shell .tabs[data-scrollable='x']::-webkit-scrollbar {
-    display: none !important;
+    display: none  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    max-width: min(76vw, 12.5rem) !important;
-    min-height: 44px !important;
-    padding: 0.7rem 0.98rem !important;
-    border-radius: 999px !important;
-    white-space: nowrap !important;
-    touch-action: manipulation !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    max-width: min(76vw, 12.5rem)  !important;
+    min-height: 44px  !important;
+    padding: 0.7rem 0.98rem  !important;
+    border-radius: 999px  !important;
+    white-space: nowrap  !important;
+    touch-action: manipulation  !important;
   }
 
   body.modal-open .modal-header {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 4.95rem) !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 4.95rem)  !important;
   }
 
   body.modal-open .modal-body {
-    padding-top: 0.7rem !important;
+    padding-top: 0.7rem  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block,
   body.modal-open .clinical-readability-rail {
-    max-width: 100% !important;
-    overflow-x: clip !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9.25rem) !important;
+    max-width: 100%  !important;
+    overflow-x: clip  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9.25rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    inset-block-start: auto !important;
+    position: fixed  !important;
+    inset-block-start: auto  !important;
     inset-inline-start: max(0.72rem, env(safe-area-inset-left, 0px)) !important;
     inset-inline-end: max(0.72rem, env(safe-area-inset-right, 0px)) !important;
     inset-block-end: max(0.62rem, calc(env(safe-area-inset-bottom, 0px) + 0.62rem)) !important;
-    z-index: 2147483700 !important;
-    width: auto !important;
+    z-index: 2147483700  !important;
+    width: auto  !important;
     max-width: min(25rem, calc(100vw - max(1.44rem, env(safe-area-inset-left, 0px) + env(safe-area-inset-right, 0px)))) !important;
-    min-height: 4.08rem !important;
-    max-height: 4.08rem !important;
-    margin: 0 auto !important;
-    padding: 0.34rem !important;
-    border-radius: 1.25rem !important;
-    transform: translate3d(0, 0, 0) !important;
-    background: rgba(12, 23, 38, 0.94) !important;
-    border: 1px solid rgba(148, 163, 184, 0.22) !important;
-    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34) !important;
-    backdrop-filter: blur(24px) saturate(1.2) !important;
-    -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
+    min-height: 4.08rem  !important;
+    max-height: 4.08rem  !important;
+    margin: 0 auto  !important;
+    padding: 0.34rem  !important;
+    border-radius: 1.25rem  !important;
+    transform: translate3d(0, 0, 0)  !important;
+    background: rgba(12, 23, 38, 0.94)  !important;
+    border: 1px solid rgba(148, 163, 184, 0.22)  !important;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34)  !important;
+    backdrop-filter: blur(24px) saturate(1.2)  !important;
+    -webkit-backdrop-filter: blur(24px) saturate(1.2)  !important;
   }
 
   body.light-mode.modal-open .modal-mobile-quickbar,
   body.light-mode.modal-open .modal-mobile-quickbar.is-fixed,
   body.light-mode.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    background: rgba(255, 255, 255, 0.94) !important;
-    border-color: rgba(15, 23, 42, 0.13) !important;
-    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.16) !important;
+    background: rgba(255, 255, 255, 0.94)  !important;
+    border-color: rgba(15, 23, 42, 0.13)  !important;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.16)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar button,
   body.modal-open .modal-mobile-quickbar a {
-    min-height: 44px !important;
-    touch-action: manipulation !important;
+    min-height: 44px  !important;
+    touch-action: manipulation  !important;
   }
 }
 
 @media (max-width: 980px) and (orientation: landscape) {
   body.modal-open .modal-content {
-    scroll-padding-top: 3.5rem !important;
-    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.4rem) !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.4rem) !important;
+    scroll-padding-top: 3.5rem  !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.4rem)  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.4rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    inset-block-start: 0 !important;
+    inset-block-start: 0  !important;
     padding:
       0.18rem
       max(0.48rem, calc(env(safe-area-inset-right, 0px) + 0.48rem))
       0.22rem
       max(0.48rem, calc(env(safe-area-inset-left, 0px) + 0.48rem)) !important;
-    border-radius: 0 0 0.82rem 0.82rem !important;
+    border-radius: 0 0 0.82rem 0.82rem  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    gap: 0.34rem !important;
-    padding-bottom: 0.04rem !important;
+    gap: 0.34rem  !important;
+    padding-bottom: 0.04rem  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    min-height: 40px !important;
-    padding: 0.54rem 0.82rem !important;
-    max-width: min(52vw, 10.6rem) !important;
+    min-height: 40px  !important;
+    padding: 0.54rem 0.82rem  !important;
+    max-width: min(52vw, 10.6rem)  !important;
   }
 
   body.modal-open .modal-header {
-    padding-top: 3.65rem !important;
+    padding-top: 3.65rem  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block,
   body.modal-open .clinical-readability-rail {
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.7rem) !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.7rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    inset-inline-start: auto !important;
+    inset-inline-start: auto  !important;
     inset-inline-end: max(0.5rem, env(safe-area-inset-right, 0px)) !important;
     inset-block-end: max(0.42rem, calc(env(safe-area-inset-bottom, 0px) + 0.42rem)) !important;
     width: min(13.2rem, calc(100vw - max(1.2rem, env(safe-area-inset-left, 0px) + env(safe-area-inset-right, 0px)))) !important;
     max-width: min(13.2rem, calc(100vw - max(1.2rem, env(safe-area-inset-left, 0px) + env(safe-area-inset-right, 0px)))) !important;
-    min-height: 3.12rem !important;
-    max-height: 3.12rem !important;
-    padding: 0.24rem !important;
-    border-radius: 1rem !important;
+    min-height: 3.12rem  !important;
+    max-height: 3.12rem  !important;
+    padding: 0.24rem  !important;
+    border-radius: 1rem  !important;
   }
 }

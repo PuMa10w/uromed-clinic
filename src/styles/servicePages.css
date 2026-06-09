@@ -253,10 +253,10 @@
 .humor-card,
 .surgery-card {
   background:
-    linear-gradient(155deg, rgba(11, 21, 38, 0.96), rgba(8, 16, 31, 0.98)) !important;
-  border: 1px solid rgba(154, 180, 214, 0.1) !important;
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28) !important;
-  color: #eef4fb !important;
+    linear-gradient(155deg, rgba(11, 21, 38, 0.96), rgba(8, 16, 31, 0.98))  !important;
+  border: 1px solid rgba(154, 180, 214, 0.1)  !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28)  !important;
+  color: #eef4fb  !important;
 }
 
 .service-empty-state {
@@ -297,10 +297,10 @@
 .fav-card::before,
 .humor-card::before,
 .surgery-card::before {
-  opacity: 0.32 !important;
+  opacity: 0.32  !important;
   background:
     radial-gradient(circle at top right, rgba(99, 234, 213, 0.08), transparent 45%),
-    linear-gradient(180deg, rgba(241, 205, 117, 0.06), transparent 42%) !important;
+    linear-gradient(180deg, rgba(241, 205, 117, 0.06), transparent 42%)  !important;
 }
 
 .favorites-group::after,
@@ -309,7 +309,7 @@
 .tool-section::after,
 .drug-group::after,
 .glossary-item::after {
-  opacity: 0.55 !important;
+  opacity: 0.55  !important;
 }
 
 .favorites-group:hover,
@@ -325,8 +325,8 @@
 .meta-rule-card:hover,
 .meta-diet-card:hover,
 .surgery-card:hover {
-  border-color: rgba(241, 205, 117, 0.14) !important;
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.32) !important;
+  border-color: rgba(241, 205, 117, 0.14)  !important;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.32)  !important;
 }
 
 .group-title,
@@ -348,7 +348,7 @@
 .humor-setup,
 .surgery-card-title,
 .surgery-card-full {
-  color: #f3d27c !important;
+  color: #f3d27c  !important;
 }
 
 .group-count,
@@ -362,7 +362,7 @@
 .emergency-hint,
 .emergency-time,
 .laugh-counter {
-  color: #d4deeb !important;
+  color: #d4deeb  !important;
 }
 
 .fav-desc,
@@ -376,7 +376,7 @@
 .surgery-card-desc,
 .sitemap-item-name,
 .sitemap-item-icd {
-  color: #edf3fb !important;
+  color: #edf3fb  !important;
 }
 
 .go-home-btn,
@@ -394,10 +394,10 @@
 .entry-item,
 .stat-card,
 .question-number {
-  background: rgba(255, 255, 255, 0.035) !important;
-  border: 1px solid rgba(154, 180, 214, 0.12) !important;
-  color: #eef4fb !important;
-  box-shadow: none !important;
+  background: rgba(255, 255, 255, 0.035)  !important;
+  border: 1px solid rgba(154, 180, 214, 0.12)  !important;
+  color: #eef4fb  !important;
+  box-shadow: none  !important;
 }
 
 .drug-search,
@@ -454,16 +454,16 @@
   min-width: max-content;
   min-height: 44px;
   padding: 0.64rem 0.88rem;
-  border: 1px solid rgba(154, 180, 214, 0.12) !important;
+  border: 1px solid rgba(154, 180, 214, 0.12)  !important;
   border-radius: 999px;
   background:
-    linear-gradient(135deg, rgba(15, 32, 54, 0.96), rgba(10, 21, 38, 0.92)) !important;
-  color: #eaf2fb !important;
+    linear-gradient(135deg, rgba(15, 32, 54, 0.96), rgba(10, 21, 38, 0.92))  !important;
+  color: #eaf2fb  !important;
   font-weight: 900;
   font-size: 0.82rem;
   line-height: 1;
   letter-spacing: -0.01em;
-  box-shadow: none !important;
+  box-shadow: none  !important;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -483,11 +483,11 @@
 
 .surgery-page .surgery-tab.active,
 .surgery-page .surgery-tab[aria-selected='true'] {
-  border-color: rgba(240, 201, 106, 0.42) !important;
+  border-color: rgba(240, 201, 106, 0.42)  !important;
   background:
-    linear-gradient(135deg, rgba(240, 201, 106, 0.96), rgba(255, 227, 154, 0.86)) !important;
-  color: #07111f !important;
-  box-shadow: 0 12px 24px rgba(240, 201, 106, 0.16) !important;
+    linear-gradient(135deg, rgba(240, 201, 106, 0.96), rgba(255, 227, 154, 0.86))  !important;
+  color: #07111f  !important;
+  box-shadow: 0 12px 24px rgba(240, 201, 106, 0.16)  !important;
 }
 
 .surgery-page .surgery-tab.active .surgery-tab-icon,
@@ -513,7 +513,7 @@
 .drug-group-count,
 .laugh-counter,
 .meta-diet-goal {
-  color: #d4deeb !important;
+  color: #d4deeb  !important;
 }
 
 .drug-list,
@@ -542,9 +542,9 @@
   padding: 1.1rem 1.15rem;
   border-radius: 22px;
   background:
-    linear-gradient(155deg, rgba(11, 21, 38, 0.96), rgba(8, 16, 31, 0.98)) !important;
-  border: 1px solid rgba(154, 180, 214, 0.1) !important;
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28) !important;
+    linear-gradient(155deg, rgba(11, 21, 38, 0.96), rgba(8, 16, 31, 0.98))  !important;
+  border: 1px solid rgba(154, 180, 214, 0.1)  !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28)  !important;
 }
 
 .meta-diet-header,
@@ -557,9 +557,9 @@
   padding: 1.8rem 1.2rem;
   border-radius: 22px;
   background:
-    linear-gradient(155deg, rgba(11, 21, 38, 0.96), rgba(8, 16, 31, 0.98)) !important;
-  border: 1px solid rgba(154, 180, 214, 0.1) !important;
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28) !important;
+    linear-gradient(155deg, rgba(11, 21, 38, 0.96), rgba(8, 16, 31, 0.98))  !important;
+  border: 1px solid rgba(154, 180, 214, 0.1)  !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28)  !important;
 }
 
 .humor-empty p {
@@ -582,10 +582,10 @@
 .history-item,
 .emergency-step,
 .emergency-tip {
-  border-radius: 16px !important;
-  background: rgba(255, 255, 255, 0.03) !important;
-  border: 1px solid rgba(154, 180, 214, 0.08) !important;
-  box-shadow: none !important;
+  border-radius: 16px  !important;
+  background: rgba(255, 255, 255, 0.03)  !important;
+  border: 1px solid rgba(154, 180, 214, 0.08)  !important;
+  box-shadow: none  !important;
 }
 
 .drug-card:hover,
@@ -594,8 +594,8 @@
 .sitemap-item:hover,
 .history-item:hover,
 .question-card:hover {
-  border-color: rgba(241, 205, 117, 0.14) !important;
-  transform: none !important;
+  border-color: rgba(241, 205, 117, 0.14)  !important;
+  transform: none  !important;
 }
 
 .drug-reference-hero {
@@ -642,10 +642,10 @@
 .drug-command-cockpit {
   position: relative;
   overflow: hidden;
-  border-color: rgba(99, 234, 213, 0.16) !important;
+  border-color: rgba(99, 234, 213, 0.16)  !important;
   background:
     radial-gradient(circle at 12% 0%, rgba(99, 234, 213, 0.12), transparent 34%),
-    linear-gradient(145deg, rgba(14, 28, 47, 0.92), rgba(8, 17, 31, 0.96)) !important;
+    linear-gradient(145deg, rgba(14, 28, 47, 0.92), rgba(8, 17, 31, 0.96))  !important;
 }
 
 .drug-command-cockpit::before {
@@ -829,7 +829,7 @@
 .result-item span,
 .question-text,
 .sitemap-count {
-  color: #d4deeb !important;
+  color: #d4deeb  !important;
 }
 
 .result-risk,
@@ -844,7 +844,7 @@
 }
 
 .calc-tab {
-  border-radius: 999px !important;
+  border-radius: 999px  !important;
 }
 
 .favorites-page .section-subtitle,
@@ -871,9 +871,9 @@
 .reset-btn:hover,
 .option-btn:hover,
 .fav-tag:hover {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-color: rgba(241, 205, 117, 0.18) !important;
-  color: #f6fbff !important;
+  background: rgba(255, 255, 255, 0.05)  !important;
+  border-color: rgba(241, 205, 117, 0.18)  !important;
+  color: #f6fbff  !important;
 }
 
 .humor-tab.active,
@@ -883,9 +883,9 @@
 .meta-diet-card.active,
 .surgery-card.selected {
   background:
-    linear-gradient(135deg, rgba(99, 234, 213, 0.18), rgba(57, 201, 255, 0.12)) !important;
-  border-color: rgba(99, 234, 213, 0.28) !important;
-  color: #f6fbff !important;
+    linear-gradient(135deg, rgba(99, 234, 213, 0.18), rgba(57, 201, 255, 0.12))  !important;
+  border-color: rgba(99, 234, 213, 0.28)  !important;
+  color: #f6fbff  !important;
 }
 
 .progress-bar,
@@ -906,10 +906,10 @@
 .drug-highlight-card,
 .drug-warning-card,
 .drug-interaction-card {
-  background: rgba(255, 255, 255, 0.028) !important;
-  border: 1px solid rgba(154, 180, 214, 0.09) !important;
-  box-shadow: none !important;
-  color: #eef4fb !important;
+  background: rgba(255, 255, 255, 0.028)  !important;
+  border: 1px solid rgba(154, 180, 214, 0.09)  !important;
+  box-shadow: none  !important;
+  color: #eef4fb  !important;
 }
 
 .progress-fill,
@@ -918,17 +918,17 @@
 .guideline-card .guideline-badge,
 .drug-group-badge,
 .drug-class-badge {
-  background: linear-gradient(135deg, rgba(99, 234, 213, 0.92), rgba(84, 205, 255, 0.88)) !important;
-  color: #06233a !important;
-  border-color: transparent !important;
+  background: linear-gradient(135deg, rgba(99, 234, 213, 0.92), rgba(84, 205, 255, 0.88))  !important;
+  color: #06233a  !important;
+  border-color: transparent  !important;
 }
 
 .result-risk,
 .emergency-tip,
 .meta-tip,
 .drug-warning-card {
-  background: rgba(255, 255, 255, 0.034) !important;
-  border-color: rgba(241, 205, 117, 0.16) !important;
+  background: rgba(255, 255, 255, 0.034)  !important;
+  border-color: rgba(241, 205, 117, 0.16)  !important;
 }
 
 .sitemap-group-title,
@@ -940,7 +940,7 @@
 .emergency-time,
 .drug-card-name,
 .drug-group-title {
-  color: #f3d27c !important;
+  color: #f3d27c  !important;
 }
 
 .sitemap-item-icon,
@@ -965,7 +965,7 @@
 .emergency-card a,
 .meta-tip strong,
 .meta-meal-food strong {
-  color: #63ead5 !important;
+  color: #63ead5  !important;
 }
 
 .meta-diet-col li,
@@ -975,19 +975,19 @@
 .entry-item,
 .history-empty p,
 .humor-empty p {
-  color: #e9f0fa !important;
+  color: #e9f0fa  !important;
 }
 
 .meta-diet-col li::before,
 .entry-urgency,
 .entry-leak,
 .step-number {
-  color: #63ead5 !important;
+  color: #63ead5  !important;
 }
 
 .meta-diet-col.forbidden li::before,
 .meta-diet-col.limited li::before {
-  color: #63ead5 !important;
+  color: #63ead5  !important;
 }
 
 .tool-section input,
@@ -996,9 +996,9 @@
 .sitemap-search input,
 .drug-search-input,
 .search-input {
-  background: rgba(255, 255, 255, 0.035) !important;
-  border: 1px solid rgba(154, 180, 214, 0.14) !important;
-  color: #f6fbff !important;
+  background: rgba(255, 255, 255, 0.035)  !important;
+  border: 1px solid rgba(154, 180, 214, 0.14)  !important;
+  color: #f6fbff  !important;
 }
 
 .tool-section input:focus,
@@ -1007,22 +1007,22 @@
 .sitemap-search input:focus,
 .drug-search-input:focus,
 .search-input:focus {
-  border-color: rgba(241, 205, 117, 0.22) !important;
-  box-shadow: 0 0 0 1px rgba(241, 205, 117, 0.08), 0 0 0 6px rgba(241, 205, 117, 0.05) !important;
+  border-color: rgba(241, 205, 117, 0.22)  !important;
+  box-shadow: 0 0 0 1px rgba(241, 205, 117, 0.08), 0 0 0 6px rgba(241, 205, 117, 0.05)  !important;
 }
 
 .empty-favorites,
 .humor-empty {
   background:
-    linear-gradient(155deg, rgba(11, 21, 38, 0.94), rgba(8, 16, 31, 0.96)) !important;
-  border: 1px solid rgba(154, 180, 214, 0.1) !important;
-  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.3) !important;
+    linear-gradient(155deg, rgba(11, 21, 38, 0.94), rgba(8, 16, 31, 0.96))  !important;
+  border: 1px solid rgba(154, 180, 214, 0.1)  !important;
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.3)  !important;
 }
 
 .empty-favorites h2,
 .humor-empty h3,
 .history-empty h3 {
-  color: #f3d27c !important;
+  color: #f3d27c  !important;
 }
 
 .go-home-btn,
@@ -1068,7 +1068,7 @@
   .meta-tip,
   .humor-card,
   .surgery-card {
-    border-radius: 18px !important;
+    border-radius: 18px  !important;
   }
 
   .service-page-intro .section-title {
@@ -1087,8 +1087,8 @@
   }
 
   .drug-card {
-    padding: 0.82rem !important;
-    border-radius: 18px !important;
+    padding: 0.82rem  !important;
+    border-radius: 18px  !important;
   }
 
   .drug-card-topline {
@@ -1177,7 +1177,7 @@
   .humor-card,
   .surgery-card {
     padding: 1rem;
-    border-radius: 1.25rem !important;
+    border-radius: 1.25rem  !important;
     background:
       linear-gradient(135deg, rgba(255, 255, 255, 0.055), transparent 46%),
       var(--bg-card);
@@ -1208,7 +1208,7 @@
   .meta-grid,
   .meta-rule-grid,
   .meta-diet-grid {
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr)  !important;
     width: 100%;
   }
 
@@ -1247,7 +1247,7 @@
 
 /* v11 iPhone polish: cleaner pharmacology and premium questionnaire flow. */
 .drug-reference .drug-filters {
-  display: none !important;
+  display: none  !important;
 }
 
 .drug-risk-filters {
@@ -1429,9 +1429,9 @@ body.light-mode .drug-risk-chip.active {
   --tool-color: #22c7b8;
   display: grid;
   gap: 0.85rem;
-  padding: clamp(0.9rem, 2.5vw, 1.2rem) !important;
-  border-color: color-mix(in srgb, var(--tool-color) 34%, rgba(154, 180, 214, 0.1)) !important;
-  border-radius: 18px !important;
+  padding: clamp(0.9rem, 2.5vw, 1.2rem)  !important;
+  border-color: color-mix(in srgb, var(--tool-color) 34%, rgba(154, 180, 214, 0.1))  !important;
+  border-radius: 18px  !important;
 }
 
 .premium-tool-head {
@@ -1461,7 +1461,7 @@ body.light-mode .drug-risk-chip.active {
 
 .premium-tool-card .tool-title {
   margin: 0;
-  color: #f3d27c !important;
+  color: #f3d27c  !important;
   font-size: clamp(1.24rem, 3vw, 1.75rem);
   line-height: 1.08;
 }
@@ -1594,10 +1594,10 @@ body.light-mode .drug-risk-chip.active {
 }
 
 .premium-score-btn.selected {
-  border-color: color-mix(in srgb, var(--tool-color) 60%, white 10%) !important;
+  border-color: color-mix(in srgb, var(--tool-color) 60%, white 10%)  !important;
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--tool-color) 24%, transparent), rgba(255, 255, 255, 0.035)) !important;
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--tool-color) 28%, transparent) inset !important;
+    linear-gradient(135deg, color-mix(in srgb, var(--tool-color) 24%, transparent), rgba(255, 255, 255, 0.035))  !important;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--tool-color) 28%, transparent) inset  !important;
 }
 
 .premium-result {
@@ -1662,13 +1662,13 @@ body.light-mode .drug-risk-chip.active {
 .premium-form-grid input,
 .premium-form-grid select {
   min-height: 2.65rem;
-  border-radius: 12px !important;
+  border-radius: 12px  !important;
 }
 
 .premium-calc-btn {
   width: fit-content;
   min-height: 2.65rem;
-  padding-inline: 1rem !important;
+  padding-inline: 1rem  !important;
 }
 
 /* v14 calculator polish: questionnaire rows become compact clinical tables. */
@@ -1730,9 +1730,9 @@ body.light-mode .drug-risk-chip.active {
 }
 
 .premium-questionnaire-progress {
-  height: 0.5rem !important;
-  min-height: 0 !important;
-  border-radius: 999px !important;
+  height: 0.5rem  !important;
+  min-height: 0  !important;
+  border-radius: 999px  !important;
 }
 
 .premium-questionnaire-progress .progress-text {
@@ -1749,11 +1749,11 @@ body.light-mode .drug-risk-chip.active {
   grid-template-columns: auto minmax(0, 1fr);
   gap: 0.74rem;
   align-items: start;
-  padding: 0.72rem !important;
-  border-radius: 16px !important;
+  padding: 0.72rem  !important;
+  border-radius: 16px  !important;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.045), transparent 48%),
-    rgba(11, 24, 40, 0.68) !important;
+    rgba(11, 24, 40, 0.68)  !important;
 }
 
 .premium-questionnaire-row .question-number {
@@ -1774,15 +1774,15 @@ body.light-mode .drug-risk-chip.active {
 .premium-questionnaire-row .option-btn {
   justify-content: flex-start;
   min-height: 2.65rem;
-  padding: 0.62rem 0.72rem !important;
-  border-radius: 12px !important;
+  padding: 0.62rem 0.72rem  !important;
+  border-radius: 12px  !important;
   text-align: left;
   white-space: normal;
 }
 
 .premium-questionnaire-row .option-btn.selected {
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--tool-color) 22%, transparent), rgba(255, 255, 255, 0.035)) !important;
+    linear-gradient(135deg, color-mix(in srgb, var(--tool-color) 22%, transparent), rgba(255, 255, 255, 0.035))  !important;
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--tool-color) 24%, transparent) inset;
 }
 
@@ -1894,9 +1894,9 @@ body.light-mode .drug-risk-chip.active {
   }
 
   .premium-questionnaire-row {
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr)  !important;
     gap: 0.62rem;
-    padding: 0.78rem !important;
+    padding: 0.78rem  !important;
   }
 
   .premium-questionnaire-row .question-number {
@@ -1923,7 +1923,7 @@ body.light-mode .drug-risk-chip.active {
     flex-wrap: nowrap;
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 1rem !important;
+    margin-bottom: 1rem  !important;
     padding: 0.18rem 0 0.32rem;
     overflow-x: auto;
     scrollbar-width: none;
@@ -1937,15 +1937,15 @@ body.light-mode .drug-risk-chip.active {
   .calculators-page .calc-tab {
     flex: 0 0 auto;
     min-height: 2.55rem;
-    border-radius: 999px !important;
+    border-radius: 999px  !important;
     white-space: nowrap;
   }
 
   .calculators-page .tool-section {
     display: grid;
     gap: 0.9rem;
-    padding: 1rem !important;
-    border-radius: 18px !important;
+    padding: 1rem  !important;
+    border-radius: 18px  !important;
   }
 
   .calculators-page .tool-title {
@@ -1961,7 +1961,7 @@ body.light-mode .drug-risk-chip.active {
   .calculators-page .progress-bar {
     height: 2.4rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.045) !important;
+    background: rgba(255, 255, 255, 0.045)  !important;
     overflow: hidden;
   }
 
@@ -1983,11 +1983,11 @@ body.light-mode .drug-risk-chip.active {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
     gap: 0.82rem;
-    padding: 0.88rem !important;
-    border-radius: 18px !important;
+    padding: 0.88rem  !important;
+    border-radius: 18px  !important;
     background:
       linear-gradient(135deg, rgba(255, 255, 255, 0.052), transparent 45%),
-      rgba(11, 24, 40, 0.78) !important;
+      rgba(11, 24, 40, 0.78)  !important;
   }
 
   .calculators-page .question-number {
@@ -2021,8 +2021,8 @@ body.light-mode .drug-risk-chip.active {
     justify-content: flex-start;
     min-height: 2.7rem;
     width: 100%;
-    padding: 0.72rem 0.82rem !important;
-    border-radius: 14px !important;
+    padding: 0.72rem 0.82rem  !important;
+    border-radius: 14px  !important;
     font-size: 0.9rem;
     line-height: 1.22;
     text-align: left;
@@ -2030,14 +2030,14 @@ body.light-mode .drug-risk-chip.active {
   }
 
   .calculators-page .result-panel {
-    border-radius: 18px !important;
+    border-radius: 18px  !important;
   }
 }
 
 /* v12 service QA: compact iPhone cards without hidden overflow or raw filter noise. */
 .drug-reference .drug-filters,
 .drug-reference [class*='drug-filter'] {
-  display: none !important;
+  display: none  !important;
 }
 
 .drug-reference,
@@ -2050,8 +2050,8 @@ body.light-mode .drug-risk-chip.active {
   .drug-reference,
   .tools-section,
   .calculators-page {
-    padding-top: 0.85rem !important;
-    padding-bottom: calc(var(--sab) + 7.5rem) !important;
+    padding-top: 0.85rem  !important;
+    padding-bottom: calc(var(--sab) + 7.5rem)  !important;
   }
 
   .drug-reference-hero,
@@ -2078,7 +2078,7 @@ body.light-mode .drug-risk-chip.active {
 
   .drug-search-input {
     min-height: 3rem;
-    border-radius: 1rem !important;
+    border-radius: 1rem  !important;
   }
 
   .drug-count {
@@ -2100,7 +2100,7 @@ body.light-mode .drug-risk-chip.active {
   }
 
   .drug-group {
-    padding: 0.9rem !important;
+    padding: 0.9rem  !important;
   }
 
   .drug-group-title {
@@ -2109,7 +2109,7 @@ body.light-mode .drug-risk-chip.active {
   }
 
   .drug-card-details {
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr)  !important;
   }
 
   .drug-detail-value {
@@ -2158,7 +2158,7 @@ body.light-mode .drug-risk-chip.active {
   .drug-search,
   .premium-tools-hero,
   .calculators-page .tool-section {
-    padding: 0.86rem !important;
+    padding: 0.86rem  !important;
   }
 }
 
@@ -2183,9 +2183,9 @@ body.light-mode .drug-risk-chip.active {
 }
 
 .calculator-tool-tab {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.38rem !important;
+  display: inline-flex  !important;
+  align-items: center  !important;
+  gap: 0.38rem  !important;
 }
 
 .calculator-tool-tab .calc-tab-desc {
@@ -2247,14 +2247,14 @@ body.light-mode .drug-risk-chip.active {
 @media (max-width: 900px) {
   .calculator-category-tabs,
   .calculator-tool-tabs {
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    gap: 0.46rem !important;
+    flex-wrap: nowrap  !important;
+    justify-content: flex-start  !important;
+    gap: 0.46rem  !important;
     width: 100%;
-    margin-bottom: 0.9rem !important;
-    padding: 0.1rem max(0.82rem, var(--sar)) 0.34rem max(0.02rem, var(--sal)) !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
+    margin-bottom: 0.9rem  !important;
+    padding: 0.1rem max(0.82rem, var(--sar)) 0.34rem max(0.02rem, var(--sal))  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
     overscroll-behavior-inline: contain;
     scroll-snap-type: x proximity;
     scrollbar-width: none;
@@ -2268,11 +2268,11 @@ body.light-mode .drug-risk-chip.active {
 
   .calculator-category-tab,
   .calculator-tool-tab {
-    flex: 0 0 auto !important;
+    flex: 0 0 auto  !important;
     scroll-snap-align: start;
-    min-height: 2.72rem !important;
+    min-height: 2.72rem  !important;
     max-width: min(78vw, 18rem);
-    padding: 0.66rem 0.92rem !important;
+    padding: 0.66rem 0.92rem  !important;
     white-space: nowrap;
   }
 
@@ -2294,7 +2294,7 @@ body.light-mode .drug-risk-chip.active {
   .premium-questionnaire-placeholder,
   .calculators-page .result-panel,
   .premium-result {
-    border-radius: 1.05rem !important;
+    border-radius: 1.05rem  !important;
   }
 
   .drug-search {
@@ -2316,7 +2316,7 @@ body.light-mode .drug-risk-chip.active {
   }
 
   .drug-search-hints {
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap  !important;
     gap: 0.42rem;
     margin-inline: -0.2rem;
     padding: 0 0.2rem 0.18rem;
@@ -2357,8 +2357,8 @@ body.light-mode .drug-risk-chip.active {
   }
 
   .drug-detail {
-    padding: 0.74rem 0.78rem 0.74rem 0.92rem !important;
-    border-radius: 0.95rem !important;
+    padding: 0.74rem 0.78rem 0.74rem 0.92rem  !important;
+    border-radius: 0.95rem  !important;
   }
 
   .drug-detail-label {
@@ -2372,8 +2372,8 @@ body.light-mode .drug-risk-chip.active {
   .drug-detail-value {
     max-width: 100%;
     color: #edf6ff;
-    font-size: 0.9rem !important;
-    line-height: 1.52 !important;
+    font-size: 0.9rem  !important;
+    line-height: 1.52  !important;
     overflow-wrap: anywhere;
     hyphens: auto;
   }
@@ -2381,27 +2381,27 @@ body.light-mode .drug-risk-chip.active {
   .premium-tools-hero,
   .drug-reference-hero,
   .calculators-page .service-page-hero {
-    border-radius: 1.25rem !important;
-    padding: 0.95rem !important;
+    border-radius: 1.25rem  !important;
+    padding: 0.95rem  !important;
   }
 
   .drug-reference .section-title,
   .calculators-page .section-title {
-    font-size: clamp(2.15rem, 10.4vw, 3rem) !important;
-    line-height: 0.96 !important;
-    letter-spacing: -0.045em !important;
+    font-size: clamp(2.15rem, 10.4vw, 3rem)  !important;
+    line-height: 0.96  !important;
+    letter-spacing: -0.045em  !important;
   }
 
   .drug-reference .section-subtitle,
   .calculators-page .section-subtitle,
   .premium-tools-hero p {
     display: -webkit-box;
-    max-width: 100% !important;
+    max-width: 100%  !important;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    font-size: 0.98rem !important;
-    line-height: 1.45 !important;
+    font-size: 0.98rem  !important;
+    line-height: 1.45  !important;
   }
 
   .drug-reference-stats {
@@ -2430,7 +2430,7 @@ body.light-mode .drug-risk-chip.active {
   }
 
   .drug-search-input {
-    font-size: 0.95rem !important;
+    font-size: 0.95rem  !important;
   }
 
   .premium-tools-hero::after,
@@ -2961,24 +2961,24 @@ body.light-mode .drug-risk-chip.active {
 }
 
 .calculators-page .service-page-intro .section-subtitle {
-  display: none !important;
+  display: none  !important;
 }
 
 .calculators-page .section-title {
   max-width: 100%;
-  overflow-wrap: normal !important;
-  word-break: normal !important;
-  hyphens: manual !important;
+  overflow-wrap: normal  !important;
+  word-break: normal  !important;
+  hyphens: manual  !important;
   text-wrap: balance;
 }
 
 .calculators-page .spermogram-premium-shell {
   position: relative;
   overflow: hidden;
-  border-radius: 26px !important;
+  border-radius: 26px  !important;
   background:
     radial-gradient(circle at 16% 0%, rgba(240, 201, 106, 0.12), transparent 28%),
-    linear-gradient(155deg, rgba(9, 22, 40, 0.98), rgba(7, 15, 28, 0.99)) !important;
+    linear-gradient(155deg, rgba(9, 22, 40, 0.98), rgba(7, 15, 28, 0.99))  !important;
 }
 
 .calculators-page .spermogram-premium-shell::before {
@@ -3009,12 +3009,12 @@ body.light-mode .drug-risk-chip.active {
   }
 
   .calculators-page .service-page-hero {
-    padding: 0.82rem 0.78rem 0.62rem !important;
-    border-radius: 1.2rem !important;
+    padding: 0.82rem 0.78rem 0.62rem  !important;
+    border-radius: 1.2rem  !important;
   }
 
   .calculators-page .service-page-intro-enhanced {
-    padding: 0.48rem 0.34rem 0.12rem !important;
+    padding: 0.48rem 0.34rem 0.12rem  !important;
   }
 
   .calculators-page .service-eyebrow {
@@ -3023,9 +3023,9 @@ body.light-mode .drug-risk-chip.active {
   }
 
   .calculators-page .section-title {
-    font-size: clamp(2.28rem, 10vw, 3.28rem) !important;
-    line-height: 0.94 !important;
-    letter-spacing: -0.052em !important;
+    font-size: clamp(2.28rem, 10vw, 3.28rem)  !important;
+    line-height: 0.94  !important;
+    letter-spacing: -0.052em  !important;
   }
 
   .calculators-page .service-hero-trust-row {
@@ -3042,36 +3042,36 @@ body.light-mode .drug-risk-chip.active {
 
   .calculators-page .calculator-category-tabs,
   .calculators-page .calculator-tool-tabs {
-    position: relative !important;
-    top: auto !important;
-    z-index: 1 !important;
-    justify-content: center !important;
+    position: relative  !important;
+    top: auto  !important;
+    z-index: 1  !important;
+    justify-content: center  !important;
     width: 100%;
-    margin: 0 auto 0.46rem !important;
-    padding: 0.08rem 0.1rem 0.16rem !important;
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+    margin: 0 auto 0.46rem  !important;
+    padding: 0.08rem 0.1rem 0.16rem  !important;
+    background: transparent  !important;
+    border: 0  !important;
+    box-shadow: none  !important;
+    backdrop-filter: none  !important;
+    -webkit-backdrop-filter: none  !important;
   }
 
   .calculators-page .calculator-tool-tabs {
-    margin-top: -0.22rem !important;
-    margin-bottom: 0.62rem !important;
+    margin-top: -0.22rem  !important;
+    margin-bottom: 0.62rem  !important;
   }
 
   .calculators-page .calc-tab {
-    min-height: 44px !important;
-    padding: 0.58rem 0.86rem !important;
+    min-height: 44px  !important;
+    padding: 0.58rem 0.86rem  !important;
   }
 
   .calculators-page .spermogram-premium-shell {
     gap: 0.74rem;
     margin-top: 0.12rem;
-    padding: 0.86rem !important;
-    padding-bottom: calc(var(--mobile-shell-bottom-offset, 4.8rem) + 1.25rem) !important;
-    border-radius: 1.32rem !important;
+    padding: 0.86rem  !important;
+    padding-bottom: calc(var(--mobile-shell-bottom-offset, 4.8rem) + 1.25rem)  !important;
+    border-radius: 1.32rem  !important;
   }
 
   .calculators-page .spermogram-head {
@@ -3088,8 +3088,8 @@ body.light-mode .drug-risk-chip.active {
 
   .calculators-page .spermogram-head .tool-title {
     margin: 0.16rem 0 0;
-    font-size: clamp(1.38rem, 7.2vw, 1.92rem) !important;
-    line-height: 1.04 !important;
+    font-size: clamp(1.38rem, 7.2vw, 1.92rem)  !important;
+    line-height: 1.04  !important;
   }
 
   .calculators-page .sperm-reset-btn,
@@ -3097,15 +3097,15 @@ body.light-mode .drug-risk-chip.active {
     width: auto;
     min-width: 0;
     min-height: 2.32rem;
-    padding: 0.48rem 0.7rem !important;
-    border-radius: 999px !important;
+    padding: 0.48rem 0.7rem  !important;
+    border-radius: 999px  !important;
     font-size: 0.76rem;
   }
 
   .calculators-page .spermogram-summary-card {
-    position: static !important;
-    top: auto !important;
-    z-index: 1 !important;
+    position: static  !important;
+    top: auto  !important;
+    z-index: 1  !important;
     gap: 0.32rem;
     padding: 0.78rem 0.82rem;
     border-radius: 16px;
@@ -3188,7 +3188,7 @@ body.light-mode .drug-risk-chip.active {
 
 @media (max-width: 390px) {
   .calculators-page .section-title {
-    font-size: clamp(2.05rem, 11.2vw, 2.68rem) !important;
+    font-size: clamp(2.05rem, 11.2vw, 2.68rem)  !important;
   }
 
   .calculators-page .service-hero-trust-pill {

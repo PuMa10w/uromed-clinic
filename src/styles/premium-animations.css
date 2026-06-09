@@ -1,0 +1,251 @@
+/* UroMed Premium Micro-Animations
+ * iOS-grade physics, Framer Motion smoothness
+ */
+
+/* Card hover states - premium elevator effect */
+.disease-card {
+  transition: 
+    transform var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-in-out) !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.disease-card:hover {
+  transform: translateY(-4px) translateZ(0);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--border-focus);
+}
+
+/* Premium focus states with glow */
+.disease-card:focus-within {
+  transform: translateY(-2px) translateZ(0);
+  box-shadow: 
+    0 0 0 2px var(--surface-primary),
+    0 0 0 4px var(--brand-primary);
+}
+
+/* Card tap/active state */
+.disease-card:active {
+  transform: translateY(0) scale(0.99) translateZ(0);
+  transition: transform var(--duration-fast) var(--ease-in-out);
+}
+
+/* Modal slide-up with spring physics */
+.modal-overlay {
+  animation: modalOverlayIn var(--duration-slow) var(--ease-spring) forwards;
+}
+
+@keyframes modalOverlayIn {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(22px) saturate(1.2);
+  }
+}
+
+.modal-content {
+  animation: modalContentIn var(--duration-slow) var(--ease-spring) forwards;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+
+@keyframes modalContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Tab indicator slide */
+.tab[data-active="true"]::after,
+.tab.active::after {
+  transform: scaleX(1);
+  transform-origin: center;
+  transition: transform var(--duration-base) var(--ease-out);
+}
+
+.tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  right: 12%;
+  height: 2px;
+  background: var(--brand-accent);
+  transform: scaleX(0);
+  border-radius: 1px;
+}
+
+/* Shimmer loading effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--surface-tertiary) 25%,
+    var(--surface-secondary) 50%,
+    var(--surface-tertiary) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+/* Premium button states */
+.premium-button {
+  transition: 
+    background-color var(--duration-fast) var(--ease-in-out),
+    transform var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-in-out),
+    color var(--duration-fast) var(--ease-in-out);
+  will-change: transform;
+}
+
+.premium-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.premium-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Floating action button */
+.fab-button {
+  transition: 
+    transform var(--duration-base) var(--ease-spring),
+    box-shadow var(--duration-base) var(--ease-out);
+  transform: translateZ(0);
+  box-shadow: 0 8px 24px rgba(45, 212, 191, 0.25);
+}
+
+.fab-button:hover {
+  transform: translateY(-2px) scale(1.02) translateZ(0);
+  box-shadow: 0 12px 32px rgba(45, 212, 191, 0.35);
+}
+
+/* Staggered grid animation */
+.disease-grid > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: staggerIn var(--duration-base) var(--ease-out) forwards;
+}
+
+@keyframes staggerIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply stagger delays */
+.disease-grid > *:nth-child(1) { animation-delay: 0ms; }
+.disease-grid > *:nth-child(2) { animation-delay: 25ms; }
+.disease-grid > *:nth-child(3) { animation-delay: 50ms; }
+.disease-grid > *:nth-child(4) { animation-delay: 75ms; }
+.disease-grid > *:nth-child(5) { animation-delay: 100ms; }
+.disease-grid > *:nth-child(6) { animation-delay: 125ms; }
+.disease-grid > *:nth-child(7) { animation-delay: 150ms; }
+.disease-grid > *:nth-child(8) { animation-delay: 175ms; }
+.disease-grid > *:nth-child(9) { animation-delay: 200ms; }
+.disease-grid > *:nth-child(10) { animation-delay: 225ms; }
+
+/* Mobile quickbar slide up */
+.mobile-shell-nav {
+  transform: translate3d(0, 100%, 0);
+  animation: slideUp var(--duration-slow) var(--ease-spring) forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Pulse indicator for active states */
+@keyframes pulse-soft {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(94, 234, 212, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(94, 234, 212, 0);
+  }
+}
+
+.status-indicator.active {
+  animation: pulse-soft 2s infinite;
+}
+
+/* Smooth page transition */
+.page-enter {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: pageEnter var(--duration-slow) var(--ease-spring) forwards;
+}
+
+@keyframes pageEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tooltip fade */
+.tooltip {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: 
+    opacity var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+  pointer-events: none;
+}
+
+.tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll fade for table headers */
+.styled-table thead th {
+  background: var(--surface-elevated);
+  backdrop-filter: blur(12px);
+  transition: background-color var(--duration-fast) var(--ease-in-out);
+}
+
+/* Premium checkbox/radio */
+.premium-checkbox {
+  transition: all var(--duration-fast) var(--ease-in-out);
+}
+
+.premium-checkbox:checked + .checkmark {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+  transform: scale(1.05);
+}
+
+/* Premium chip/tag */
+.premium-chip {
+  transition: all var(--duration-fast) var(--ease-in-out);
+}
+
+.premium-chip:hover {
+  background: var(--surface-secondary);
+  transform: translateY(-1px);
+}

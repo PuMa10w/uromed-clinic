@@ -6,8 +6,8 @@
 
 @media (max-width: 980px) {
   body.modal-open {
-    overflow: hidden !important;
-    overscroll-behavior: none !important;
+    overflow: hidden  !important;
+    overscroll-behavior: none  !important;
   }
 
   body.modal-open .navbar,
@@ -17,254 +17,254 @@
   body.modal-open .app-bottom-nav,
   body.modal-open .floating-scroll-button,
   body.modal-open .scroll-to-top {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+    display: none  !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+    pointer-events: none  !important;
   }
 
   body.modal-open .modal-overlay {
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 2147482000 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100dvh !important;
-    max-height: 100dvh !important;
-    margin: 0 !important;
-    overflow: hidden !important;
-    overscroll-behavior: none !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    z-index: 2147482000  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    height: 100dvh  !important;
+    max-height: 100dvh  !important;
+    margin: 0  !important;
+    overflow: hidden  !important;
+    overscroll-behavior: none  !important;
   }
 
   body.modal-open .modal-content {
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 2147482100 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100dvh !important;
-    max-height: 100dvh !important;
-    min-height: 100dvh !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    border: 0 !important;
-    transform: none !important;
-    overflow-x: clip !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    -webkit-overflow-scrolling: touch !important;
-    scroll-padding-top: 4.65rem !important;
-    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem) !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem) !important;
+    position: fixed  !important;
+    inset: 0  !important;
+    z-index: 2147482100  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    height: 100dvh  !important;
+    max-height: 100dvh  !important;
+    min-height: 100dvh  !important;
+    margin: 0  !important;
+    border-radius: 0  !important;
+    border: 0  !important;
+    transform: none  !important;
+    overflow-x: clip  !important;
+    overflow-y: auto  !important;
+    overscroll-behavior: contain  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    scroll-padding-top: 4.65rem  !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem)  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    position: fixed !important;
-    inset-block-start: 0 !important;
-    inset-inline-start: 0 !important;
-    inset-inline-end: 0 !important;
-    z-index: 2147483600 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    margin-inline: 0 !important;
-    transform: none !important;
-    border-radius: 0 0 1.05rem 1.05rem !important;
-    border: 0 !important;
-    border-bottom: 1px solid rgba(125, 211, 252, 0.22) !important;
+    position: fixed  !important;
+    inset-block-start: 0  !important;
+    inset-inline-start: 0  !important;
+    inset-inline-end: 0  !important;
+    z-index: 2147483600  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    min-width: 0  !important;
+    box-sizing: border-box  !important;
+    margin: 0  !important;
+    margin-inline: 0  !important;
+    transform: none  !important;
+    border-radius: 0 0 1.05rem 1.05rem  !important;
+    border: 0  !important;
+    border-bottom: 1px solid rgba(125, 211, 252, 0.22)  !important;
     padding:
       calc(env(safe-area-inset-top, 0px) + 0.34rem)
       max(0.58rem, calc(env(safe-area-inset-right, 0px) + 0.58rem))
       0.38rem
-      max(0.58rem, calc(env(safe-area-inset-left, 0px) + 0.58rem)) !important;
-    overflow: hidden !important;
+      max(0.58rem, calc(env(safe-area-inset-left, 0px) + 0.58rem))  !important;
+    overflow: hidden  !important;
     background:
       linear-gradient(180deg, rgba(10, 21, 35, 0.99), rgba(12, 25, 42, 0.96)),
-      rgba(10, 21, 35, 0.98) !important;
-    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28) !important;
-    backdrop-filter: blur(22px) saturate(1.25) !important;
-    -webkit-backdrop-filter: blur(22px) saturate(1.25) !important;
-    contain: layout paint !important;
+      rgba(10, 21, 35, 0.98)  !important;
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28)  !important;
+    backdrop-filter: blur(22px) saturate(1.25)  !important;
+    -webkit-backdrop-filter: blur(22px) saturate(1.25)  !important;
+    contain: layout paint  !important;
   }
 
   body.modal-open .modal-overlay .modal-content .tabs-shell,
   body.modal-open .modal-content .tabs-shell {
-    position: fixed !important;
-    inset-block-start: 0 !important;
-    inset-inline-start: 0 !important;
-    inset-inline-end: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin: 0 !important;
-    margin-inline: 0 !important;
-    transform: none !important;
+    position: fixed  !important;
+    inset-block-start: 0  !important;
+    inset-inline-start: 0  !important;
+    inset-inline-end: 0  !important;
+    left: 0  !important;
+    right: 0  !important;
+    width: 100vw  !important;
+    max-width: 100vw  !important;
+    margin: 0  !important;
+    margin-inline: 0  !important;
+    transform: none  !important;
   }
 
   body.light-mode.modal-open .tabs-shell {
-    border-bottom-color: rgba(14, 116, 144, 0.18) !important;
+    border-bottom-color: rgba(14, 116, 144, 0.18)  !important;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(238, 248, 251, 0.97)),
-      rgba(255, 255, 255, 0.98) !important;
-    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.13) !important;
+      rgba(255, 255, 255, 0.98)  !important;
+    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.13)  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    align-items: stretch !important;
-    gap: 0.44rem !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 0.04rem 0.08rem 0.1rem !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    overscroll-behavior-x: contain !important;
-    touch-action: pan-x !important;
-    scrollbar-width: none !important;
+    display: flex  !important;
+    flex-wrap: nowrap  !important;
+    align-items: stretch  !important;
+    gap: 0.44rem  !important;
+    width: 100%  !important;
+    max-width: 100%  !important;
+    min-width: 0  !important;
+    margin: 0  !important;
+    padding: 0.04rem 0.08rem 0.1rem  !important;
+    overflow-x: auto  !important;
+    overflow-y: hidden  !important;
+    -webkit-overflow-scrolling: touch  !important;
+    overscroll-behavior-x: contain  !important;
+    touch-action: pan-x  !important;
+    scrollbar-width: none  !important;
   }
 
   body.modal-open .modal-content .tabs-shell .tabs,
   body.modal-open .modal-content .tabs-shell .tabs[data-scrollable='x'] {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    overflow-x: auto !important;
+    width: 100%  !important;
+    max-width: 100%  !important;
+    min-width: 0  !important;
+    margin: 0  !important;
+    overflow-x: auto  !important;
   }
 
   body.modal-open .tabs-shell .tabs::-webkit-scrollbar,
   body.modal-open .tabs-shell .tabs[data-scrollable='x']::-webkit-scrollbar {
-    display: none !important;
+    display: none  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    flex: 0 0 auto !important;
-    min-width: max-content !important;
-    max-width: min(76vw, 12.5rem) !important;
-    min-height: 44px !important;
-    padding: 0.7rem 0.98rem !important;
-    border-radius: 999px !important;
-    white-space: nowrap !important;
-    touch-action: manipulation !important;
+    flex: 0 0 auto  !important;
+    min-width: max-content  !important;
+    max-width: min(76vw, 12.5rem)  !important;
+    min-height: 44px  !important;
+    padding: 0.7rem 0.98rem  !important;
+    border-radius: 999px  !important;
+    white-space: nowrap  !important;
+    touch-action: manipulation  !important;
   }
 
   body.modal-open .modal-header {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 4.95rem) !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 4.95rem)  !important;
   }
 
   body.modal-open .modal-body {
-    padding-top: 0.7rem !important;
+    padding-top: 0.7rem  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block,
   body.modal-open .clinical-readability-rail {
-    max-width: 100% !important;
-    overflow-x: clip !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9.25rem) !important;
+    max-width: 100%  !important;
+    overflow-x: clip  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 9.25rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    position: fixed !important;
-    inset-block-start: auto !important;
-    inset-inline-start: max(0.72rem, env(safe-area-inset-left, 0px)) !important;
-    inset-inline-end: max(0.72rem, env(safe-area-inset-right, 0px)) !important;
-    inset-block-end: max(0.62rem, calc(env(safe-area-inset-bottom, 0px) + 0.62rem)) !important;
-    z-index: 2147483700 !important;
-    width: auto !important;
+    position: fixed  !important;
+    inset-block-start: auto  !important;
+    inset-inline-start: max(0.72rem, env(safe-area-inset-left, 0px))  !important;
+    inset-inline-end: max(0.72rem, env(safe-area-inset-right, 0px))  !important;
+    inset-block-end: max(0.62rem, calc(env(safe-area-inset-bottom, 0px) + 0.62rem))  !important;
+    z-index: 2147483700  !important;
+    width: auto  !important;
     max-width: min(25rem, calc(100vw - max(1.44rem, env(safe-area-inset-left, 0px) + env(safe-area-inset-right, 0px)))) !important;
-    min-height: 4.08rem !important;
-    max-height: 4.08rem !important;
-    margin: 0 auto !important;
-    padding: 0.34rem !important;
-    border-radius: 1.25rem !important;
-    transform: translate3d(0, 0, 0) !important;
-    background: rgba(12, 23, 38, 0.94) !important;
-    border: 1px solid rgba(148, 163, 184, 0.22) !important;
-    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34) !important;
-    backdrop-filter: blur(24px) saturate(1.2) !important;
-    -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
+    min-height: 4.08rem  !important;
+    max-height: 4.08rem  !important;
+    margin: 0 auto  !important;
+    padding: 0.34rem  !important;
+    border-radius: 1.25rem  !important;
+    transform: translate3d(0, 0, 0)  !important;
+    background: rgba(12, 23, 38, 0.94)  !important;
+    border: 1px solid rgba(148, 163, 184, 0.22)  !important;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34)  !important;
+    backdrop-filter: blur(24px) saturate(1.2)  !important;
+    -webkit-backdrop-filter: blur(24px) saturate(1.2)  !important;
   }
 
   body.light-mode.modal-open .modal-mobile-quickbar,
   body.light-mode.modal-open .modal-mobile-quickbar.is-fixed,
   body.light-mode.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    background: rgba(255, 255, 255, 0.94) !important;
-    border-color: rgba(15, 23, 42, 0.13) !important;
-    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.16) !important;
+    background: rgba(255, 255, 255, 0.94)  !important;
+    border-color: rgba(15, 23, 42, 0.13)  !important;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.16)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar button,
   body.modal-open .modal-mobile-quickbar a {
-    min-height: 44px !important;
-    touch-action: manipulation !important;
+    min-height: 44px  !important;
+    touch-action: manipulation  !important;
   }
 }
 
 @media (max-width: 980px) and (orientation: landscape) {
   body.modal-open .modal-content {
-    scroll-padding-top: 3.5rem !important;
-    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.4rem) !important;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.4rem) !important;
+    scroll-padding-top: 3.5rem  !important;
+    scroll-padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.4rem)  !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.4rem)  !important;
   }
 
   body.modal-open .tabs-shell {
-    inset-block-start: 0 !important;
+    inset-block-start: 0  !important;
     padding:
       0.18rem
       max(0.48rem, calc(env(safe-area-inset-right, 0px) + 0.48rem))
       0.22rem
-      max(0.48rem, calc(env(safe-area-inset-left, 0px) + 0.48rem)) !important;
-    border-radius: 0 0 0.82rem 0.82rem !important;
+      max(0.48rem, calc(env(safe-area-inset-left, 0px) + 0.48rem))  !important;
+    border-radius: 0 0 0.82rem 0.82rem  !important;
   }
 
   body.modal-open .tabs-shell .tabs,
   body.modal-open .tabs-shell .tabs[data-scrollable='x'] {
-    gap: 0.34rem !important;
-    padding-bottom: 0.04rem !important;
+    gap: 0.34rem  !important;
+    padding-bottom: 0.04rem  !important;
   }
 
   body.modal-open .tabs-shell .tab,
   body.modal-open .tabs-shell .tabs button {
-    min-height: 40px !important;
-    padding: 0.54rem 0.82rem !important;
-    max-width: min(52vw, 10.6rem) !important;
+    min-height: 40px  !important;
+    padding: 0.54rem 0.82rem  !important;
+    max-width: min(52vw, 10.6rem)  !important;
   }
 
   body.modal-open .modal-header {
-    padding-top: 3.65rem !important;
+    padding-top: 3.65rem  !important;
   }
 
   body.modal-open .modal-body,
   body.modal-open .modal-tabpanel,
   body.modal-open .modal-tabpanel > .content-block,
   body.modal-open .clinical-readability-rail {
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.7rem) !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 6.7rem)  !important;
   }
 
   body.modal-open .modal-mobile-quickbar,
   body.modal-open .modal-mobile-quickbar.is-fixed,
   body.modal-open .modal-overlay > .modal-mobile-quickbar.is-fixed {
-    inset-inline-start: auto !important;
-    inset-inline-end: max(0.5rem, env(safe-area-inset-right, 0px)) !important;
-    inset-block-end: max(0.42rem, calc(env(safe-area-inset-bottom, 0px) + 0.42rem)) !important;
+    inset-inline-start: auto  !important;
+    inset-inline-end: max(0.5rem, env(safe-area-inset-right, 0px))  !important;
+    inset-block-end: max(0.42rem, calc(env(safe-area-inset-bottom, 0px) + 0.42rem))  !important;
     width: min(13.2rem, calc(100vw - max(1.2rem, env(safe-area-inset-left, 0px) + env(safe-area-inset-right, 0px)))) !important;
     max-width: min(13.2rem, calc(100vw - max(1.2rem, env(safe-area-inset-left, 0px) + env(safe-area-inset-right, 0px)))) !important;
-    min-height: 3.12rem !important;
-    max-height: 3.12rem !important;
-    padding: 0.24rem !important;
-    border-radius: 1rem !important;
+    min-height: 3.12rem  !important;
+    max-height: 3.12rem  !important;
+    padding: 0.24rem  !important;
+    border-radius: 1rem  !important;
   }
 }

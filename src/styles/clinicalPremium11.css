@@ -176,83 +176,83 @@
     }
 
     body.modal-open .App[data-clinical-premium='true'] :where(.navbar, .mobile-shell-nav, .floating-scroll-top, .section-switch, .clinical-os-panel) {
-      display: none !important;
-      pointer-events: none !important;
+      display: none  !important;
+      pointer-events: none  !important;
     }
 
     body.modal-open .modal-content {
-      inset: 0 !important;
-      width: 100vw !important;
-      max-width: 100vw !important;
-      height: 100dvh !important;
-      max-height: 100dvh !important;
-      border-radius: 0 !important;
-      overflow-x: clip !important;
-      background: var(--cp11-bg) !important;
+      inset: 0  !important;
+      width: 100vw  !important;
+      max-width: 100vw  !important;
+      height: 100dvh  !important;
+      max-height: 100dvh  !important;
+      border-radius: 0  !important;
+      overflow-x: clip  !important;
+      background: var(--cp11-bg)  !important;
     }
 
     body.modal-open .modal-header {
-      padding-inline: max(1rem, env(safe-area-inset-left, 0px) + 1rem) max(1rem, env(safe-area-inset-right, 0px) + 1rem) !important;
+      padding-inline: max(1rem, env(safe-area-inset-left, 0px) + 1rem) max(1rem, env(safe-area-inset-right, 0px) + 1rem)  !important;
     }
 
     body.modal-open .tabs-shell {
-      position: sticky !important;
-      top: 0 !important;
-      z-index: 2147483600 !important;
-      max-width: 100vw !important;
-      padding-inline: max(0.7rem, env(safe-area-inset-left, 0px) + 0.7rem) max(0.7rem, env(safe-area-inset-right, 0px) + 0.7rem) !important;
-      border-bottom: 1px solid var(--cp11-border) !important;
+      position: sticky  !important;
+      top: 0  !important;
+      z-index: 2147483600  !important;
+      max-width: 100vw  !important;
+      padding-inline: max(0.7rem, env(safe-area-inset-left, 0px) + 0.7rem) max(0.7rem, env(safe-area-inset-right, 0px) + 0.7rem)  !important;
+      border-bottom: 1px solid var(--cp11-border)  !important;
       background:
-        linear-gradient(180deg, color-mix(in srgb, var(--cp11-bg) 94%, transparent), color-mix(in srgb, var(--cp11-bg) 84%, transparent)) !important;
-      backdrop-filter: blur(20px) !important;
+        linear-gradient(180deg, color-mix(in srgb, var(--cp11-bg) 94%, transparent), color-mix(in srgb, var(--cp11-bg) 84%, transparent))  !important;
+      backdrop-filter: blur(20px)  !important;
     }
 
     body.modal-open .modal-body,
     body.modal-open .modal-tabpanel,
     body.modal-open .modal-tabpanel > .content-block {
-      max-width: 100% !important;
-      min-width: 0 !important;
-      overflow-wrap: anywhere !important;
-      padding-bottom: calc(var(--cp11-safe-bottom) + 7rem) !important;
+      max-width: 100%  !important;
+      min-width: 0  !important;
+      overflow-wrap: anywhere  !important;
+      padding-bottom: calc(var(--cp11-safe-bottom) + 7rem)  !important;
     }
 
     body.modal-open .modal-mobile-quickbar,
     body.modal-open .modal-mobile-quickbar.is-fixed {
-      position: fixed !important;
-      top: auto !important;
-      bottom: max(0.65rem, calc(var(--cp11-safe-bottom) + 0.65rem)) !important;
-      left: max(0.76rem, env(safe-area-inset-left, 0px) + 0.76rem) !important;
-      right: max(0.76rem, env(safe-area-inset-right, 0px) + 0.76rem) !important;
-      width: auto !important;
-      max-width: min(27rem, calc(100vw - 1.52rem)) !important;
-      z-index: 2147483700 !important;
-      border: 1px solid var(--cp11-border-strong) !important;
-      background: color-mix(in srgb, var(--cp11-surface-strong) 92%, transparent) !important;
-      backdrop-filter: blur(22px) !important;
-      box-shadow: 0 18px 54px rgba(0, 0, 0, 0.36) !important;
+      position: fixed  !important;
+      top: auto  !important;
+      bottom: max(0.65rem, calc(var(--cp11-safe-bottom) + 0.65rem))  !important;
+      left: max(0.76rem, env(safe-area-inset-left, 0px) + 0.76rem)  !important;
+      right: max(0.76rem, env(safe-area-inset-right, 0px) + 0.76rem)  !important;
+      width: auto  !important;
+      max-width: min(27rem, calc(100vw - 1.52rem))  !important;
+      z-index: 2147483700  !important;
+      border: 1px solid var(--cp11-border-strong)  !important;
+      background: color-mix(in srgb, var(--cp11-surface-strong) 92%, transparent)  !important;
+      backdrop-filter: blur(22px)  !important;
+      box-shadow: 0 18px 54px rgba(0, 0, 0, 0.36)  !important;
     }
   }
 
   @media (max-width: 940px) and (orientation: landscape) {
     .App[data-clinical-premium='true'] :where(.service-page-hero, .home-shell, .subsection-selector) {
-      padding-top: 0.55rem !important;
-      padding-bottom: 0.55rem !important;
+      padding-top: 0.55rem  !important;
+      padding-bottom: 0.55rem  !important;
     }
 
     .App[data-clinical-premium='true'] :where(.service-page-hero .section-subtitle, .home-hero-copy, .hero-description, .clinical-os-copy) {
-      display: none !important;
+      display: none  !important;
     }
 
     body.modal-open .modal-header {
-      min-height: auto !important;
-      padding-bottom: 0.38rem !important;
+      min-height: auto  !important;
+      padding-bottom: 0.38rem  !important;
     }
 
     body.modal-open .modal-mobile-quickbar,
     body.modal-open .modal-mobile-quickbar.is-fixed {
-      left: auto !important;
-      width: min(14rem, calc(100vw - 1.2rem)) !important;
-      max-width: min(14rem, calc(100vw - 1.2rem)) !important;
+      left: auto  !important;
+      width: min(14rem, calc(100vw - 1.2rem))  !important;
+      max-width: min(14rem, calc(100vw - 1.2rem))  !important;
     }
   }
 
@@ -264,15 +264,15 @@
     .service-page-hero,
     .calculators-page .service-page-hero,
     .surgery-page .service-page-hero {
-      min-height: auto !important;
-      margin-top: 0.28rem !important;
-      margin-bottom: 0.58rem !important;
-      padding: 0.62rem max(0.82rem, env(safe-area-inset-right, 0px)) 0.7rem max(0.82rem, env(safe-area-inset-left, 0px)) !important;
+      min-height: auto  !important;
+      margin-top: 0.28rem  !important;
+      margin-bottom: 0.58rem  !important;
+      padding: 0.62rem max(0.82rem, env(safe-area-inset-right, 0px)) 0.7rem max(0.82rem, env(safe-area-inset-left, 0px))  !important;
     }
 
     .service-page-intro,
     .service-page-intro-enhanced {
-      gap: 0.42rem !important;
+      gap: 0.42rem  !important;
     }
 
     .service-page-hero .section-eyebrow,
@@ -281,29 +281,29 @@
     .service-page-hero .hero-chip-row,
     .surgery-page .service-page-hero p,
     .calculators-page .service-page-hero p {
-      display: none !important;
+      display: none  !important;
     }
 
     .service-page-hero .section-title,
     .calculators-page .section-title,
     .surgery-page .section-title {
-      max-width: min(100%, 38rem) !important;
-      font-size: clamp(1.72rem, 5.8vw, 2.45rem) !important;
-      line-height: 0.92 !important;
-      letter-spacing: -0.05em !important;
-      margin: 0 !important;
+      max-width: min(100%, 38rem)  !important;
+      font-size: clamp(1.72rem, 5.8vw, 2.45rem)  !important;
+      line-height: 0.92  !important;
+      letter-spacing: -0.05em  !important;
+      margin: 0  !important;
     }
 
     .surgery-page .section-title {
-      font-size: clamp(1.42rem, 4.3vw, 1.85rem) !important;
-      line-height: 0.88 !important;
-      max-width: min(100%, 30rem) !important;
+      font-size: clamp(1.42rem, 4.3vw, 1.85rem)  !important;
+      line-height: 0.88  !important;
+      max-width: min(100%, 30rem)  !important;
     }
 
     .mobile-shell-nav,
     .bottom-nav,
     .bottom-shell-nav {
-      max-height: 3.05rem !important;
+      max-height: 3.05rem  !important;
     }
   }
 
@@ -311,10 +311,10 @@
     .App[data-clinical-premium='true'] *,
     .App[data-clinical-premium='true'] *::before,
     .App[data-clinical-premium='true'] *::after {
-      scroll-behavior: auto !important;
-      animation-duration: 0.001ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.001ms !important;
+      scroll-behavior: auto  !important;
+      animation-duration: 0.001ms  !important;
+      animation-iteration-count: 1  !important;
+      transition-duration: 0.001ms  !important;
     }
   }
 }

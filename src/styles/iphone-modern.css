@@ -1,0 +1,173 @@
+/* UroMed iPhone 15-17 Pro Max Optimization
+ * Dynamic Island, safe-area, notch handling
+ */
+
+/* iPhone 15 Pro / Dynamic Island detection */
+@supports (padding: max(0px)) {
+  @media (width >= 390px) and (width <= 430px) and (height >= 780px) and (-webkit-touch-callout: none) {
+    :root {
+      --device-type: 'iPhone-modern';
+      --has-notch: true;
+      --has-dynamic-island: true;
+    }
+  }
+}
+
+/* iPhone 15 Pro Max (430x932) */
+@media (width: 430px) and (height: 932px) {
+  :root {
+    --safe-area-top: env(safe-area-inset-top, 47px);
+    --safe-area-bottom: env(safe-area-inset-bottom, 34px);
+    --safe-area-left: env(safe-area-inset-left, 0px);
+    --safe-area-right: env(safe-area-inset-right, 0px);
+    --dynamic-island-height: 47px;
+  }
+
+  .modal-header {
+    padding-top: calc(var(--safe-area-top) + 1rem) !important;
+  }
+
+  .modal-mobile-quickbar {
+    bottom: calc(var(--safe-area-bottom) + 0.64rem) !important;
+  }
+}
+
+/* iPhone 15 Pro (390x844) */
+@media (width: 390px) and (height: 844px) {
+  :root {
+    --safe-area-top: env(safe-area-inset-top, 47px);
+    --safe-area-bottom: env(safe-area-inset-bottom, 34px);
+    --dynamic-island-height: 47px;
+  }
+}
+
+/* iPhone 15 / 15 Plus (390x844 / 428x926) */
+@media (width: 428px) and (height: 926px) {
+  :root {
+    --safe-area-top: env(safe-area-inset-top, 47px);
+    --safe-area-bottom: env(safe-area-inset-bottom, 34px);
+  }
+}
+
+/* iPhone 16 Pro Max (430x954) - Future proof */
+@media (width: 430px) and (height: 954px) {
+  :root {
+    --safe-area-top: env(safe-area-inset-top, 51px);
+    --safe-area-bottom: env(safe-area-inset-bottom, 34px);
+    --dynamic-island-height: 51px;
+  }
+}
+
+/* iPhone 17 Pro Max (430x960) - Future proof */
+@media (width: 430px) and (height: 960px) {
+  :root {
+    --safe-area-top: env(safe-area-inset-top, 53px);
+    --dynamic-island-height: 53px;
+  }
+}
+
+/* Landscape modes for all iPhones */
+@media (orientation: landscape) and (max-width: 940px) {
+  .modal-header {
+    padding-top: calc(env(safe-area-inset-top, 0px) + 0.4rem) !important;
+  }
+
+  .modal-mobile-quickbar {
+    max-width: min(12rem, calc(100vw - max(1rem, env(safe-area-inset-left) + 1rem))) !important;
+    bottom: max(0.3rem, calc(env(safe-area-inset-bottom) + 0.3rem)) !important;
+  }
+
+  .modal-header-icon,
+  .modal-header-eyebrow,
+  .modal-header-lead,
+  .modal-summary-grid,
+  .modal-risk-row,
+  .modal-pathway-row {
+    display: none !important;
+  }
+
+  .modal-title {
+    font-size: clamp(0.95rem, 2.8vw, 1.25rem) !important;
+    line-height: 1.1 !important;
+    max-width: calc(100vw - 6rem) !important;
+  }
+}
+
+/* Keyboard handling */
+@media (pointer: coarse) and (hover: none) {
+  .keyboard-open .modal-mobile-quickbar {
+    display: none !important;
+  }
+
+  .keyboard-open .modal-content {
+    padding-bottom: max(0.8rem, env(safe-area-inset-bottom)) !important;
+  }
+}
+
+/* Scrollbar styling - WebKit */
+[data-v23-workbench] ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+[data-v23-workbench] ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+[data-v23-workbench] ::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+  border-radius: 999px;
+  transition: background var(--duration-fast) var(--ease-in-out);
+}
+
+[data-v23-workbench] ::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-primary);
+}
+
+/* Hide scrollbar - Firefox */
+[data-v23-workbench] {
+  scrollbar-width: none;
+  scrollbar-color: var(--border-primary) transparent;
+}
+
+/* Touch target minimum 44px */
+button, a[role="button"], [tabindex]:not([tabindex="-1"]) {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Prevent accidental zoom on form inputs (iOS) */
+input, select, textarea {
+  font-size: 16px; /* Prevents zoom on focus */
+}
+
+/* Safe area padding utility classes */
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px) !important;
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px) !important;
+}
+
+.safe-left {
+  padding-left: env(safe-area-inset-left, 0px) !important;
+}
+
+.safe-right {
+  padding-right: env(safe-area-inset-right, 0px) !important;
+}
+
+.safe-inset {
+  padding-top: env(safe-area-inset-top, 0px) !important;
+  padding-bottom: env(safe-area-inset-bottom, 0px) !important;
+  padding-left: env(safe-area-inset-left, 0px) !important;
+  padding-right: env(safe-area-inset-right, 0px) !important;
+}
+
+/* iPhone notch avoidance */
+@media (width >= 375px) and (width <= 430px) {
+  .navbar {
+    top: max(0.42rem, env(safe-area-inset-top)) !important;
+  }
+}

@@ -19,12 +19,13 @@ export default defineConfig(({ mode }) => {
   };
 
   return {
-    plugins: [react()],
-    esbuild: {
-      loader: 'jsx',
-      include: /src\/.*\.jsx?$/,
-      exclude: [],
-    },
+    plugins: [
+      react({
+        babel: {
+          presets: ['@babel/preset-react'],
+        },
+      }),
+    ],
     define: {
       'process.env': JSON.stringify(compatibleEnv),
     },

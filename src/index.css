@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import './styles/premium-design-system.css';
+@import './styles/premium-cards-2026.css';
+@import './styles/premium-modal-2026.css';
+@import './styles/premium-animations.css';
+@import './styles/premium-components.css';
+@import './styles/iphone-modern.css';
+@import './styles/z-index-stack.css';
+@import './styles/accessibility.css';
 
 :root {
   /* Spacing */

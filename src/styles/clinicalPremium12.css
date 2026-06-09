@@ -229,59 +229,59 @@
     }
 
     body.modal-open .App[data-product-version='1.2'] :where(.navbar, .mobile-shell-nav, .floating-scroll-top, .scroll-top-btn, .clinical-os-strip, .breadcrumb-bar) {
-      display: none !important;
-      pointer-events: none !important;
-      visibility: hidden !important;
+      display: none  !important;
+      pointer-events: none  !important;
+      visibility: hidden  !important;
     }
 
     body.modal-open .tabs-shell {
-      top: 0 !important;
-      width: 100vw !important;
-      max-width: 100vw !important;
-      padding-inline: max(0.58rem, calc(var(--cp12-safe-left) + 0.58rem)) max(0.58rem, calc(var(--cp12-safe-right) + 0.58rem)) !important;
+      top: 0  !important;
+      width: 100vw  !important;
+      max-width: 100vw  !important;
+      padding-inline: max(0.58rem, calc(var(--cp12-safe-left) + 0.58rem)) max(0.58rem, calc(var(--cp12-safe-right) + 0.58rem))  !important;
     }
 
     body.modal-open .modal-mobile-quickbar,
     body.modal-open .modal-mobile-quickbar.is-fixed {
-      bottom: max(0.62rem, calc(var(--cp12-safe-bottom) + 0.62rem)) !important;
-      left: max(0.72rem, calc(var(--cp12-safe-left) + 0.72rem)) !important;
-      right: max(0.72rem, calc(var(--cp12-safe-right) + 0.72rem)) !important;
-      max-width: min(25rem, calc(100vw - var(--cp12-safe-left) - var(--cp12-safe-right) - 1.44rem)) !important;
+      bottom: max(0.62rem, calc(var(--cp12-safe-bottom) + 0.62rem))  !important;
+      left: max(0.72rem, calc(var(--cp12-safe-left) + 0.72rem))  !important;
+      right: max(0.72rem, calc(var(--cp12-safe-right) + 0.72rem))  !important;
+      max-width: min(25rem, calc(100vw - var(--cp12-safe-left) - var(--cp12-safe-right) - 1.44rem))  !important;
     }
 
     body.modal-open .modal-body,
     body.modal-open .modal-tabpanel,
     body.modal-open .modal-tabpanel > .content-block,
     body.modal-open .clinical-readability-rail {
-      padding-bottom: calc(var(--cp12-safe-bottom) + 9.25rem) !important;
+      padding-bottom: calc(var(--cp12-safe-bottom) + 9.25rem)  !important;
     }
   }
 
   @media (max-width: 980px) and (orientation: landscape) {
     .App[data-product-version='1.2'] :where(.home-workbench, .service-page-hero) {
-      min-height: auto !important;
-      padding-top: 0.52rem !important;
-      padding-bottom: 0.62rem !important;
+      min-height: auto  !important;
+      padding-top: 0.52rem  !important;
+      padding-bottom: 0.62rem  !important;
     }
 
     .App[data-product-version='1.2'] :where(.home-workbench-subtitle, .section-subtitle, .service-page-chips, .hero-chip-row, .clinical-os-signal) {
-      display: none !important;
+      display: none  !important;
     }
 
     .App[data-product-version='1.2'] :where(.home-workbench-title, .section-title, .service-page-hero h1) {
-      font-size: clamp(1.45rem, 5.2vw, 2.35rem) !important;
-      line-height: 0.94 !important;
-      margin-block: 0 !important;
+      font-size: clamp(1.45rem, 5.2vw, 2.35rem)  !important;
+      line-height: 0.94  !important;
+      margin-block: 0  !important;
     }
 
     .App[data-product-version='1.2'] :where(.clinical-os-strip) {
-      padding-block: 0.42rem !important;
-      gap: 0.42rem !important;
+      padding-block: 0.42rem  !important;
+      gap: 0.42rem  !important;
     }
 
     body.modal-open .tabs-shell .tab,
     body.modal-open .tabs-shell .tabs button {
-      min-height: 40px !important;
+      min-height: 40px  !important;
     }
   }
 
@@ -289,10 +289,10 @@
     .App[data-product-version='1.2'] *,
     .App[data-product-version='1.2'] *::before,
     .App[data-product-version='1.2'] *::after {
-      scroll-behavior: auto !important;
-      animation-duration: 0.001ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.001ms !important;
+      scroll-behavior: auto  !important;
+      animation-duration: 0.001ms  !important;
+      animation-iteration-count: 1  !important;
+      transition-duration: 0.001ms  !important;
     }
   }
 }
