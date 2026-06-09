@@ -1,4 +1,4 @@
-import { sectionNames, subsectionLabels } from './index';
+import { sectionNames, subsectionLabels } from './constants';
 
 const SUBSECTION_PROFILES = {
   stones: {

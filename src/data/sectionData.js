@@ -1,4 +1,4 @@
-import { allDiseases } from './index';
+import allDiseases from './diseases';
 import { enrichDiseaseMetadataList } from './enrichMetadata';
 
 export function getSectionDiseasesByIds(ids) {
