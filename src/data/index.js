@@ -92,11 +92,11 @@ export function getDiseaseById(id) {
 }
 
 export function getDiseasesBySection(section) {
-  return Array.isArray(allDiseases) ? allDiseases.filter(d => d.section === section);
+  return Array.isArray(allDiseases) ? allDiseases.filter(d => d.section === section) : [];
 }
 
 export function getDiseasesBySubsection(section, subsection) {
-  return Array.isArray(allDiseases) ? allDiseases.filter(d => d.section === section && d.subsection === subsection);
+  return Array.isArray(allDiseases) ? allDiseases.filter(d => d.section === section && d.subsection === subsection) : [];
 }
 
 export function searchDiseases(query) {
