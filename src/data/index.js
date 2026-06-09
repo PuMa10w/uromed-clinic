@@ -22,7 +22,9 @@ export const sectionIcons = {
 
 // ===== MAP для быстрого поиска по ID =====
 export const diseaseById = {};
-allDiseases.forEach(d => { diseaseById[d.id] = d; });
+if (Array.isArray(allDiseases)) {
+  allDiseases.forEach(d => { diseaseById[d.id] = d; });
+}
 
 const SEARCH_SYNONYMS = {
   bph: ['дгпж', 'аденома простаты', 'доброкачественная гиперплазия простаты', 'доброкачественная гиперплазия предстательной железы', 'benign prostatic hyperplasia', 'bph', 'luts', 'нижние мочевые пути', 'затрудненное мочеиспускание'],
@@ -85,15 +87,16 @@ function getDiseaseSearchTerms(disease) {
 
 // ===== Хелперы =====
 export function getDiseaseById(id) {
+  if (!diseaseById || !id) return null;
   return diseaseById[id] || null;
 }
 
 export function getDiseasesBySection(section) {
-  return allDiseases.filter(d => d.section === section);
+  return Array.isArray(allDiseases) ? allDiseases.filter(d => d.section === section);
 }
 
 export function getDiseasesBySubsection(section, subsection) {
-  return allDiseases.filter(d => d.section === section && d.subsection === subsection);
+  return Array.isArray(allDiseases) ? allDiseases.filter(d => d.section === section && d.subsection === subsection);
 }
 
 export function searchDiseases(query) {

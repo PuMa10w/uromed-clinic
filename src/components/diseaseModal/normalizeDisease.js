@@ -498,6 +498,7 @@ const normalizeUltrasound = (value, disease) => {
 };
 
 export const normalizeDisease = (disease) => {
+  if (!disease || !disease.id) return { id: 'unknown', name: 'Неизвестная болезнь' };
   return {
     ...disease,
     tags: asArray(disease.tags),

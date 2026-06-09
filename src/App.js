@@ -282,10 +282,10 @@ function App() {
             />
           </div>
           <Footer onNavigate={handleNavigate} activeSection={activeSection} />
-          {selectedDisease && (
+          {selectedDisease && selectedDisease?.id && (
             <DiseaseModal
               disease={selectedDisease}
-              allDiseases={allDiseases}
+              allDiseases={Array.isArray(allDiseases) ? allDiseases : []}
               onNavigate={handleNavigate}
               onClose={closeDisease}
             />
