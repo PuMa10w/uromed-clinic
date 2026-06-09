@@ -93,8 +93,14 @@ const DiseaseSection = React.memo(({
     });
 
     try {
+      console.log('handleCardClick:', disease.id, disease.name);
       const fullDisease = await preloadDiseaseData(disease.id);
+      console.log('preloadDiseaseData result:', !!fullDisease);
+      if (!fullDisease) console.warn('preloadDiseaseData returned null for:', disease.id);
       setSelectedDisease(fullDisease || disease);
+    } catch (err) {
+      console.error('preloadDiseaseData error:', err.message, disease.id);
+      setSelectedDisease(disease);
     } finally {
       setLoadingDiseaseId(null);
     }
