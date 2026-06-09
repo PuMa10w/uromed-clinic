@@ -2,10 +2,20 @@ import allDiseases from './diseases';
 import { enrichDiseaseMetadataList } from './enrichMetadata';
 
 export function getSectionDiseasesByIds(ids) {
-  if (!Array.isArray(ids) || ids.length === 0) return [];
+  if (!Array.isArray(ids) || ids.length === 0) {
+    console.warn('getSectionDiseasesByIds: ids invalid', ids);
+    return [];
+  }
 
+  console.log('getSectionDiseasesByIds called with ids:', ids, 'allDiseases length:', allDiseases.length);
   const lookup = new Map(allDiseases.map((disease) => [disease.id, disease]));
-  return enrichDiseaseMetadataList(ids.map((id) => lookup.get(id)).filter(Boolean));
+  console.log('lookup size:', lookup.size);
+  const found = ids.map((id) => lookup.get(id)).filter(Boolean);
+  console.log('found count:', found.length);
+  if (found.length === 0) {
+    console.warn('No diseases found for ids:', ids, 'first few disease ids:', Array.from(lookup.keys()).slice(0, 10));
+  }
+  return enrichDiseaseMetadataList(found);
 }
 
 export function getSectionDiseasesBySubsection(section, subsection, priorityIds = []) {
